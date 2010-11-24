@@ -1,0 +1,1 @@
+﻿package mymath{	public class MathArray extends Array{		public function MathArray( ... args){			this.push(args)		}				public function total():Number {			var sum:Number = 0			for (var i:Number = 0 ; i < this.length ; i++){				sum += this[i]}			return sum		}									public function mean():Number {			return this.total() / this.length		}	}}

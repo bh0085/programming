@@ -1,0 +1,1 @@
+/Users/bh0085/Programming/AI Class/Vacuum_World/Environment.cpp:107: error: no 'unsigned int Environment::getNumberCleaned()' member function declared in class 'Environment'

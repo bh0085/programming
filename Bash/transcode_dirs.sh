@@ -1,0 +1,34 @@
+#!/bin/bash
+old_IFS=${IFS}
+new_IFS='
+'
+IFS=$new_IFS
+
+echo "Directories to be transcoded:"
+count=0
+
+cdir=`pwd`
+dirs=`find $cdir -type d -mindepth 1 -maxdepth 1 ! -name '.*'`
+for f in $dirs
+do
+    count=$(( count+1 ))
+    echo $f
+done
+
+echo "Continue transcoding "${count}"directories? (y/n)"
+read docode
+if [[ $docode != y ]]
+then
+    echo "transcoding aborted"
+    IFS=$old_IFS
+    exit 0
+fi
+
+for f in $dirs
+do
+	echo $f
+    cd $f
+    flac_transcode2.sh
+done
+IFS=$old_IFS
+exit 0

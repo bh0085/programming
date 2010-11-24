@@ -1,0 +1,7 @@
+#!python
+import sys
+import dnuos
+try:
+    sys.exit(dnuos.main())
+except (KeyboardInterrupt, SystemExit):
+    pass

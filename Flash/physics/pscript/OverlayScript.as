@@ -1,0 +1,1 @@
+﻿package physics.pscript{	import physics.PhysOverlay	public class OverlayScript extends PhysScript{		public var thisOverlay:PhysOverlay				public function setOverlay(o:PhysOverlay):void{			thisOverlay = o		}	}}

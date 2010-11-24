@@ -1,0 +1,1 @@
+﻿package tanks.planets{	import physics.pscript.PhysScript		public class PlanetScript extends PhysScript{			}	}

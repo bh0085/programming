@@ -1,0 +1,192 @@
+<html>
+
+<head>
+<title>Introduction to OpenGL</title>
+</head>
+
+<body stylesrc="http://buggy/codecolony/home.htm" bgcolor="#000000" text="#FF0000" link="#ABABAB" vlink="#D6B001" alink="#FFFF00">
+<font size="3">
+
+<p></font><font size="6"><strong>Introduction</strong></p>
+
+<p></font><font size="4"><strong>What you'll learn in this tutorial:</strong></font><font size="3"></p>
+
+<blockquote>
+  <ul>
+    <li>What is OpenGL?</li>
+    <li>What is GLUT?</li>
+    <li>How does OpenGL work?</li>
+    <li>How can I use GLUT?</li>
+    <li>Which commands do I need to work with OpenGL?</li>
+    <li>How can I draw a simple triangle with OpenGL?</li>
+    <li>End of theory! Let's start.</li>
+  </ul>
+</blockquote>
+
+<p></font><font size="4"><strong>What is OpenGL?</strong></font><font size="3"></p>
+
+<p>OpenGL provides a set of commands to render a threedimensional scene. That means you
+provide the data in an OpenGL-useable form and OpenGL will show this data on the screen
+(render it). It is developed by many companies and it is free to use. You can develop
+OpenGL-applications without licencing.</p>
+
+<p>OpenGL is a hardware- and system-independent interface. An OpenGL-application will work
+on every platform, as long as there is an installed implementation.</p>
+
+<p>Because it is systemindependant, there are no functions to create windows etc., but
+there are helper functions for each platform. A very useful thing is GLUT.</p>
+
+<p></font><font size="4"><strong>What is GLUT?</strong></font><font size="3"></p>
+
+<p>GLUT is a complete API written by Mark Kilgard which lets you create windows and handle
+the messages. It exists for several platforms, that means that a program which uses GLUT
+can be compiled on many platforms without (or at least with very few) changes in the code.</p>
+
+<p></font><font size="4"><strong>How does OpenGL work?</strong></font><font size="3"></p>
+
+<p>OpenGL bases on the state variables. There are many values, for example the color, that
+remain after being specified. That means, you can specify a color once and draw several
+polygons, lines or what ever with this color then. There are no classes like in DirectX.
+However, it is logically structured. Before we come to the commands themselves, here is
+another thing:</p>
+
+<p>To be hardware independent, OpenGL provides its own data types. They all begin with
+&quot;GL&quot;. For example GLfloat, GLint and so on. There are also many symbolic
+constants, they all begin with &quot;GL_&quot;, like GL_POINTS, GL_POLYGON. Finally the
+commands have the prefix &quot;gl&quot; like <em>glVertex3f()</em>. There is a utility
+library called GLU, here the prefixes are &quot;GLU_&quot; and &quot;glu&quot;. GLUT
+commands begin with &quot;glut&quot;, it is the same for every library. You want to know
+which libraries coexist with the ones called before? There are libraries for every system,
+Windows has the wgl*-Functions, Unix systems glx* and so on.</p>
+
+<p>A very important thing is to know, that there are two important matrices, which affect
+the transformation from the 3d-world to the 2d-screen: The projection matrix and the
+modelview matrix. The projection matrix contains information, how a vertex &#150; let's
+say a &quot;point&quot; in space &#150; shall be mapped to the screen. This contains,
+whether the projection shall be isometric or from a perspective, how wide the field of
+view is and so on. Into the other matrix you put information, how the objects are moved,
+where the viewer is and so on. </p>
+
+<p>Don't like matrices? Don't be afraid, you probably won't really see them, at least at
+the beginning. There are commands that do all the maths for you. </p>
+
+<p>Some basic commands are explained later in this tutorial.</p>
+
+<p></font><font size="4"><strong>How can I use GLUT?</strong></font><font size="3"></p>
+
+<p>GLUT provides some routines for the initialization and creating the window (or
+fullscreen mode, if you want to). Those functions are called first in a GLUT application:</p>
+
+<p>In your first line you always write g<em>lutInit(&amp;argc, argv)</em>. After this, you
+must tell GLUT, which display mode you want &#150; single or double buffering, color index
+mode or RGB and so on. This is done by calling <em>glutInitDisplayMode()</em>. The
+symbolic constants are connected by a logical OR, so you could use <em>glutInitDisplayMode(GLUT_RGB
+| GLUT_SINGLE)</em>. In later tutorials we will use some more constants here.</p>
+
+<p>After the initialization you call <em>glCreateWindow()</em> with the window name as
+parameter.</p>
+
+<p>Then you can (and should) pass some methods for certain events. The most important ones
+are &quot;reshape&quot; and &quot;display&quot;. In reshape you need to (re)define the
+field of view and specify a new area in the window, where OpenGL is allowed to draw to.</p>
+
+<p>Display should clear the so called color buffer &#150; let's say this is the sheet of
+paper &#150; and draw our objects.</p>
+
+<p>You pass the methods by <em>glut*Func()</em>, for example <em>glutDisplayFunc()</em>.
+At the end of the main function you call <em>glutMainLoop()</em>. This function doesn't
+return, but calls the several functions passed by <em>glut*Func</em>. </p>
+
+<p></font><font size="4"><strong>Which commands do I need to work with OpenGL?</strong></font><font size="3"></p>
+
+<p>Here I'll explain the commands you need in &quot;reshape&quot; and at the beginning of
+&quot;display&quot;.</p>
+
+<p>As mentioned before, there are two (ok, in reality there are three, but let's make it
+easier) matrices. Which one is current is controlled by &quot;<em>glMatrixMode()</em>&quot;.
+You can call it either with GL_PROJECTION or GL_MODELVIEW. In Reshape you specify a new
+projection matrix. After turning it current, you load an identity matrix into it, that
+means &quot;deleting&quot; the former projection matrix. Now you can apply a new field of
+view by using a glu* command: <em>gluPerspective</em>. You pass the y-angle of view, the
+aspect ratio (the window's witdth / height), and a near and far clipping distance. The
+objects or parts of objects which are not between those distances will not be visible.
+Careful: Don't take a too small near clipping distance, you could get wrong-looking
+results! After this, you make the modelview matrix currrent and also load an identity
+matrix.</p>
+
+<p>Display has to clear the color buffer. Therefore you call </p>
+
+<p><em>glClear(GL_COLOR_BUFFER_BIT)</em>.</p>
+
+<p>After the initialization of GLUT, you should have defined a clear color using <em>glClearColor()</em>.
+It takes four arguments, red, green and blue and an alpha value. Set alpha = 0.0.</p>
+
+<p>To get clear red, you would call <em>glClearColor(1.0,0.0,0.0,0.0);</em></p>
+
+<p>Drawing the object is explained in the next section.</p>
+
+<p>Last but not least you define the &quot;viewport&quot;, the area on the window where
+OpenGL shall paint to.</p>
+
+<p>Therefore you use <em>glViewport(0,0,x,y); </em>with x and y as the size of your
+window: You get them from the reshape parameters. Here is how to define the function
+headers of the two routines:</p>
+
+<p><em>void Reshape ( int x, int y );</em></p>
+
+<p><em>void Display ( void );</em></p>
+
+<p></font><font size="4"><strong>How can I draw a simple triangle with OpenGL?</strong></p>
+
+<p></font><font size="3">Having cleared the colorbuffer, you can pass some data to OpenGL.
+It is very simple: You specify some vertices, which are used in a certain way. The way is
+defined by <em>glBegin()</em>. For now let's use GL_POLYGON as parameter which tells
+OpenGL to use the following vertices as corners of one polygon.</p>
+
+<p>After passing the data to OpenGL, you have to call <em>glEnd()</em>. This method
+doesn't take any arguments.</p>
+
+<p>To provide a vertex , you can call one of some <em>glVertex*() </em>routines. * stands
+for a combination of the number of arguments (two-dimensional, three-dimensional or
+four-dimensional) + the data type (f for float, d for double and i for int).</p>
+
+<p>To specify a 3d vertex with integer coordinates, you call <em>glVertex3i()</em>.</p>
+
+<p>To finish rendering, you must call <em>glFlush() </em>at the end of your
+display-function.</p>
+
+<p>That's all we need. Just call glVertex*() three times between <em>glBegin</em> and <em>glEnd</em>.</p>
+
+<p>To change the current color in RGB(A)-mode, you call <em>glColor*().</em> Again *
+stands for the number of arguments (three for RGB and four for RGBA)+ the data type. If
+you take a floating point type as parameters, note that 1.0 is full intensity for the
+color component. Also note, that colors are blended, when they are different for one or
+more vertices in the polygon.</p>
+
+<p>One last thing: If you want to add some vertices to our polygon, you must note that
+OpenGL cannot render concave polygons (for performance reasons). Then you have to
+tesselate it, ie make some smaller ones from it (add a new <em>glBegin / glEnd</em> pair).</p>
+
+<p></font><font size="4"><strong>End of theory! Let's start.</strong></p>
+
+<p></font><font size="3">Assuming you're using Visual C++ you first have to create a
+console application. The only required include file is &quot;GL\glut.h&quot;. It includes
+&quot;GL\gl.h&quot; and &quot;GL\glu.h&quot;, so we needn't do so. If you don't have GLUT
+(you need the headers and the dll), download it <a href="http://reality.sgi.com/opengl/glut3/glut3.html">here</a>. You now can write your
+first OpenGL application!</p>
+
+<p>Have a look at <a href="../opengl.htm#Introduction">my tutorials</a> to see the result.</font></p>
+
+<p><font size="3"><a href="../opengl.htm">Back</a></font></p>
+
+<p><big>**************************************************************************</big></p>
+
+<p><big>Any comments? Conact me!</big></p>
+
+<p><big><a href="mailto:philipp.crocoll@web.de">philipp.crocoll@web.de</a></big></p>
+
+<p><big><a href="http://www.codecolony.de">www.codecolony.de</a></big></p>
+
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,328 @@
+X Lossless Decoder version 20091230 (115.2)
+
+XLD extraction logfile from 2010-01-23 12:45:51 -0500
+
+Rahsaan Roland Kirk / Simmer, Reduce, Garnish & Serve
+
+Used drive : MATSHITA DVD-R   UJ-868 (revision KA14)
+
+Use cdparanoia mode     : YES (CDParanoia III 10.2 engine)
+Disable audio cache     : OK for the drive with cache less than 2750KB
+Make use of C2 pointers : NO
+Read offset correction  : 102
+Max retry count         : 100
+
+TOC of the extracted CD
+     Track |   Start  |  Length  | Start sector | End sector 
+    ---------------------------------------------------------
+        1  | 00:00:00 | 05:24:17 |         0    |    24316   
+        2  | 05:24:17 | 09:44:28 |     24317    |    68144   
+        3  | 15:08:45 | 04:45:57 |     68145    |    89576   
+        4  | 19:54:27 | 06:08:45 |     89577    |   117221   
+        5  | 26:02:72 | 00:27:35 |    117222    |   119281   
+        6  | 26:30:32 | 03:37:13 |    119282    |   135569   
+        7  | 30:07:45 | 02:15:45 |    135570    |   145739   
+        8  | 32:23:15 | 07:32:30 |    145740    |   179669   
+        9  | 39:55:45 | 00:24:20 |    179670    |   181489   
+       10  | 40:19:65 | 01:49:50 |    181490    |   189714   
+       11  | 42:09:40 | 05:09:37 |    189715    |   212926   
+       12  | 47:19:02 | 06:16:25 |    212927    |   241151   
+       13  | 53:35:27 | 07:12:03 |    241152    |   273554   
+       14  | 60:47:30 | 06:35:35 |    273555    |   303214   
+       15  | 67:22:65 | 01:40:20 |    303215    |   310734   
+       16  | 69:03:10 | 04:10:07 |    310735    |   329491   
+
+
+Track 01
+    Filename : /Volumes/Media/Music/XLD Converts/01 - Lunatic Danza.flac
+
+    Pre-gap length : 00:02:00
+
+    CRC32 hash (test run)  : B742785E
+    CRC32 hash             : B742785E
+    CRC32 hash (skip zero) : FA6BDF69
+    AccurateRip signature  : B4AB5BAD
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 02
+    Filename : /Volumes/Media/Music/XLD Converts/02 - Theme For The Eulipions (Album Version).flac
+
+    CRC32 hash (test run)  : 70E0D19F
+    CRC32 hash             : 70E0D19F
+    CRC32 hash (skip zero) : E64918F5
+    AccurateRip signature  : B1ABF1B2
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 03
+    Filename : /Volumes/Media/Music/XLD Converts/03 - Sweet Georgia Brown.flac
+
+    CRC32 hash (test run)  : C01D226F
+    CRC32 hash             : C01D226F
+    CRC32 hash (skip zero) : 7D3D091E
+    AccurateRip signature  : 0B811E64
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 04
+    Filename : /Volumes/Media/Music/XLD Converts/04 - I'll Be Seeing You.flac
+
+    CRC32 hash (test run)  : ECA8B94B
+    CRC32 hash             : ECA8B94B
+    CRC32 hash (skip zero) : 42771601
+    AccurateRip signature  : F60FCBB9
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 05
+    Filename : /Volumes/Media/Music/XLD Converts/05 - Los Angeles Negro Chorus.flac
+
+    CRC32 hash (test run)  : 791535DA
+    CRC32 hash             : 791535DA
+    CRC32 hash (skip zero) : 631256E6
+    AccurateRip signature  : BE6F12F3
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 06
+    Filename : /Volumes/Media/Music/XLD Converts/06 - Serenade To A Cuckoo.flac
+
+    CRC32 hash (test run)  : 69FE9129
+    CRC32 hash             : 69FE9129
+    CRC32 hash (skip zero) : 80F4A396
+    AccurateRip signature  : 966C4E72
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 07
+    Filename : /Volumes/Media/Music/XLD Converts/07 - Bagpipe Medley.flac
+
+    CRC32 hash (test run)  : 22A3776C
+    CRC32 hash             : 22A3776C
+    CRC32 hash (skip zero) : B0416E62
+    AccurateRip signature  : 3D787673
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 08
+    Filename : /Volumes/Media/Music/XLD Converts/08 - J. Griff's Blues.flac
+
+    CRC32 hash (test run)  : 2AD2DCF5
+    CRC32 hash             : 2AD2DCF5
+    CRC32 hash (skip zero) : 9A259DAE
+    AccurateRip signature  : 4CF81493
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 09
+    Filename : /Volumes/Media/Music/XLD Converts/09 - Mary Mcleod Bethune.flac
+
+    CRC32 hash (test run)  : 5A54B4CE
+    CRC32 hash             : 5A54B4CE
+    CRC32 hash (skip zero) : AE440753
+    AccurateRip signature  : B3A2ABFD
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 10
+    Filename : /Volumes/Media/Music/XLD Converts/10 - I Loves You Porgy.flac
+
+    CRC32 hash (test run)  : E9DF7645
+    CRC32 hash             : E9DF7645
+    CRC32 hash (skip zero) : 7E90500F
+    AccurateRip signature  : 495F075A
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 11
+    Filename : /Volumes/Media/Music/XLD Converts/11 - Hey Babebips.flac
+
+    CRC32 hash (test run)  : F935E18D
+    CRC32 hash             : F935E18D
+    CRC32 hash (skip zero) : F63EDC8D
+    AccurateRip signature  : 4A8F2AF6
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 12
+    Filename : /Volumes/Media/Music/XLD Converts/12 - In A Mellow Tone.flac
+
+    CRC32 hash (test run)  : 8485EA4B
+    CRC32 hash             : 8485EA4B
+    CRC32 hash (skip zero) : 7F938313
+    AccurateRip signature  : D0C5BF40
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 13
+    Filename : /Volumes/Media/Music/XLD Converts/13 - Dorthaan's Walk.flac
+
+    CRC32 hash (test run)  : 45535EEE
+    CRC32 hash             : 45535EEE
+    CRC32 hash (skip zero) : 1F926003
+    AccurateRip signature  : 6D9206AF
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 14
+    Filename : /Volumes/Media/Music/XLD Converts/14 - Watergate Blues.flac
+
+    CRC32 hash (test run)  : 1C63AAB7
+    CRC32 hash             : 1C63AAB7
+    CRC32 hash (skip zero) : DCFDDE04
+    AccurateRip signature  : 454B32D6
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 15
+    Filename : /Volumes/Media/Music/XLD Converts/15 - Summertime.flac
+
+    CRC32 hash (test run)  : 2CF18CC0
+    CRC32 hash             : 2CF18CC0
+    CRC32 hash (skip zero) : 2BCE2E16
+    AccurateRip signature  : 8EA6446C
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+Track 16
+    Filename : /Volumes/Media/Music/XLD Converts/16 - Thunder And Lighting Goodbye.flac
+
+    CRC32 hash (test run)  : 468BAD96
+    CRC32 hash             : 468BAD96
+    CRC32 hash (skip zero) : 7A399F8D
+    AccurateRip signature  : 8FFC20A1
+        ->Accurately ripped! (confidence 3)
+    Statistics
+        Read error                           : 0
+        Skipped (treated as error)           : 0
+        Edge jitter error (maybe fixed)      : 0
+        Atom jitter error (maybe fixed)      : 0
+        Drift error (maybe fixed)            : 0
+        Dropped bytes error (maybe fixed)    : 0
+        Duplicated bytes error (maybe fixed) : 0
+        Inconsistency in error sectors       : 0
+
+No errors occurred
+
+End of status report

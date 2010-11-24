@@ -1,0 +1,88 @@
+#filetype genotype_data
+#format id parent_id parent_dist num_cpus total_cpus length merit gest_time fitness update_born update_dead depth sequence
+
+#  1: ID
+#  2: parent ID
+#  3: parent distance
+#  4: number of organisms currently alive
+#  5: total number of organisms that ever existed
+#  6: length of genome
+#  7: merit
+#  8: gestation time
+#  9: fitness
+# 10: update born
+# 11: update deactivated
+# 12: depth in phylogentic tree
+# 13: genome of organism
+
+29611 29121 -1 8 34 91 1376 331 4.1571 9869 -1 170 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29668 29451 -1 5 31 90 1344 323 4.16099 9889 -1 172 wzcagcaekxzylcadxejxdamvovoncpscfvvqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29121 28846 -1 4 73 91 1376 331 4.1571 9709 -1 169 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29589 29121 -1 4 19 91 1376 331 4.1571 9864 -1 170 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnwewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29812 29589 -1 4 7 91 1376 331 4.1571 9940 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnwewckwscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29547 29121 -1 3 36 91 1376 331 4.1571 9846 -1 170 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnkewckjscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29905 29547 -1 3 4 91 680 329 2.06687 9971 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnkewckjscobtqolbeoorbpneakmkcnmayqncacuuyuzvfcaxgab 
+29808 29611 -1 3 6 91 1376 334 4.11976 9939 -1 171 wzcagcaekxzylcadxeqqxdcmvovoncpscfxkqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29887 29589 -1 2 3 91 688 331 2.07855 9969 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnwewckmscobtqolbeoorbpnedsmkcnmayqncacuuyuzvfcaxgab 
+29943 29611 -1 2 2 91 1376 334 4.11976 9985 -1 171 wzcagcaekxzylcadxejqxdcmhovoncpscfvkqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29962 29611 -1 2 2 91 1376 331 4.1571 9993 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqtslnkewckmscobtqolbeoirbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29911 29668 -1 1 3 90 1328 322 4.12422 9976 -1 173 wzcagcaekxzylcadxejxdamvovoncpscfvvqtslnkewckmscobtqolbeoorbpnfdkmkcnmayqncacuuyuzvfcaxgab 
+29851 29774 -1 1 5 94 1408 344 4.09302 9957 -1 174 wzcagcaedifzypcjxqxejqdjrmvwvoncpscfsjpmpbnkecccfsscobtdlieoornpvnedkmkcnqayjncacuuyuzvfcaxgab 
+29872 29547 -1 1 3 91 1392 332 4.19277 9963 -1 171 wzcagcarkxzylcadxejqxdcmvovoncpscfvuqtslnkewckjscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29753 29578 -1 1 4 93 696 339 2.0531 9919 -1 172 wzcagcaedifiypcjxdxejqdjcmvwvoncpscfsjpmpbnkxcccmscobtdlbeoornkvnedkmkcnqayqncacuuyuzvfcaxgab 
+29852 29801 -1 1 1 94 696 334 2.08383 9957 -1 170 wzcagcafdxfzyflcxddzgqrxjdmvvvoncvscfsjemfbnkecckascobtqolbeoirtpnvdkfkcnmayqncacuuyuzvfcaxgab 
+29856 29681 -1 1 1 94 86 334 0.257485 9958 -1 169 wzcagcafdxfzyflcxddegqryjdmvvvoncvscfsjemfenkecckascobtqolbeoirtpnvdkmkcnmayqncacuuyuzvfcaxgab 
+29866 29668 -1 1 1 90 84 323 0.260062 9962 -1 173 wzcagcaekxzylnadxejxdamvovoncpscfvvqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29875 29578 -1 1 1 93 86 337 0.255193 9964 -1 172 wzcagcaedifiypcjxdxejqdjcmvwvoncpscfsjpmpbnkecccmscobtdlbeoornkvnedkmkcnqayqncapuuyjzvfcaxgab 
+29896 29866 -1 1 1 90 1344 323 4.16099 9970 -1 174 wzcagcaekxzylnadxejxdamvovoncpscfvvqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncasuuyuzvfcaxgab 
+29901 29460 -1 1 1 93 1376 337 4.08309 9971 -1 168 wzcagcaedxfzylcaddxejqrdodmvvvxncoscfsjqmfbkecckxscoktjdlbeoornpnedkmkcnmayqncdcuuyuzvfcaxgkb 
+29906 29547 -1 1 1 91 1376 331 4.1571 9972 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnkewckjscobtqolbeoorbpnedkmkcnmahqncacuuyuzvfcaxgab 
+29915 29668 -1 1 1 90 83 323 0.256966 9977 -1 173 wzcagcaekxzylcadxejxdamvovoncpscfvvqtslnkewckmsyobtqolbeoorbpnedkmkcomayqncacuuyuzvfcaxgab 
+29916 29668 -1 1 1 90 1344 323 4.16099 9977 -1 173 wzcagcaekxzylcadxejxdamvovoncpscfvvqtslnkewckmscobtqolbeoorbpnedkmkcnmagqncacuuyuzvfcaxgab 
+29919 29845 -1 1 1 90 1376 331 4.1571 9977 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpsefvuqtslukewckmseobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgb 
+29920 29668 -1 1 1 90 46 627 0.0733652 9977 -1 173 wzcagcaekxzylcadxejxdamvovoncpscfvvqtslnkewckmscobtqolyeoorbpnedkmkcnmayqncacuuyunvfcaxgab 
+29923 29611 -1 1 1 91 1376 331 4.1571 9978 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqtslnkewckmscobtqoabeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29928 29121 -1 1 1 91 1376 331 4.1571 9979 -1 170 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcacgab 
+29929 29611 -1 1 1 91 1376 331 4.1571 9979 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcajgab 
+29850 29589 -1 1 3 91 688 332 2.07229 9956 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnwewckmscobtqolbeoorbpnedkmkcnmsyqncacuuyuzvfcaxgab 
+29941 29915 -1 1 1 89 1344 323 4.16099 9985 -1 174 wzcagcaekxzylcadxejxdamvovoncpscfvvqtslkewckmsyobtqolbeoorbpnedkmkcomayqncacuuyuzvfcaxgab 
+29888 29808 -1 1 2 91 940.667 333.667 2.82044 9969 -1 172 wzcagcaekxzylcadxeqqxdcmvovoncpscfxkqtslykewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29942 29888 -1 1 1 91 1360 336 4.04762 9985 -1 173 wzcagcaekxzylcadxeqqxdcmvoqoncpscfxkqtslykewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29585 29460 -1 1 5 93 688 337 2.04154 9862 -1 168 wzcagcaedxfzylcaddxejqrdodmvvvxncoscfsjqmfbkecckxscoktjdlbeoornpnedkmkcnmayqncdcjuyuzvfcaxgab 
+29845 29121 -1 1 3 91 1376 331 4.1571 9954 -1 170 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslukewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29893 29668 -1 1 2 90 1344 323 4.16099 9969 -1 173 wzcagcaekxzylcwdxejxdamvovoncpscfvvqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29945 29893 -1 1 1 90 1344 323 4.16099 9985 -1 174 wzcagcaesxzylcwdxejxdamvovoncpscfvvqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29946 29922 -1 1 1 90 1344 323 4.16099 9985 -1 174 wzcagcaekxzylcadxejxdamvovoncpscfvvqtslnkewckmscobuqolbeoorbpnekkmkcwmayqncacuuyuzvfcaxgab 
+29947 29611 -1 1 1 91 688 331 2.07855 9985 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqtslnkewckmscobtqolbeoorbpnydkmkcnmayqncacuuyuzvfcaxgab 
+29948 29611 -1 1 1 91 680 330 2.06061 9986 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqtslnkewckmscobtqolbeoorbpnefkmkcnmayqncacuuyuzvfcaxgab 
+29950 29589 -1 1 1 91 1344 329 4.08511 9986 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvfqtslnwewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29926 29611 -1 1 2 91 86 329 0.261398 9978 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqtslnkewckmscobtqolbeoorbpnedkmkvnmayqecacuuyuzvfcaxgab 
+29953 29611 -1 1 1 91 1376 331 4.1571 9987 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfrkqtslnkewckmscobtqolgeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29932 29851 -1 1 2 93 87 337 0.25816 9980 -1 175 wzcagcaedifzypcjxqxejqdjrmvwvoncpscfsjpmpbnkecccfsscobtdvieoornpvnedkmkcnqayjncacuyuzvfcaxgab 
+29884 29699 -1 1 2 92 84 334 0.251497 9967 -1 170 wzcagcaedifwypcaxdxeeqdjdmvvvoncpscfsjpmpbnkecdcmscoftdlbeoornpnsdkmkcnqayqncacuuyuzvfcaxgab 
+29959 29893 -1 1 1 90 83 323 0.256966 9992 -1 174 wzcagcaekxzylcwdxejxdamvovoncpscfvvqtslnkewckmswobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29937 29611 -1 1 2 91 1376 331 4.1571 9984 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqttlnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29961 29920 -1 1 1 90 1344 323 4.16099 9993 -1 174 btqolyeoorbpnedkmkcnmayqncacuuyunvfcaxgabwzcagcaekxzylcadxejxdamvovoncpscfvvqtslnkewckmsco 
+29963 29668 -1 1 1 90 1344 323 4.16099 9993 -1 173 wzcagcaekxzylcadxejxdamvovoncpscfvvstslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcalgab 
+29966 29668 -1 1 1 89 1344 323 4.16099 9993 -1 173 wcagcaekxzylcadxejxdamvovoncpscfvvqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29967 29945 -1 1 1 90 1344 323 4.16099 9993 -1 175 wzcagcaesxzylctdzejxdamvovoncpscfvvqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29969 29888 -1 1 1 91 1368 333.5 4.10192 9993 -1 173 wzcagcaekxzylcadxeqqxdcmvovoncpscfxkqtslykewckmscobtqolbqoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29970 29948 -1 1 1 92 1376 331 4.1571 9993 -1 172 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqtslnkewckmscobtqolbeoorbpnefkmkcnmayqncacuufeuzvfcaxgab 
+29972 29611 -1 1 1 91 1376 331 4.1571 9993 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacujyuzvfcaxgab 
+29973 29850 -1 1 1 91 688 332 2.07229 9994 -1 172 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnwewckmscobtqolbeoorbpnedkmkcnmsyqncacuuyuzvccaxgab 
+29974 29121 -1 1 1 90 1376 331 4.1571 9994 -1 170 wzcagcekxzylcadxejqxdcmvovoncpscfvuqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29931 29589 -1 1 2 90 85 328 0.259146 9979 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnwewckmsobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29975 29842 -1 1 1 91 1376 331 4.1571 9994 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfuuqtslnkewakmscobtqolbloorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29977 29547 -1 1 1 91 1376 331 4.1571 9994 -1 171 wzcagcaekxzylcaoxejqxdcmvovoncpscfvuqtslnkewckjscobtqolbeoorbpnedkmkcnmayqncahuuyuzvfcaxgab 
+29978 29611 -1 1 1 91 1376 331 4.1571 9995 -1 171 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqtslnyewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29904 29460 -1 1 2 93 387 337 1.14837 9971 -1 168 wzcagcaedxfzylcaddxejqrdodmvvvxscoscfsjqmfbkecckxscoktjdlbeoornpnedkmkcnmayqncdcuuyuzvfcaxgab 
+29979 29904 -1 1 1 93 688 337 2.04154 9995 -1 169 wzcagcaedxfzylcaddxejqrdodmvvvxscoscfsjqmfbkecckxscoktjdlbelornpnedkmkcnmayqncdcuuyuzvfcaxgab 
+29951 29121 -1 1 2 91 1376 332 4.14458 9986 -1 170 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnkewckmscobtqolbeoorbpnedkmkcnmnyqncacuuyuzvfcaxgab 
+29980 29121 -1 1 1 91 1376 331 4.1571 9995 -1 170 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvocaxgab 
+29981 29753 -1 1 1 93 696 339 2.0531 9997 -1 173 wzcagcaemifiypcjxdxejqdjcmvwvoncpscfsjpmpbnkxcccmscobtdlbeoornkvnedkmkcnqayqncacuuyuzvfcaxgab 
+29982 29121 -1 1 1 91 1376 331 4.1571 9999 -1 170 wzcagcaekxzylcadxejqxdcmvovoncpscfvuqtslnkewckmscobcqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29983 29668 -1 1 1 90 1344 323 4.16099 9999 -1 173 wzcagcaekxzylcydxejxdamvovoncpscfvvqtslnkewckmscobtqoloeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29984 29937 -1 1 1 91 1376 331 4.1571 10000 -1 172 wzcagcaekxzylcadxejqxdcmvovoncpscfvkqtblnkewckmscobtqolbeoorbpnedkmkcnmayqncacuuyuzvfcaxgab 
+29985 29959 -1 1 1 89 1344 323 4.16099 10000 -1 175 wzcagcaekxzylcwdxejxdamvovoncpscfvvqtslnkewckmswobtqolbeoorbpnedkmkcnmaqncacuuyuzvfcaxgab 
+29986 29808 -1 1 1 91 1376 334 4.11976 10000 -1 172 wzcagcaekxzylcadxeqqxdcmvovoncpscfxkqtslnkewckmscobtqolbeoorbpnedqmkcnmayqncacuuyuzvfcfxgab 
+29987 29668 -1 1 1 90 1344 323 4.16099 10000 -1 173 wzcagcaekxzylcadxejxdamvovoncpscfvvqtslnkewckmscobtqolbeoorbpnedkmkcsmayqncacuuyuzvfcaxgab 

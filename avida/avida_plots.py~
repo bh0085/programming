@@ -1,0 +1,108 @@
+import matplotlib.pyplot as plt
+import avida_utils as au
+import os
+
+from numpy import *
+import numpy as np
+
+def make_plot(params):
+    ptype = params.get('type','ts')
+    f = params.get('figure',0)
+    
+    try:
+    
+        fig = plt.figure(f)
+        
+        if ptype == 'ts':
+            plot_ts(fig,params)
+        else:
+
+            plot_grid(fig,params)
+        plt.draw()
+                    
+            
+    except IndexError,e:
+        print e
+def plot_grid(fig, params):
+    grid =map(lambda x: x.strip().split(' '),
+              open(au.data_filepath(params['fname'])).readlines())
+
+    if params['command'] == 'DumpLineageGrid':
+        grid =( array(grid, float) + 1) * 10
+    elif params['command'] == 'DumpTaskGrid':
+        grid = (array(grid, float)) 
+    else:
+        raise Exception('Grid type not implemented')
+    
+
+    fig.clear()
+
+    #grid = params['grid']
+    x = shape(grid)[0]
+    y = shape(grid)[1]
+    n = x * y
+
+
+
+    xs,ys,rs,cs = [[] for i in range(4)]
+    for i in range(x):
+        for j in range(y):
+            xs.append(i)
+            ys.append(j)
+            rs.append(grid[i,j])
+            cs.append([1,0,0])
+    ax = fig.add_subplot(111)
+    ax.scatter(xs,ys,rs,cs)
+
+
+def plot_ts(fig,params):
+    fname = params['fname']
+    window = params.get('window',20)
+    
+
+    cols, data = au.parse_printed( fname)
+    data_dict_unfiltered = {}
+    for i in range(len(cols)):
+        c = cols[i]
+        data_dict_unfiltered[c] = array(map(lambda x: x[i], data),float)
+
+    data_dict = {}
+
+    name = params['name']
+    if name == 'tasks':
+        for k,v in data_dict_unfiltered.iteritems():
+            if k != 'Update':
+                data_dict[k] = v
+    elif name == 'tasks_deme':
+        for k,v in data_dict_unfiltered.iteritems():
+            if k != 'Update':
+                data_dict[k] = v
+    elif name == 'fitness':
+        for k,v in data_dict_unfiltered.iteritems():
+            if k != 'Update':
+                data_dict[k] = v
+    elif name == 'all':
+        data_dict = data_dict_unfiltered
+    else:
+        raise Exception('unhandled graph type: '+name)
+
+
+    nplots = len(cols)
+    fig.clear()
+    col_set = data_dict.keys()
+    ax = fig.add_subplot(111)
+    plots = []    
+    widths = params.get('widths',1)
+
+    for i in range(len(col_set)):
+        c = col_set[i]            
+        yvals = zeros(window)
+        n = min(window, len(data_dict[c]))
+        yvals[-n:] = data_dict[c][-n:]            
+        plots.append(ax.plot(yvals))
+
+    ax.legend(plots, col_set, loc = 3,
+              frameon = False)
+    
+    return
+        

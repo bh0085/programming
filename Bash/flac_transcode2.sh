@@ -1,0 +1,135 @@
+#!/bin/bash
+#
+
+LAME_OPTS_V0="-V 0 --vbr-new"
+LAME_OPTS_V2="-V 2 --vbr-new"
+OGG_OPTS=""
+OGG=$(which oggenc)
+LAME=$(which lame)
+FLAC=$(which flac)
+
+DEST_ROOT=formats
+
+if [[ ! -d "${DEST_ROOT}" ]]; then mkdir -p "${DEST_ROOT}"; fi
+
+bn=`basename "$SOURCE"`
+DEST_V0=$DEST_ROOT/[V0]
+DEST_V2=$DEST_ROOT/[V2]
+DEST_OGG=$DEST_ROOT/[OGG]
+DEST_FLAC=$DEST_ROOT/[FLAC]
+
+ 
+old_IFS=${IFS}
+new_IFS='
+'
+IFS=$new_IFS
+files=( `find . \( -type f -o -type l \)  -maxdepth 1 -a -iname '*.flac'` )
+IFS=$old_IFS
+
+if [[ -d "${DEST_V0}" ]]; then
+  echo "V0 Destination exists... quitting"
+  exit 1
+fi
+if [[ -d "${DEST_V2}" ]]; then
+  echo "V2 Destination exists... quitting"
+  exit 1
+fi
+if [[ -d "${DEST_FLAC}" ]]; then
+  echo "FLAC Destination exists... quitting"
+  exit 1
+fi
+if [[ -d "${DEST_OGG}" ]]; then
+  echo "OGG Destination exists... quitting"
+  exit 1
+fi
+
+mkdir "$DEST_V0"
+mkdir "$DEST_V2"
+mkdir "$DEST_OGG"
+mkdir "$DEST_FLAC"
+
+IFS=$new_IFS
+for N_files in ${!files[@]}
+  do
+    dst_file="${DEST_OGG}/${files[${N_files}]/%\.flac/.ogg}"
+    vars=( `metaflac --no-utf8-convert --export-tags-to=- "${files[${N_files}]}"` )
+ 
+    comment_str=""
+    for N_vars in ${!vars[@]}
+      do
+	comment_str=${comment_str}'
+-c'${vars[${N_vars}]}' '
+        export "$(echo "${vars[${N_vars}]%=*}" | tr [:upper:] [:lower:])=${vars[${N_vars}]#*=}"
+    done
+
+    "${FLAC}" -dc "${files[${N_files}]}" |\
+    oggenc - -o "$dst_file" $comment_str
+       
+    if [[ $DELETE_OLD == 1 ]]; then rm "${files[${N_files}]}"; fi
+
+done
+
+#V0 loop
+for N_files in ${!files[@]}
+  do
+    dst_file="${DEST_V0}/${files[${N_files}]/%\.flac/.mp3}"
+    vars=( `metaflac --no-utf8-convert --export-tags-to=- "${files[${N_files}]}"` )
+ 
+    comment_str=""
+    for N_vars in ${!vars[@]}
+      do
+        export "$(echo "${vars[${N_vars}]%=*}" | tr [:upper:] [:lower:])=${vars[${N_vars}]#*=}"
+    done
+
+    IFS=$old_IFS
+    "${FLAC}" -dc "${files[${N_files}]}" |\
+    "${LAME}" --ignore-tag-errors --add-id3v2 "${LAME_OPTS_V0}" \
+        ${artist:+--ta} "${artist}" \
+        ${tracknumber:+--tn} "${tracknumber}${tracktotal:+/}${tracktotal}" \
+        ${title:+--tt} "${title}" \
+        ${album:+--tl} "${album}" \
+        ${date:+--ty} "${date}" \
+        ${genre:+--tg} "${genre}" \
+        ${comment:+--tc} "${comment}" \
+        - "${dst_file}"
+    IFS=$new_IFS
+done
+
+for N_files in ${!files[@]}
+  do
+    dst_file="${DEST_V2}/${files[${N_files}]/%\.flac/.mp3}"
+    vars=( `metaflac --no-utf8-convert --export-tags-to=- "${files[${N_files}]}"` )
+ 
+    comment_str=""
+    for N_vars in ${!vars[@]}
+      do
+        export "$(echo "${vars[${N_vars}]%=*}" | tr [:upper:] [:lower:])=${vars[${N_vars}]#*=}"
+    done
+
+    IFS=$old_IFS
+
+    "${FLAC}" -dc "${files[${N_files}]}" |\
+    "${LAME}" --ignore-tag-errors --add-id3v2 "${LAME_OPTS_V2}" \
+        ${artist:+--ta} "${artist}" \
+        ${tracknumber:+--tn} "${tracknumber}${tracktotal:+/}${tracktotal}" \
+        ${title:+--tt} "${title}" \
+        ${album:+--tl} "${album}" \
+        ${date:+--ty} "${date}" \
+        ${genre:+--tg} "${genre}" \
+        ${comment:+--tc} "${comment}" \
+        - "${dst_file}"
+
+    IFS=$new_IFS
+done
+
+for N_files in ${!files[@]}
+do
+    dst_file="${DEST_FLAC}/${files[${N_files}]}"
+    src_file="${files[${N_files}]}"
+    echo $src_file
+    mv "${src_file}" "${dst_file}"
+done
+
+IFS=${old_IFS}
+exit 0
+ 

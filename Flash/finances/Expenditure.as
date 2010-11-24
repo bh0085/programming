@@ -1,0 +1,1 @@
+﻿package finances{			public class Expenditure {		var month:Number		var day:Number		var year:Number		var text:String		var cost:Number		var category:String				public function Expenditure(cat:String,c:Number,t:String,m:Number,d:Number,y:Number):void{			month = 			year = y			day = d			text = t			cost = c			category = cat		}					}	}

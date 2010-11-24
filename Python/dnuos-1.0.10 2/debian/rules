@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+DEB_PYTHON_SYSTEM=pysupport
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/python-distutils.mk
+
+DEB_INSTALL_MANPAGES_dnuos='debian/dnuos.1 debian/dnuos.fr.1'
+
+build/dnuos::
+	pod2man -c '' -n dnuos -r '' debian/dnuos.1.pod > debian/dnuos.1
+	pod2man -c '' -n dnuos -r '' debian/dnuos.1.fr.pod > debian/dnuos.fr.1
+
+cleanbuilddir/dnuos::
+	rm -f dnuos.1
+	rm -f dnuos.fr.1
+
+clean::
+	find ./dnuos/locale -name '*.mo' -exec rm -f "{}" ';'

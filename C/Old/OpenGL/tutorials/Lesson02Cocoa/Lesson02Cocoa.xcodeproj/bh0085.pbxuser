@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 619017360FF28FF9004AB078 /* Lesson02Cocoa */;
+		activeTarget = 8D1107260486CEB800E47090 /* Lesson02Cocoa */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* Lesson02Cocoa */,
+		);
+		codeSenseManager = 6190173D0FF28FFE004AB078 /* Code sense */;
+		executables = (
+			619017360FF28FF9004AB078 /* Lesson02Cocoa */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 267554809;
+			PBXWorkspaceStateSaveDate = 267554809;
+		};
+		perUserProjectItems = {
+			619017DA0FF29A8D004AB078 /* PBXTextBookmark */ = 619017DA0FF29A8D004AB078 /* PBXTextBookmark */;
+			619017DB0FF29A8D004AB078 /* PBXTextBookmark */ = 619017DB0FF29A8D004AB078 /* PBXTextBookmark */;
+			619017DC0FF29A8D004AB078 /* PBXTextBookmark */ = 619017DC0FF29A8D004AB078 /* PBXTextBookmark */;
+			619017DD0FF29A8D004AB078 /* PBXTextBookmark */ = 619017DD0FF29A8D004AB078 /* PBXTextBookmark */;
+			619017DE0FF29A8D004AB078 /* PlistBookmark */ = 619017DE0FF29A8D004AB078 /* PlistBookmark */;
+			619017DF0FF29A8D004AB078 /* PBXTextBookmark */ = 619017DF0FF29A8D004AB078 /* PBXTextBookmark */;
+			619017E00FF29A8D004AB078 /* PBXTextBookmark */ = 619017E00FF29A8D004AB078 /* PBXTextBookmark */;
+			619017E10FF29A8D004AB078 /* PBXTextBookmark */ = 619017E10FF29A8D004AB078 /* PBXTextBookmark */;
+			619017E20FF29A8D004AB078 /* PBXTextBookmark */ = 619017E20FF29A8D004AB078 /* PBXTextBookmark */;
+			619017E30FF29A8D004AB078 /* PBXTextBookmark */ = 619017E30FF29A8D004AB078 /* PBXTextBookmark */;
+			619017E40FF29A8D004AB078 /* PBXTextBookmark */ = 619017E40FF29A8D004AB078 /* PBXTextBookmark */;
+			619017E50FF29A8D004AB078 /* PBXTextBookmark */ = 619017E50FF29A8D004AB078 /* PBXTextBookmark */;
+			619017E60FF29A8D004AB078 /* PBXTextBookmark */ = 619017E60FF29A8D004AB078 /* PBXTextBookmark */;
+			619017E70FF29A8D004AB078 /* PlistBookmark */ = 619017E70FF29A8D004AB078 /* PlistBookmark */;
+			619017E80FF29A8D004AB078 /* PBXTextBookmark */ = 619017E80FF29A8D004AB078 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 6190173C0FF28FFE004AB078 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	619017360FF28FF9004AB078 /* Lesson02Cocoa */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Lesson02Cocoa;
+		sourceDirectories = (
+		);
+	};
+	6190173C0FF28FFE004AB078 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	6190173D0FF28FFE004AB078 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	6190173E0FF29057004AB078 /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 253}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 124}";
+		};
+	};
+	6190173F0FF29057004AB078 /* Lesson02Controller.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 406}}";
+			sepNavSelRange = "{218, 0}";
+			sepNavVisRange = "{0, 502}";
+		};
+	};
+	619017400FF29057004AB078 /* Lesson02Controller.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 1876}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 544}";
+		};
+	};
+	619017410FF29057004AB078 /* Lesson02View.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 490}}";
+			sepNavSelRange = "{344, 0}";
+			sepNavVisRange = "{3, 525}";
+		};
+	};
+	619017420FF29057004AB078 /* Lesson02View.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 3318}}";
+			sepNavSelRange = "{418, 0}";
+			sepNavVisRange = "{130, 475}";
+		};
+	};
+	619017DA0FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619017420FF29057004AB078 /* Lesson02View.m */;
+		name = "Lesson02View.m: 15";
+		rLen = 0;
+		rLoc = 418;
+		rType = 0;
+		vrLen = 475;
+		vrLoc = 130;
+	};
+	619017DB0FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6190173E0FF29057004AB078 /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 124;
+		vrLoc = 0;
+	};
+	619017DC0FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619017400FF29057004AB078 /* Lesson02Controller.m */;
+		name = "Lesson02Controller.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 544;
+		vrLoc = 0;
+	};
+	619017DD0FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6190173F0FF29057004AB078 /* Lesson02Controller.h */;
+		name = "Lesson02Controller.h: 6";
+		rLen = 0;
+		rLoc = 218;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 0;
+	};
+	619017DE0FF29A8D004AB078 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 619017630FF293F5004AB078 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/bh0085/Programming/OpenGL/tutorials/Lesson02Cocoa/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	619017DF0FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619017410FF29057004AB078 /* Lesson02View.h */;
+		name = "Lesson02View.h: 10";
+		rLen = 0;
+		rLoc = 344;
+		rType = 0;
+		vrLen = 525;
+		vrLoc = 3;
+	};
+	619017E00FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6190173F0FF29057004AB078 /* Lesson02Controller.h */;
+		name = "Lesson02Controller.h: 6";
+		rLen = 0;
+		rLoc = 218;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 0;
+	};
+	619017E10FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619017410FF29057004AB078 /* Lesson02View.h */;
+		name = "Lesson02View.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 490;
+		vrLoc = 0;
+	};
+	619017E20FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619017420FF29057004AB078 /* Lesson02View.m */;
+		name = "Lesson02View.m: 15";
+		rLen = 0;
+		rLoc = 418;
+		rType = 0;
+		vrLen = 475;
+		vrLoc = 130;
+	};
+	619017E30FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6190173E0FF29057004AB078 /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 124;
+		vrLoc = 0;
+	};
+	619017E40FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619017400FF29057004AB078 /* Lesson02Controller.m */;
+		name = "Lesson02Controller.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 544;
+		vrLoc = 0;
+	};
+	619017E50FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6190173F0FF29057004AB078 /* Lesson02Controller.h */;
+		name = "Lesson02Controller.h: 6";
+		rLen = 0;
+		rLoc = 218;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 0;
+	};
+	619017E60FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619017410FF29057004AB078 /* Lesson02View.h */;
+		name = "Lesson02View.h: 10";
+		rLen = 0;
+		rLoc = 344;
+		rType = 0;
+		vrLen = 525;
+		vrLoc = 3;
+	};
+	619017E70FF29A8D004AB078 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 619017630FF293F5004AB078 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/bh0085/Programming/OpenGL/tutorials/Lesson02Cocoa/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	619017E80FF29A8D004AB078 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619017410FF29057004AB078 /* Lesson02View.h */;
+		name = "Lesson02View.h: 10";
+		rLen = 0;
+		rLoc = 344;
+		rType = 0;
+		vrLen = 525;
+		vrLoc = 3;
+	};
+	8D1107260486CEB800E47090 /* Lesson02Cocoa */ = {
+		activeExec = 0;
+		executables = (
+			619017360FF28FF9004AB078 /* Lesson02Cocoa */,
+		);
+	};
+}

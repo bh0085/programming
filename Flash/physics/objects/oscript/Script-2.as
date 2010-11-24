@@ -1,0 +1,1 @@
+﻿package physics.misc{	public class Multipole{		masses = new Array()		charges = new Array()		customCharges = new Array()		public var ptsXY = new Array()				public function pushPole(xy:Array, mass:Number, charge:Number, customCharge:Array){			masses.push(mass)			charges.push(charge)			customCharges.push(customCharge)			ptsXY.push(xy)		}	}}

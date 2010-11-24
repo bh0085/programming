@@ -1,0 +1,37 @@
+Installation Instructions
+-------------------------
+
+First of all, install the following dependencies:
+  
+  1. python (tested with 2.4)
+     Standard python 2.3 or later should work.
+     
+     -> http://www.python.org/
+
+  2. libdiscid (tested with 0.1.0)
+     Any version above 0.1.0 should do.
+
+     -> http://musicbrainz.org/products/libdiscid/
+
+  3. ctypes (tested with 0.9.6 and 0.9.9.3)
+     Version 0.9.0 or later should work, which is included in recent
+     linux distributions. This is required for DiscID calculation.
+     Note that python 2.5 already comes with ctypes.
+
+     -> http://starship.python.net/crew/theller/ctypes/
+
+
+Installation works using python's standard distutils (on most systems,
+root permissions are required):
+
+    python setup.py install
+
+
+Optionally, API documentation can be generated using epydoc. This command
+runs epydoc (http://epydoc.sf.net) which creates a 'html' directory containing
+the documentation:
+
+    python setup.py docs
+
+--
+$Id: INSTALL.txt 8490 2006-09-20 17:30:54Z matt $

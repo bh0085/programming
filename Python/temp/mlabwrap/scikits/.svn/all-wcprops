@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/scikits/!svn/ver/105/trunk/mlabwrap/scikits
+END
+itest.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/scikits/!svn/ver/104/trunk/mlabwrap/scikits/itest.py
+END
+testing.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/scikits/!svn/ver/103/trunk/mlabwrap/scikits/testing.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/scikits/!svn/ver/65/trunk/mlabwrap/scikits/__init__.py
+END

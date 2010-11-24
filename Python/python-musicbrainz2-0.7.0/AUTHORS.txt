@@ -1,0 +1,31 @@
+Authors:
+
+   Matthias Friedrich <matt at mafr dot de>
+    - Designed, implemented and documented this package.
+
+
+Contributors:
+
+   Lukáš Lalinský <lalinsky at gmail dot com>
+    - Fixed several bugs and tested windows/ctypes compatibility.
+    - Patch for changing TRMs to PUIDs.
+    - Created and submitted Debian/Ubuntu packages.
+
+   Nikki <nikki at lmfao dot org dot uk>
+    - Tested compatibility with python-2.3 on Debian.
+    - Provided country/language/script lists.
+
+   Oliver Charles <depth dot of dot field at gmail dot com>
+    - Added initial label support.
+    
+   Philipp Wolfer <ph dot wolfer at googlemail dot com>
+    - Added folksonomy tagging support.
+
+   Peter Schnebel <pschnebel at googlemail dot com>
+    - Added rating support.
+
+   Alastair Porter <alastair at porter dot net dot nz>
+    - Added ISRC support.
+
+--
+$Id: AUTHORS.txt 11730 2009-06-14 09:58:08Z matt $

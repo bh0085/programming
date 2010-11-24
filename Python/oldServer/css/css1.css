@@ -1,0 +1,25 @@
+body {font-family:"Courier","Times New Roman"; color:black;font-size:13px }
+span.frametop { 
+    font-family:"Courier","Arial";
+    color:white; 
+    font-size:40px;   
+    font-variant:small-caps ;
+    font-weight:500;
+}
+div.frametop {
+    text-align:center;
+    width:100% - 10px ; 
+    padding:5;
+    background:#222288;! #6666ee; !#99aaff;  !orange
+
+}
+a.white:link {
+    color:white;
+    font-weight:bold;
+    text-decoration: none;
+}
+a.white:visited {
+    color:white;
+    font-weight:bold;
+    text-decoration: none;
+}

@@ -1,0 +1,10 @@
+function pymatshow(  )
+%UNTITLED Summary of this function goes here
+%   Detailed explanation goes here
+    path = getenv('PYMAT_PATH')
+    loaded = load(strcat(path, '/python.mat'))
+    imshow(loaded)
+    save(loaded,'strcat(path, '/matlab.mat')
+    
+end
+

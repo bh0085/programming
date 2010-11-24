@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		614C957D109A39400030627F /* libBoxGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 614C957A109A39400030627F /* libBoxGL.a */; };
+		614C957F109A396E0030627F /* libMyCocoaGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 614C957E109A396E0030627F /* libMyCocoaGL.a */; };
+		614C959D109A39BD0030627F /* libGAGD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 614C9598109A39BD0030627F /* libGAGD.a */; };
+		614C959E109A39BD0030627F /* libKohonen1D.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 614C9599109A39BD0030627F /* libKohonen1D.a */; };
+		614C959F109A39BD0030627F /* libGenetic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 614C959A109A39BD0030627F /* libGenetic.a */; };
+		614C95A0109A39BD0030627F /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 614C959B109A39BD0030627F /* libfreetype.6.dylib */; };
+		614C95A1109A39BD0030627F /* libMyMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 614C959C109A39BD0030627F /* libMyMath.a */; };
+		614C95B3109A3AA40030627F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614C95B2109A3AA40030627F /* OpenGL.framework */; };
+		614C95C4109A3B610030627F /* libbox2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 614C95C0109A3B4B0030627F /* libbox2d.a */; };
+		61F7F8211043355C00C47EC0 /* CPSimulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F7F8201043355C00C47EC0 /* CPSimulation.cpp */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* cp_main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* cp_main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* cp_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cp_main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		614C949A109A2DEB0030627F /* Box2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Box2D.h; path = ../../PhysicsEngines/Box2D_v2.0.0/Box2D/Include/Box2D.h; sourceTree = SOURCE_ROOT; };
+		614C957A109A39400030627F /* libBoxGL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBoxGL.a; path = /Users/bh0085/Programming/gcclib/libBoxGL.a; sourceTree = "<absolute>"; };
+		614C957E109A396E0030627F /* libMyCocoaGL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyCocoaGL.a; path = /Users/bh0085/Programming/gcclib/libMyCocoaGL.a; sourceTree = "<absolute>"; };
+		614C9598109A39BD0030627F /* libGAGD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGAGD.a; path = /Users/bh0085/Programming/gcclib/Algorithms/libGAGD.a; sourceTree = "<absolute>"; };
+		614C9599109A39BD0030627F /* libKohonen1D.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKohonen1D.a; path = /Users/bh0085/Programming/gcclib/Algorithms/libKohonen1D.a; sourceTree = "<absolute>"; };
+		614C959A109A39BD0030627F /* libGenetic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGenetic.a; path = /Users/bh0085/Programming/gcclib/Algorithms/libGenetic.a; sourceTree = "<absolute>"; };
+		614C959B109A39BD0030627F /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = /opt/local/lib/libfreetype.6.dylib; sourceTree = "<absolute>"; };
+		614C959C109A39BD0030627F /* libMyMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyMath.a; path = /Users/bh0085/Programming/gcclib/libMyMath.a; sourceTree = "<absolute>"; };
+		614C95B2109A3AA40030627F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		614C95C0109A3B4B0030627F /* libbox2d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbox2d.a; path = /Users/bh0085/Programming/gcclib/libbox2d.a; sourceTree = "<absolute>"; };
+		61AEF8E9109961D20048B885 /* Cart and Pole_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cart and Pole_Prefix.pch"; sourceTree = "<group>"; };
+		61F7F81F1043355C00C47EC0 /* CPSimulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSimulation.h; sourceTree = "<group>"; };
+		61F7F8201043355C00C47EC0 /* CPSimulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPSimulation.cpp; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Cart and Pole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cart and Pole.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614C95C4109A3B610030627F /* libbox2d.a in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				614C957D109A39400030627F /* libBoxGL.a in Frameworks */,
+				614C957F109A396E0030627F /* libMyCocoaGL.a in Frameworks */,
+				614C959D109A39BD0030627F /* libGAGD.a in Frameworks */,
+				614C959E109A39BD0030627F /* libKohonen1D.a in Frameworks */,
+				614C959F109A39BD0030627F /* libGenetic.a in Frameworks */,
+				614C95A0109A39BD0030627F /* libfreetype.6.dylib in Frameworks */,
+				614C95A1109A39BD0030627F /* libMyMath.a in Frameworks */,
+				614C95B3109A3AA40030627F /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* CPP Classes */ = {
+			isa = PBXGroup;
+			children = (
+				61F7F81F1043355C00C47EC0 /* CPSimulation.h */,
+				61F7F8201043355C00C47EC0 /* CPSimulation.cpp */,
+			);
+			name = "CPP Classes";
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				614C95B2109A3AA40030627F /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Cart and Pole.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Cart and Pole */ = {
+			isa = PBXGroup;
+			children = (
+				614C949A109A2DEB0030627F /* Box2D.h */,
+				614C939C109A26160030627F /* Libraries */,
+				080E96DDFE201D6D7F000001 /* CPP Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "Cart and Pole";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* cp_main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61AEF8E9109961D20048B885 /* Cart and Pole_Prefix.pch */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		614C939C109A26160030627F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				614C95C0109A3B4B0030627F /* libbox2d.a */,
+				614C957E109A396E0030627F /* libMyCocoaGL.a */,
+				614C9598109A39BD0030627F /* libGAGD.a */,
+				614C9599109A39BD0030627F /* libKohonen1D.a */,
+				614C959A109A39BD0030627F /* libGenetic.a */,
+				614C959B109A39BD0030627F /* libfreetype.6.dylib */,
+				614C959C109A39BD0030627F /* libMyMath.a */,
+				614C957A109A39400030627F /* libBoxGL.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Cart and Pole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Cart and Pole" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cart and Pole";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "Cart and Pole";
+			productReference = 8D1107320486CEB800E47090 /* Cart and Pole.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Cart and Pole" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Cart and Pole */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Cart and Pole */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* cp_main.m in Sources */,
+				61F7F8211043355C00C47EC0 /* CPSimulation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cart and Pole_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../C++/Box2DHelloWorld\"",
+					/opt/local/lib,
+					"\"$(SRCROOT)/../gcclib\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../gcclib/Algorithms\"",
+					"\"$(SRCROOT)/../../gcclib\"",
+					"\"$(SRCROOT)/../../PhysicsEngines/Box2D_v2.0.1/Box2D/Source/Gen/fixed\"",
+					"\"$(SRCROOT)/../../PhysicsEngines/Box2D_v2.0.1/Box2D/Source/Gen/float\"",
+					"\"$(SRCROOT)/../../gcclib/Algorithms\"",
+					"\"$(SRCROOT)/../../usr/local/lib\"",
+				);
+				PRODUCT_NAME = "Cart and Pole";
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cart and Pole_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../gcclib\"",
+					"\"$(SRCROOT)/../../gcclib/Algorithms\"",
+					/opt/local/lib,
+				);
+				PRODUCT_NAME = "Cart and Pole";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/bh0085/Programming/gccinclude/**",
+					"$(opt-include)/freetype2",
+					"$(opt-include)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/bh0085/Programming/gcclib/,
+					/Users/bh0085/Programming/PhysicsEngines/Box2D_v2.0.1/Box2D/Source/Gen/float/,
+					/opt/local/lib/,
+					/usr/local/lib/,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = /Users/bh0085/Programming/gccinclude/;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/bh0085/Programming/gccinclude/**",
+					"$(opt-include)/freetype2",
+					"$(opt-include)",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				USER_HEADER_SEARCH_PATHS = /Users/bh0085/Programming/gccinclude/;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Cart and Pole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Cart and Pole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

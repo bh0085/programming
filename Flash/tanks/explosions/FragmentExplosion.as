@@ -1,0 +1,1 @@
+﻿package tanks.explosions{	import tanks.scripts.FragmentExplosionScript	public class FragmentExplosion extends Explosion{ 		override public function createScript():void{						thisScript = new FragmentExplosionScript()			thisScript.setExplosion(this)		}	}}

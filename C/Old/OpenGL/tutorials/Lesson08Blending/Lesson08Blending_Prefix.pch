@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Lesson08Blending' target in the 'Lesson08Blending' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

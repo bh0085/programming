@@ -1,0 +1,15 @@
+Compiling XStreamRipper in XCode
+
+Tested on: OSX 10.5.0, Leopard
+
+Versions:
+streamripper 1.62.3
+MAD : mad-0.15.1 from streamripper
+TRE : tre-0.75
+libogg:
+libvorbis:
+
+
+HOW TO COMPILE
+1. Load up the project in Xcode
+2. click on the build and go

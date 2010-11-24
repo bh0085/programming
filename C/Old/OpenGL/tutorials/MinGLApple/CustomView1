@@ -1,0 +1,14 @@
+//
+//  customView1.m
+//  MinGLApple
+//
+//  Created by Benjamin Holmes on 6/22/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//
+
+#import "CustomView1.h"
+
+
+@implementation CustomView1
+
+@end

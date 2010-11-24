@@ -1,0 +1,84 @@
+import cfg_avida as ca
+import avida_utils as au
+import re
+
+default_x = 15
+default_y = 15
+default_gens = 2000
+
+#Do nothing, create a genesis file just by
+#copying over the default copy.
+#
+#Do not add any action events.
+#
+def untouched(name,
+              eve_fname,
+              org_fname,
+              ana_fname,
+              env_fname,
+              ins_fname,
+              gen_name):
+
+    genesis = ca.make_gen(name,
+                          {},
+                          gen_name)
+
+
+#Create a genesis fie and add action events:
+#1: Kill off the ancestor
+#2: Set mutation rates per site
+#3: Re-Inject into strains with fixed mutation rates.
+def differential_mut(name,
+                     eve_fname,
+                     org_fname,
+                     ana_fname,
+                     env_fname,
+                     ins_fname,
+                     gen_name):
+    #CONFIG PARAMETERS
+    mut_rate_source = 2
+    x = default_x
+    y = default_y
+    params_dict = {'MUT_RATE_SOURCE':2,
+                   'WORLD_X':x,
+                   'WORLD_Y':y,
+                   'ENVIRONMENT_FILE':env_fname,
+                   'ANALYZE_FILE':ana_fname,
+                   'EVENT_FILE':eve_fname,
+                   'INST_SET':ins_fname,
+                   'START_CREATURE':org_fname,
+                   'DIVIDE_INS_PROB':0.0,
+                   'DIVIDE_DEL_PROB':0.0,
+                   'COPY_MUT_PROB':0.00}
+
+    genesis = ca.make_gen(name,
+                          params_dict,
+                          gen_name)
+
+
+
+    #Create a genome and a complementing genome
+    default_genome = au.genesis_seqs(genesis)
+    seqprime = default_genome
+    repeats = re.search(re.compile('c{3,}'),seqprime).group()
+    seqprime =seqprime.replace(repeats,repeats.replace('c','b'))
+    org_fname2 = au.save_genome(genesis,  seqprime, org_fname + '.comp')
+
+    n = x * y
+    ntot = x*y/4
+    nofs = ntot/2
+
+    #STERILIZE 
+    ca.alter_eve(eve_fname, 'i KillRectangle 0 0 '+str(x-1) + ' ' + str(y-1))    
+    #SET MUTATION PROBS
+    ca.alter_eve(eve_fname,   'i SetMutProb COPY_MUT 0.02 1 '+str(nofs))
+    ca.alter_eve(eve_fname,   'i SetMutProb COPY_MUT 0.02 ' +str(nofs+1) + ' ' +str(ntot))
+
+    #INJECT
+    ca.alter_eve(eve_fname,   
+                 'i InjectRange '+org_fname+' 1 '+str(nofs)+' -1 2')
+    ca.alter_eve(eve_fname,   
+                 'i InjectRange '+org_fname+' '+str(nofs+1)+ ' ' +str(ntot) +' -1 1')
+    
+    #EXIT
+    ca.alter_eve(eve_fname, 'g ' + str(default_gens) + ' Exit')

@@ -1,0 +1,98 @@
+import re
+import os
+
+def genesis_seqs(genesis):
+    data = open(genesis).read()
+    org = re.search(re.compile('START_CREATURE (\S+)'),data).group(1)
+    instructions = re.search(re.compile('INST_SET (\S+)'),data).group(1)
+
+    seq = org_sequence(instructions,org)
+    
+    return seq
+
+def data_filepath(filename):
+    return os.path.join('data',filename)
+
+def parse_printed(filename):
+    f = open(data_filepath(filename))
+    lines = f.readlines()
+    columns = []
+    data = []
+    for l in lines:
+        if l[0] == '#':
+            is_column = re.search(re.compile('# *[0-9]+'),l)
+            if is_column:
+                columns.append(re.search(re.compile(': *(.*)'),l).group(1))
+        else:
+            datapoints = []
+            datamatches = re.finditer(re.compile('[0-9\.]+'),l)
+            for match in datamatches:
+                datapoints.append(match.group())
+        
+            if len(datapoints):    
+                data.append(datapoints)
+            
+    return (columns, data)
+    
+
+def save_genome(genesis, genome, fname):
+    data = open(genesis).read()
+    instructions = re.search(re.compile('INST_SET (\S+)'),data).group(1)    
+    ilines = open(instructions).readlines()
+
+    new_org = ''
+    
+    instr_keys = {}
+    letters = list('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')[::-1]
+    for l in ilines:
+        if not l.strip(): continue
+        if l[0] == '#': continue
+        match = re.match(re.compile('\S+'),l)
+        if not match:
+            break
+
+        instr = match.group()
+        letter = letters.pop()
+        instr_keys[letter] = instr
+    
+    new_org = new_org + '#Genome synthesized in python from a strand\n'
+    for letter in list(genome):
+        new_org += instr_keys[letter]+'\n'
+
+    newfile = open(fname,'w')
+    newfile.write(new_org)
+    newfile.close
+    return fname
+        
+
+    
+        
+def org_sequence(instructions, organism):
+    ilines = open(instructions).readlines()
+    olines = open(organism).readlines()
+    
+    instr_keys = {}
+    
+    letters = list('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')[::-1]
+    for l in ilines:
+        if not l.strip(): continue
+        if l[0] == '#': continue
+        match = re.match(re.compile('\S+'),l)
+        if not match:
+            break
+
+        instr = match.group()
+        letter = letters.pop()
+        instr_keys[instr] = letter
+    
+    out = ''
+    for l in olines:
+        if not l.strip(): continue
+        if l[0] == '#': continue
+        match = re.match(re.compile('\S+'),l)
+        if not match:
+            break
+        out = out+instr_keys[match.group()]
+        
+    return out
+    

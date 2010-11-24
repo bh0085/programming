@@ -1,0 +1,113 @@
+<html>
+
+<head>
+<title>The Codecolony Particle Engine</title>
+</head>
+
+<body stylesrc="../home.htm" bgcolor="#000000" text="#FF0000" link="#ABABAB" vlink="#D6B001" alink="#FFFF00">
+<font size="3">
+
+<p></font><font size="6"><strong>The CodeColony Particle Engine</strong></font><font size="5"></p>
+
+<p></font><font size="4"><strong>Here I'll explain</strong></font><font size="3"></p>
+
+<blockquote>
+  <ul>
+    <li>How the particle engine works and how you can use it</li>
+    <li>Rendering translucent, textured polygons</li>
+    <li>How to use blending in combination with opaque objects</li>
+    <li>What billboarding means and how it works</li>
+  </ul>
+</blockquote>
+
+<p></font><font size="4"><strong>How does the CodeColony particle engine work?</strong></font><font size="3"></p>
+<b>General thoughts</b><br>
+The particle engine consists of particle systems. You can have as many systems as you want to. Each particle system defines where and how its "childs" (particles) are created and how they behave during their so called life (see below). <br>
+Example: If you look at my tutorial program, you can see several systems: The rain, the smoke, the firework, the engine, and the fire (which consists of two systems, which I will explain later.)<br>
+But, what is a particle? A particle is a little object in space which is emitted by its parent system. It normally has a certain emission direction (for example: up, if you look at the fire). Our virtual world is infinite, so we must define what shall happen with the particles. They must die, otherwise the number of particles would rise and rise!<br>
+One could define the "dying-conditions" dependent from the location (you could say: if the particle is further than X away from its emitter, it must die). But I think it is more flexible if you say: It must die after X seconds (create a particle engine where the particles do not move, then you will get problems with the first possibility).<br>
+You can render the particles either as a point, as a triangle or as a (textured) quadrangle.
+My particle engine allows you to choose between point and quadrangle mode. You can see the point mode in the "firework". As you see, textured polygons look much better!<br>
+<br>
+<b>Which properties does a particle have?</b><br>
+During its lifetime, a particle moves with a certain velocity. This velocity can be changed by an acceleration, for example gravity. The acceleration can differ from particle to particle - in strength and direction.<br>
+But a particle also can be a spinning object (you can see this very well in the fire: simpply disable the line where the SpinSpeed is set). Again, the spinning speed can be accelerated.<br>
+On the other hand also the look of a particle changes: When the fire particles are emitted, they are bright, when they die, you cannot see them anymore! They also change their color. This is done by setting emission and die alpha/color values for the system. When the particle is created, the system computes the AlphaChange/ColorChange vectors. These vectors indicate how much these values are changed per second.<br>
+Last but not least the particles die with another size as they are emitted. I use this especially in the smoke system.<br>
+<br>
+<b>I simply want to use the engine! How do I have to set the values?</b><br>
+The properties of a particle are not directly assign (by you). Instead, you set the properties to the particle system, which will the create particles with the desired values.<br>
+I soon realized that the look of the systems is quite bad if you assign always exactly the same values to each particle:<br>
+<img src="images/particles-random.jpg"><img src="images/particles-nonrandom.jpg"><br>
+This is how I solved the problem:<br>
+You never pass the value which shall be assigned to each particle. You simple pass two values (min and max). The system will randomly choose a value between these. For example, if you want the particles to live something between 1 and 2 seconds, you simply set the MinDieAge to 1.0f and the MaxDieAge to 2.0f.<br>
+It is a bit different from that with the emission position and emission direction. Here you pass a standard position/direction and a maximum deviation from this. Example: The fire particles are not all emitted from the same point. But they all are emitted from the bottom (y=0.0f). I set the deviation vector to (0.1f,0.0f,0.1f). If the standard position was the origin, this would affect that the particles are created with an x/z-value between -0.1f and +0.1f and a y-value of 0.0f.<br>
+To specify the color you can pass a "creation range" and a "die range": The creation color's r,g,b values are in the range of the min/max creation color's r,g,b values. It is the same with the die color.<br>
+I won't explain the usage here more in detail. Simply look at the initialization code in main.cpp to see some example. Try what happens when you change the values!<br>
+<br>
+Now you have seen how to assign the particles' values. But the system also needs some things to know:<br>
+When you initialize the system you have to pass the maximum number of particles which the system can handle. Of course you should never use too many particles out of performance reasons.<br>
+You also must specify the value, how many particles per second shall be created (here you should consider the average lifetime and the maximum number of particles in the system!). The CreationDeviation controls how much random deviation in number of created particles should be. Note: If there are no "free" (idle) particles, no particles can be created! If you want to be sure that all particles are always in use, you can set RecreateWhenDied to true.<br>
+The value ParticlesLeaveSystem controls, whether the particles are in a local coordinate system (relative to the system's emitter position) or in a global coordinate system. This value has no effect as long as the system doesn't move!<br>
+<br>
+<b>How exactly are the particles' properties computed?</b><br>
+This computiation is done in the particle's Initialize() method. Here I first assign the die age (between the max/min die age). Then I compute the emission and die values (for example emission/die color). As I know how long the particle will live, I can compute the XXChange values (how much the values change per sec.).<br>
+<br>
+One annotation to a little trick I use to get a more pyramidic look of the fire: I simply use two fire systems: One is broader, but not so high.
+<br>
+I know, this explanation is not too exact, but I hope it helps to understand the basics. It then shouldn't be too hard to understand how I do the details.<br>
+
+</font>
+
+<p><font size="3">
+</font></p>
+
+<p><font size="4"><strong>How can I render translucent polygons?</strong></font></p>
+
+<p><font size="3">It is absolutely clear that our particle polygons must be translucent. But how can we achieve this effect? <br>
+First, we must enable blending and choose a blend func:<br>
+<em>
+glEnable(GL_BLEND);<br>
+glBlendFunc(GL_SRC_ALPHA, GL_ONE);</em><br>
+Now all we have to do is to set the color (glColor()) and the color will be blended with the texture's color. It's easy!</font></p>
+
+<p><font size="4"><strong>How can I use blending in combination with opaque objects?</strong></font></p>
+<p><font size="3">I have seen quite a lot of particle tutorials, but they all present pure particle systems: The only thing you see are particles. This is not too realistic. In most cases you will have opaque objects <i>and</i> particles. <br>
+On the one hand you must not disable the depth buffer when rendering particles, because this could cause that particles behind a wall could be visible!<br>
+On the other hand you cannot leave it enabled, because the particles are translucent. This is how it would look if the depth buffer was enabled:<br>
+<img src="images/particles-db.jpg">
+<br>
+<br>
+The solution is - again - not too difficult: OpenGL allows you                              to <i>switch off writing to the depth buffer</i>. This means the depth check is still enabled (particles behind a wall are invisible), but you do not get effects like you can see in the image above. You disable writing into the depth buffer by:<br>
+<i>glDepthMask(GL_FALSE);</i><br>
+<img src="images/particles-correct.jpg">
+</font></p><br>
+
+<p><font size="4"><strong>What is billboarding and how does it work?</strong></font></p>
+
+<p><font size="3">So far we have always looked perpendicular on our particles. In this view we can render the particles as quadrangles with the vecors (1.0|0.0|0.0) and (0.0|1.0|0.0).<br>
+But imagine, the camera could move (which is even very common, of course!). I do not often look down onto a fire, but I am quite sure it doesn't look like this:<br>
+<img src="images/particles-nobb-fromtop.jpg"> </font></p><br>
+The solution is billboarding: Rotate the particles so they face the camera!<br>
+I found a very good tutorial on this on <a href="http://www.lighthouse3d.com/opengl/billboarding/index.php3?billInt">LightHouse3d</a>. This explains everything very well. I have implemented two billboarding modes: "perpendicular to view direction" means, the particles are aligned parallel to the projection plane. The second mode (perpendicular to view direction), but still vertical means they face the camera concerning the rotation around the y-axis. But they are always vertical.<br>
+With the first mode, the fire (again from top) looks like this:<br>
+<img src="images/particles-bb-fromtop.jpg"><br>
+<br>
+
+
+<p><font size="3">To go to the tutorial, click <a href="../opengl.htm#Particles">here</a>.</font></p>
+
+<p><font size="3"><a href="../opengl.htm">Back</a></font></p>
+
+
+
+
+<p><big>**************************************************************************</big></p>
+
+<p><big>Any comments? Conact me!</big></p>
+
+<p><big><a href="mailto:philipp.crocoll@web.de">philipp.crocoll@web.de</a></big></p>
+
+<p><big><a href="http://www.codecolony.de">www.codecolony.de</a></big></p>
+</body>
+</html>

@@ -1,0 +1,222 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61AEFD25109A1B480048B885 /* bgSkeleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFD0F109A19D50048B885 /* bgSkeleton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEFD26109A1B480048B885 /* bgActor.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFD11109A19D50048B885 /* bgActor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEFD27109A1B480048B885 /* bgBone.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFD13109A19D50048B885 /* bgBone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEFD29109A1B4D0048B885 /* bgSkeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFD10109A19D50048B885 /* bgSkeleton.cpp */; };
+		61AEFD2A109A1B4D0048B885 /* bgActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFD12109A19D50048B885 /* bgActor.cpp */; };
+		61AEFD2B109A1B4D0048B885 /* bgBone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFD14109A19D50048B885 /* bgBone.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61AEFD0F109A19D50048B885 /* bgSkeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bgSkeleton.h; sourceTree = "<group>"; };
+		61AEFD10109A19D50048B885 /* bgSkeleton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bgSkeleton.cpp; sourceTree = "<group>"; };
+		61AEFD11109A19D50048B885 /* bgActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bgActor.h; sourceTree = "<group>"; };
+		61AEFD12109A19D50048B885 /* bgActor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bgActor.cpp; sourceTree = "<group>"; };
+		61AEFD13109A19D50048B885 /* bgBone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bgBone.h; sourceTree = "<group>"; };
+		61AEFD14109A19D50048B885 /* bgBone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bgBone.cpp; sourceTree = "<group>"; };
+		61AEFD1E109A1B080048B885 /* libBoxGL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBoxGL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61AEFD1C109A1B080048B885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61AEFD01109A19CC0048B885 = {
+			isa = PBXGroup;
+			children = (
+				61AEFD0B109A19D50048B885 /* Source */,
+				61AEFD1F109A1B080048B885 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61AEFD0B109A19D50048B885 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				61AEFD0F109A19D50048B885 /* bgSkeleton.h */,
+				61AEFD10109A19D50048B885 /* bgSkeleton.cpp */,
+				61AEFD11109A19D50048B885 /* bgActor.h */,
+				61AEFD12109A19D50048B885 /* bgActor.cpp */,
+				61AEFD13109A19D50048B885 /* bgBone.h */,
+				61AEFD14109A19D50048B885 /* bgBone.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		61AEFD1F109A1B080048B885 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61AEFD1E109A1B080048B885 /* libBoxGL.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		61AEFD1A109A1B080048B885 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEFD25109A1B480048B885 /* bgSkeleton.h in Headers */,
+				61AEFD26109A1B480048B885 /* bgActor.h in Headers */,
+				61AEFD27109A1B480048B885 /* bgBone.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		61AEFD1D109A1B080048B885 /* BoxGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AEFD22109A1B090048B885 /* Build configuration list for PBXNativeTarget "BoxGL" */;
+			buildPhases = (
+				61AEFD1A109A1B080048B885 /* Headers */,
+				61AEFD1B109A1B080048B885 /* Sources */,
+				61AEFD1C109A1B080048B885 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoxGL;
+			productName = BoxGL;
+			productReference = 61AEFD1E109A1B080048B885 /* libBoxGL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61AEFD03109A19CC0048B885 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 61AEFD06109A19CC0048B885 /* Build configuration list for PBXProject "BoxGL" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 61AEFD01109A19CC0048B885;
+			productRefGroup = 61AEFD1F109A1B080048B885 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61AEFD1D109A1B080048B885 /* BoxGL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61AEFD1B109A1B080048B885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEFD29109A1B4D0048B885 /* bgSkeleton.cpp in Sources */,
+				61AEFD2A109A1B4D0048B885 /* bgActor.cpp in Sources */,
+				61AEFD2B109A1B4D0048B885 /* bgBone.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		61AEFD04109A19CC0048B885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/bh0085/Programming/PhysicsEngines/Box2D_v2.0.1/Box2D/Include/,
+					"$(gcc-include)/**",
+				);
+			};
+			name = Debug;
+		};
+		61AEFD05109A19CC0048B885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				HEADER_SEARCH_PATHS = (
+					/Users/bh0085/Programming/PhysicsEngines/Box2D_v2.0.1/Box2D/Include/,
+					"$(gcc-include)/**",
+				);
+			};
+			name = Release;
+		};
+		61AEFD20109A1B090048B885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Users/bh0085/Programming/PhysicsEngines/Box2D_v2.0.1/Box2D/Include/,
+					"$(gcc-include)/**",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = BoxGL;
+			};
+			name = Debug;
+		};
+		61AEFD21109A1B090048B885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "$(build-dir)";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					/Users/bh0085/Programming/PhysicsEngines/Box2D_v2.0.1/Box2D/Include/,
+					"$(gcc-include)/**",
+				);
+				INSTALL_PATH = /gcclib/;
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = /gccinclude/;
+				PRODUCT_NAME = BoxGL;
+				PUBLIC_HEADERS_FOLDER_PATH = /gccinclude/;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61AEFD06109A19CC0048B885 /* Build configuration list for PBXProject "BoxGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AEFD04109A19CC0048B885 /* Debug */,
+				61AEFD05109A19CC0048B885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AEFD22109A1B090048B885 /* Build configuration list for PBXNativeTarget "BoxGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AEFD20109A1B090048B885 /* Debug */,
+				61AEFD21109A1B090048B885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61AEFD03109A19CC0048B885 /* Project object */;
+}

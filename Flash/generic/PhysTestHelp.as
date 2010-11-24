@@ -1,0 +1,1 @@
+﻿package phystest{		import flash.display.MovieClip	public class PhysTestHelp{		public function PhysTestHelp(){			addEventListener(MouseEvent.MOUSE_DOWN,helpMouseClick)		}	public function helpMouseClick(event:MouseEvent):void{		root.showHelp()	}	}}

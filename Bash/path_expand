@@ -1,0 +1,3 @@
+find /Users/bh0085/Programming/IDL -type d -maxdepth 1 > temp
+awk 'length($0) > 100' temp
+awk '{ printf "%s", $0; next }{print}'

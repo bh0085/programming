@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61B22F1A0FEEB70B00ACD6D4 /* Cocoa Readme.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 61B22F050FEEB70B00ACD6D4 /* Cocoa Readme.rtf */; };
+		61B22F1B0FEEB70B00ACD6D4 /* Complete.wav in Resources */ = {isa = PBXBuildFile; fileRef = 61B22F060FEEB70B00ACD6D4 /* Complete.wav */; };
+		61B22F1C0FEEB70B00ACD6D4 /* Die.wav in Resources */ = {isa = PBXBuildFile; fileRef = 61B22F070FEEB70B00ACD6D4 /* Die.wav */; };
+		61B22F1D0FEEB70B00ACD6D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61B22F090FEEB70B00ACD6D4 /* InfoPlist.strings */; };
+		61B22F1E0FEEB70B00ACD6D4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 61B22F0B0FEEB70B00ACD6D4 /* MainMenu.nib */; };
+		61B22F1F0FEEB70B00ACD6D4 /* Font.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 61B22F0D0FEEB70B00ACD6D4 /* Font.bmp */; };
+		61B22F200FEEB70B00ACD6D4 /* Freeze.wav in Resources */ = {isa = PBXBuildFile; fileRef = 61B22F0E0FEEB70B00ACD6D4 /* Freeze.wav */; };
+		61B22F210FEEB70B00ACD6D4 /* Hourglass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 61B22F0F0FEEB70B00ACD6D4 /* Hourglass.wav */; };
+		61B22F220FEEB70B00ACD6D4 /* Image.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 61B22F100FEEB70B00ACD6D4 /* Image.bmp */; };
+		61B22F250FEEB70B00ACD6D4 /* Lesson21Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B22F150FEEB70B00ACD6D4 /* Lesson21Controller.m */; };
+		61B22F260FEEB70B00ACD6D4 /* Lesson21View.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B22F170FEEB70B00ACD6D4 /* Lesson21View.m */; };
+		61B22F270FEEB70B00ACD6D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B22F180FEEB70B00ACD6D4 /* main.m */; };
+		61B22F280FEEB70B00ACD6D4 /* NeHe's Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 61B22F190FEEB70B00ACD6D4 /* NeHe's Readme.txt */; };
+		61B22F2B0FEEB75000ACD6D4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B22F2A0FEEB75000ACD6D4 /* OpenGL.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* MyLesson21_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLesson21_Prefix.pch; sourceTree = "<group>"; };
+		61B22F050FEEB70B00ACD6D4 /* Cocoa Readme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Cocoa Readme.rtf"; sourceTree = "<group>"; };
+		61B22F060FEEB70B00ACD6D4 /* Complete.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Complete.wav; sourceTree = "<group>"; };
+		61B22F070FEEB70B00ACD6D4 /* Die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Die.wav; sourceTree = "<group>"; };
+		61B22F0A0FEEB70B00ACD6D4 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		61B22F0C0FEEB70B00ACD6D4 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		61B22F0D0FEEB70B00ACD6D4 /* Font.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = Font.bmp; sourceTree = "<group>"; };
+		61B22F0E0FEEB70B00ACD6D4 /* Freeze.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Freeze.wav; sourceTree = "<group>"; };
+		61B22F0F0FEEB70B00ACD6D4 /* Hourglass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hourglass.wav; sourceTree = "<group>"; };
+		61B22F100FEEB70B00ACD6D4 /* Image.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = Image.bmp; sourceTree = "<group>"; };
+		61B22F140FEEB70B00ACD6D4 /* Lesson21Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lesson21Controller.h; sourceTree = "<group>"; };
+		61B22F150FEEB70B00ACD6D4 /* Lesson21Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lesson21Controller.m; sourceTree = "<group>"; };
+		61B22F160FEEB70B00ACD6D4 /* Lesson21View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lesson21View.h; sourceTree = "<group>"; };
+		61B22F170FEEB70B00ACD6D4 /* Lesson21View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lesson21View.m; sourceTree = "<group>"; };
+		61B22F180FEEB70B00ACD6D4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		61B22F190FEEB70B00ACD6D4 /* NeHe's Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NeHe's Readme.txt"; sourceTree = "<group>"; };
+		61B22F2A0FEEB75000ACD6D4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* MyLesson21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLesson21.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				61B22F2B0FEEB75000ACD6D4 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* MyLesson21.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* MyLesson21 */ = {
+			isa = PBXGroup;
+			children = (
+				61B22F050FEEB70B00ACD6D4 /* Cocoa Readme.rtf */,
+				61B22F060FEEB70B00ACD6D4 /* Complete.wav */,
+				61B22F070FEEB70B00ACD6D4 /* Die.wav */,
+				61B22F080FEEB70B00ACD6D4 /* English.lproj */,
+				61B22F0D0FEEB70B00ACD6D4 /* Font.bmp */,
+				61B22F0E0FEEB70B00ACD6D4 /* Freeze.wav */,
+				61B22F0F0FEEB70B00ACD6D4 /* Hourglass.wav */,
+				61B22F100FEEB70B00ACD6D4 /* Image.bmp */,
+				61B22F140FEEB70B00ACD6D4 /* Lesson21Controller.h */,
+				61B22F150FEEB70B00ACD6D4 /* Lesson21Controller.m */,
+				61B22F160FEEB70B00ACD6D4 /* Lesson21View.h */,
+				61B22F170FEEB70B00ACD6D4 /* Lesson21View.m */,
+				61B22F180FEEB70B00ACD6D4 /* main.m */,
+				61B22F190FEEB70B00ACD6D4 /* NeHe's Readme.txt */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = MyLesson21;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MyLesson21_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61B22F090FEEB70B00ACD6D4 /* InfoPlist.strings */,
+				61B22F0B0FEEB70B00ACD6D4 /* MainMenu.nib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61B22F2A0FEEB75000ACD6D4 /* OpenGL.framework */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61B22F080FEEB70B00ACD6D4 /* English.lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* MyLesson21 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MyLesson21" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyLesson21;
+			productInstallPath = "$(HOME)/Applications";
+			productName = MyLesson21;
+			productReference = 8D1107320486CEB800E47090 /* MyLesson21.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MyLesson21" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* MyLesson21 */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* MyLesson21 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61B22F1A0FEEB70B00ACD6D4 /* Cocoa Readme.rtf in Resources */,
+				61B22F1B0FEEB70B00ACD6D4 /* Complete.wav in Resources */,
+				61B22F1C0FEEB70B00ACD6D4 /* Die.wav in Resources */,
+				61B22F1D0FEEB70B00ACD6D4 /* InfoPlist.strings in Resources */,
+				61B22F1E0FEEB70B00ACD6D4 /* MainMenu.nib in Resources */,
+				61B22F1F0FEEB70B00ACD6D4 /* Font.bmp in Resources */,
+				61B22F200FEEB70B00ACD6D4 /* Freeze.wav in Resources */,
+				61B22F210FEEB70B00ACD6D4 /* Hourglass.wav in Resources */,
+				61B22F220FEEB70B00ACD6D4 /* Image.bmp in Resources */,
+				61B22F280FEEB70B00ACD6D4 /* NeHe's Readme.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61B22F250FEEB70B00ACD6D4 /* Lesson21Controller.m in Sources */,
+				61B22F260FEEB70B00ACD6D4 /* Lesson21View.m in Sources */,
+				61B22F270FEEB70B00ACD6D4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		61B22F090FEEB70B00ACD6D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61B22F0A0FEEB70B00ACD6D4 /* English */,
+			);
+			name = InfoPlist.strings;
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+		61B22F0B0FEEB70B00ACD6D4 /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61B22F0C0FEEB70B00ACD6D4 /* English */,
+			);
+			name = MainMenu.nib;
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MyLesson21_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = MyLesson21;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MyLesson21_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = MyLesson21;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MyLesson21" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MyLesson21" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

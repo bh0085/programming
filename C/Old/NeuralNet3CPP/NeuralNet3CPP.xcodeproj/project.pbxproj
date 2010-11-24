@@ -1,0 +1,118 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXFileReference section */
+		6120DF2F0FE96F180065A33C /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6120DF300FE96F330065A33C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6120DF500FE9706A0065A33C /* libboost_regex-xgcc40-mt-1_39.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libboost_regex-xgcc40-mt-1_39.dylib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		6120DF250FE96F060065A33C = {
+			isa = PBXGroup;
+			children = (
+				6120DF500FE9706A0065A33C /* libboost_regex-xgcc40-mt-1_39.dylib */,
+				6120DF2F0FE96F180065A33C /* Makefile */,
+				6120DF300FE96F330065A33C /* main.cpp */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		6120DF340FE96F620065A33C /* NN3CPPTarget */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 6120DF370FE96F960065A33C /* Build configuration list for PBXLegacyTarget "NN3CPPTarget" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = NN3CPPTarget;
+			passBuildSettingsInEnvironment = 1;
+			productName = NN3CPPTarget;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		6120DF270FE96F060065A33C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 6120DF2A0FE96F060065A33C /* Build configuration list for PBXProject "NeuralNet3CPP" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 6120DF250FE96F060065A33C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6120DF340FE96F620065A33C /* NN3CPPTarget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		6120DF280FE96F060065A33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		6120DF290FE96F060065A33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		6120DF350FE96F620065A33C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = NN3CPP;
+			};
+			name = Debug;
+		};
+		6120DF360FE96F620065A33C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = NN3CPPTarget;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6120DF2A0FE96F060065A33C /* Build configuration list for PBXProject "NeuralNet3CPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6120DF280FE96F060065A33C /* Debug */,
+				6120DF290FE96F060065A33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6120DF370FE96F960065A33C /* Build configuration list for PBXLegacyTarget "NN3CPPTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6120DF350FE96F620065A33C /* Debug */,
+				6120DF360FE96F620065A33C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6120DF270FE96F060065A33C /* Project object */;
+}

@@ -1,0 +1,1 @@
+﻿package tanks.explosions{	public class StandardExplosion extends Explosion{			}}

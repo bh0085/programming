@@ -1,0 +1,1 @@
+﻿package tanks.tank.tankscripts {	public class tBackward extends TankScript{		override public function advance(...args):void{			thisTank.thrustBackward(.5)			if (frame  > 10) {scriptDone = true}		}	}}

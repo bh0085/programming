@@ -1,0 +1,1 @@
+cp `(ls *.a)` /Users/bh0085/Programming/gcclib

@@ -1,0 +1,27 @@
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:12: error: syntax error before '*' token
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:12: warning: return type defaults to 'int'
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c: In function 'makeFreetypeManager':
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:13: error: 'string' undeclared (first use in this function)
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:13: error: (Each undeclared identifier is reported only once
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:13: error: for each function it appears in.)
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:13: error: syntax error before 'fontString'
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:14: error: 'new' undeclared (first use in this function)
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:14: error: syntax error before 'FreetypeManager'
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:15: warning: control reaches end of non-void function
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c: At top level:
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:16: error: syntax error before '*' token
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c: In function 'getFontPixels':
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:17: error: 'manager' undeclared (first use in this function)
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:17: error: 'whichChar' undeclared (first use in this function)
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:18: warning: control reaches end of non-void function
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c: At top level:
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:19: error: syntax error before '*' token
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c: In function 'checkWidth':
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:20: error: 'manager' undeclared (first use in this function)
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:20: error: 'whichChar' undeclared (first use in this function)
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:21: warning: control reaches end of non-void function
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c: At top level:
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:22: error: syntax error before '*' token
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c: In function 'killFreetypeManager':
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:23: error: 'delete' undeclared (first use in this function)
+/Users/bh0085/Programming/Cocoa/MyGL/FreetypeWrapper.c:23: error: syntax error before 'manager'

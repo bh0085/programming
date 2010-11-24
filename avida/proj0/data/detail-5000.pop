@@ -1,0 +1,94 @@
+#filetype genotype_data
+#format id parent_id parent_dist num_cpus total_cpus length merit gest_time fitness update_born update_dead depth sequence
+
+#  1: ID
+#  2: parent ID
+#  3: parent distance
+#  4: number of organisms currently alive
+#  5: total number of organisms that ever existed
+#  6: length of genome
+#  7: merit
+#  8: gestation time
+#  9: fitness
+# 10: update born
+# 11: update deactivated
+# 12: depth in phylogentic tree
+# 13: genome of organism
+
+14412 14032 -1 5 30 102 776 361 2.14958 4889 -1 99 wzcagccavizylcacuavecqthxfbxmvccconccscqdjcvjbjxxccccnspobtvxdldceormfjcvdckmkcpjaybncacuuyzjzvfcaxgab 
+14640 14375 -1 3 3 103 784 365 2.14795 4965 -1 100 wzcagccavizylcacuavecqthxfobxmvccconccscqdjcvjbjjxccccnspoctvxdldceormfjcvfckmkcpjaybncacuuyzjzvfcaxgab 
+14417 13789 -1 3 12 99 744 359 2.07242 4890 -1 101 wzcagckaoizyxcacjavbcetcxdbxmvcccnccscqcjcmjmjxxccwknupoctvkcldceormfccxbcukcqjayncjcuuyznzvfcaxgab 
+14606 14340 -1 2 6 100 736 360 2.04444 4954 -1 101 wzcagccacizylcacjsvlcetcxwbxmvccccnccscqcccvxecxxccwsnupoctvccltceorkfccxbqmkcqjayncjcuuyznzvfcaxgab 
+14555 14534 -1 2 9 102 776 364 2.13187 4938 -1 102 wzcagcbavizylcacuavecqthxobxmoccronccscqdjcvjbjxxccccnspoctvxdldceormfjcvdckmkcpjaybncawuuyzjzvfcaxgab 
+14658 14412 -1 2 2 102 97 361 0.268698 4972 -1 100 wzcagccavizylcacuavecqthxfbxmvccconccscqdjcvjbjxxccccnspobtvxdldceormfjcvdckmkcpjadbncacuuyzjzvfcaxgab 
+14666 14647 -1 2 2 101 768 360 2.13333 4977 -1 104 wzcagcbavizylcacuavecqthxobxmocconccscqdjcvjbjxxccccnspoctvxdldceormfhcvdckmkcpjaybncawuuyzjzvfcaxgab 
+14673 14340 -1 2 2 100 92 360 0.255556 4979 -1 101 wzcagccacimylcacjsvlcetcxwbxmvccccnccscqcccvxecxxccwsnupoctvccltceorkfccxbcmkcqjayncjcuuyznzvfcaxgab 
+14670 14626 -1 2 2 101 736 362 2.03315 4978 -1 101 wzcawgccaoezymcacuavecbthxobxmvccconccscqdjcvwbjxxccpnspoctixdldceormfkcvdcmkcqjaybncacuuyzhzvfcaxgab 
+14688 14417 -1 2 2 99 93 359 0.259053 4983 -1 102 wzcagckaoizyxcacjavbcetcxdbxmvccqnccscqcjcmjmjxxccwknupoctvkcldceorkfccxbcukcqjayncjcuuyznzvfcaxgab 
+14362 14032 -1 2 10 102 784 362 2.16575 4872 -1 99 wzcagccavizylcacuavecqthxobxmvccconccscqdjcvjbjxxccccnspoctvxdldceormfjcvdckmkcpjaybncawuuyzjzvfcaxgab 
+14671 14645 -1 2 2 102 744 367 2.02725 4978 -1 104 wzcawgccaoezymcacoavewbthxobxmvbcconccscqdjcvwbjxxcccpnupoctixdldceormekcvdcmkccjaybncacuuyzjzvfcaxgab 
+14601 14501 -1 2 3 101 720 360 2 4952 -1 101 wzcawgccaoezylcacuavecbthxobxmvcenonccscqdjcvwbjxxcccpnpoctixdldceormfkcvdcmkcqjaybncacuuyzzzvfcaxgab 
+14701 14555 -1 2 2 102 97 365 0.265753 4987 -1 103 wzcagcbavizylcacuavecqthxobxmoccronccscqdjcvjbjxxccccnspoctvxdldceormfjcvdckmkrpjaybncawuuyzjzvfcaxgab 
+14384 14238 -1 2 12 102 744 366 2.03279 4879 -1 99 wzcawgccaoezymcacuavecbthxobxmvccconccscqdjcvwbjxxcccpnspoctixdldceormfkcvdcmkcqjaybncacuuyzjzvfcaxgab 
+14645 14568 -1 2 3 102 744 367 2.02725 4969 -1 103 wzcawgccaoezymcacuavewbthxobxmvbcconccscqdjcvwbjxxcccpnupoctixdldceormekcvdcmkccjaybncacuuyzjzvfcaxgab 
+14340 14243 -1 2 21 100 736 360 2.04444 4865 -1 100 wzcagccacizylcacjsvlcetcxwbxmvccccnccscqcccvxecxxccwsnupoctvccltceorkfccxbcmkcqjayncjcuuyznzvfcaxgab 
+14659 14515 -1 2 3 98 736 358 2.05587 4972 -1 106 wzcagccaoizyxdacjavbcetcxwbomvccccnccscqcjnjtjxccwknupoctvkclwceormfccxbcukcqjayncjcuuyzjzvfcaxgab 
+14675 14340 -1 1 3 100 744 364 2.04396 4979 -1 101 wzcagccacizylcacjevlcetcxwbxmvccccnccscqcccvxfcxxccwsnupoctvccltceorkoccxbcmkcqjayncjcuuyznzvfcaxgab 
+14581 14554 -1 1 1 98 376 258 1.45736 4946 -1 107 wzcagccaoizyxdacjavbcetcxwbomvccccnccscqcjfjtjxccwknupoctvkclwceormfccxbcukcqjayncjcuuypjzvfclxgab 
+14582 14362 -1 1 1 102 82 573 0.143106 4946 -1 100 wzcagccavizylcacuavecqthxobxmvccconccscqdjcvjbjxxccccnspoctvxdldcgormfjcvdckmkcpjaybncawuuyzuzvfcaxgab 
+14598 14576 -1 1 1 103 776 362 2.14365 4951 -1 102 wzcagccavizylcacuavecqthxobxmvccconccscqdjcvjbjjxvjcccnspoctvxdldceocmfjcvfckmkcpjaibncacuuyzjzvfcaxgab 
+14570 14417 -1 1 2 99 92 358 0.256983 4942 -1 102 wzcagckaoizyxcacjavbcetcxdbxmvcccnccscqcjcmjmjxxccwknupoctvkcsdceormfccxbcukcqjayncjafuyznzvfcaxgab 
+14506 14436 -1 1 2 101 94 361 0.260388 4919 -1 101 wzcagccavizylcacuavecqthxobxmvccconccscqdjcfjbjjxccccnspoctvxdldceormfjcvfckmkpjaybncacuuyzjzvfcaxgab 
+14556 14362 -1 1 2 102 98 362 0.270718 4938 -1 100 wzcagccavizylcacuavecqthxobxmvccconccscqdjcvjbjxxccccnspoctvxdlzceormfjcvdckmkcpjaybncawuuyzjzvfcaxgab 
+14624 14602 -1 1 1 99 744 359 2.07242 4960 -1 103 wzcayckaoizyxcacjavbcemcxdbxmvcccnccscqcjcmjmjxxccwknupoctvkcldceormfccxbcukcqjayncjcuuyznzvfcaxgab 
+14627 14608 -1 1 1 102 776 364 2.13187 4962 -1 104 wzcagcbavizylcacuavecqthxobxmoccroncxscqdjcvjbjxxccccnspoctvxdldceormfjcvdckmkfpjaybncawuuyzjzvfcaxgab 
+14641 14437 -1 1 1 100 96 362 0.265193 4966 -1 103 wzcagccaoizyxdhcjavbcelcxwbomvcctcnccscqcjcvjmjxxccwknupoctvkcliceoumpccxbcukcqjayncecuuyznzvfcaxgab 
+14654 14634 -1 1 1 103 98 365 0.268493 4972 -1 101 wzcagccavizyylcacuavecqthxfbxmvccconccscqdjcvjbjxxccccnspobtvxdldclormfjcvdckmkcpjaybncacuuyzjzvfcaxgab 
+14657 14412 -1 1 1 102 776 361 2.14958 4972 -1 100 wzcagccavizylcacuavecqthxfbxmvccconccscqdjcvjbjxxccccnspobtvxdldcoormfjcvdckmkcpjaybncacuuyzjzvfcaxgab 
+14660 14640 -1 1 1 103 776 361 2.14958 4973 -1 101 wzcagccavizyocacuavecqthxfobxmvccconccseqdjcvjbjjxccccnspochvxdldcyormrjcvfckmkcpsaybncacugyzjzvfcaxgab 
+14568 14541 -1 1 3 102 744 367 2.02725 4942 -1 102 wzcawgccaoezymcacuavewbthxobxmvbcconccscqdjcvwbjxxcccpnspoctixdldceormekcvdcmkccjaybncacuuyzjzvfcaxgab 
+14679 14635 -1 1 1 98 368 356 1.03371 4979 -1 107 wzcagccaoizyxdacjrvbcctcxwbomvccccnccssqcjvjtjxccknupoctvkclwceormfccxbcukcqjayncgcuueyzjzvfcaxgab 
+14643 14502 -1 1 2 102 95 367 0.258856 4968 -1 102 wzcawgccauezylcacuavecbthzobxmvceconpcscqdjcvwbjxxwccptspoctixdldceormfkcvdcmkcqjaybncacuuyzjzvfcaxgab 
+14689 14661 -1 1 1 99 752 361 2.0831 4984 -1 103 wzcagckaoizyxcacjavbwetcxdbxmvcccnccscqcjcmjmjxxccwknupoctvkcldceormfwcxbcukcqjayncjcuuyznzvfcaxgab 
+14502 14482 -1 1 4 102 728 363 2.00551 4918 -1 101 wzcawgccaoezylcacuavecbthzobxmvceconccscqdjcvwbjxxwccpnspoctixdldceormfkcvdcmkcqjaybncacuuyzjzvfcaxgab 
+14693 14362 -1 1 1 101 97 358 0.27095 4985 -1 100 wzcagccavizylcacuavecqthxobxmvccconccscqdjcvjbjxxccccnspoctvxdlceormfjcvdckmkcpjaybncawuuyzjzvfcaxgab 
+14694 14626 -1 1 1 101 93 365 0.254795 4986 -1 101 wzcawgccaoezymcacuafecbthxobxmvccconccscqdjcvwbjxxccpnspoctixdldceormfkcvdcmkcqjaybncacuuyzjzvfcaxgab 
+14695 14384 -1 1 1 102 744 366 2.03279 4986 -1 100 wzcawgcwaoezymcacuavecbthxobxmvccconccscqdjcvwbjxxcccpnspoctixdldceormfkcvdcmkcqjaybncacuuyzjzvfcaxgab 
+14642 14574 -1 1 2 101 97 365 0.265753 4967 -1 98 wzcagccaoibylcasjaclcbthxbxmvccccjccscqcjcvjbjxxcccjnsmpoctvxcldceormfchvdcmkcqjzybncacuuywjzvfcaxgab 
+14703 14668 -1 1 1 103 744 367 2.02725 4987 -1 104 wzcawgccaoezymcacuavewbthxobxmvbcconaccscqdjcvwbjxxcccpnspoctixdldceormekcvdcmkccjaybncacupvzjzvfcaxgab 
+14706 14606 -1 1 1 99 368 296 1.24324 4987 -1 102 wzcagccacizylcacjsvlcetcxwbxmvccccnccscqcccvxecxxccwsnupoctvccltceorkfccxxqmkcqjayncjcuuyznzvcaxgab 
+14707 14606 -1 1 1 99 736 360 2.04444 4987 -1 102 wzcagccacizylcacjsvlcetcxwbxmvccccnccscqcccvxecxxccwsnupoctvccltcorkfccxbqmkcqjayncjcuuyznfvfcaxgab 
+14710 14674 -1 1 1 100 736 360 2.04444 4988 -1 103 wzcagccacizylcacjsvlcetcxwblmvccccnccdcqcccvxecxxccwsnupoctvccltceorkfccxbqmkcqjayncjcuuyznzvfcaxgab 
+14712 14491 -1 1 1 98 91 354 0.257062 4989 -1 105 wzcagccaoizyxdacjavbcetcxwbomvccccnccucqcjvjtjxccwknupoctvkclwceormfccxbcukcqjayncjcuuyzjzvfcaxgab 
+14714 14684 -1 1 1 102 776 361 2.14958 4989 -1 101 wzcagccavizylcacuavicqthxfbxmvccconccscqdjcvjbjxxciccnspobtvxdldceormfjcvdckmkcpuaybncacuuyzjzvfcaxgab 
+14716 14656 -1 1 1 98 92 357 0.257703 4990 -1 108 wzcagccaoizyxmacjavbcetcxwbomvcccnccscqrjfjtjxccwknupoctvkclwceormfccxbcukcqjayncjcuuyzajzvfcaxgab 
+14603 14500 -1 1 5 100 473.2 361 1.3108 4952 -1 103 wzcagckaoizyxcacjavbceicxdbxmvcfcnccscqcjcmjmjxxccwknupoctvkcldceormfcctbcukcqjayncjcuuyznzvfcaxggab 
+14717 14506 -1 1 1 101 94 361 0.260388 4993 -1 102 wzcagccavizylcacuavecqthxobxmvccconccscqdjcfjbjjxccccnspoctvxdldceormfjcvfckdkpjaybncacuuyzjzvfcaxgab 
+14718 14689 -1 1 1 99 744 359 2.07242 4993 -1 104 wzcagikaoizyxcacjavbwetcxdbxmvcccnccscqcjcmjmjxxccwknupoctvkcldceormfwcxbcukcqjayncjcuuyznzvfcaxgab 
+14623 14417 -1 1 2 99 93 359 0.259053 4960 -1 102 wzcagckaoizyxcacjavbcetcxdbxmvcccnccscqcjcmjmjxxccwknupoctvkcodceormfccxbcukcqjayncjcuuyznzvfcaxgab 
+14719 14647 -1 1 1 102 776 364 2.13187 4993 -1 104 wzcagcbavizylcacuavecqthxobxmoccronccscqdjcvjbjxxccccnspoctvxdldueormfhcvdckmkcpjaybncawuuyzjzvfcaxgab 
+14720 14502 -1 1 1 102 728 363 2.00551 4993 -1 102 wzcawgccaogzylcacuavecbthzobxmvceconccscqdjcvwbjxxwccpnspoctixdldceormfkcvdcmkcqjaybncacuuyzjzvfcaxgab 
+14721 14666 -1 1 1 101 768 360 2.13333 4994 -1 105 wzcagcbavizylcacuavecqthxobxmocconccscqdjcvjbjxxccccnspoctvxdldceormfhcvdckmkcpjaybncawuuyzjnvfcaxgab 
+14722 14666 -1 1 1 101 768 360 2.13333 4994 -1 105 wzcagcbavizylcacuavecqthxobxmjcconccscqdjcvjbjxxccccnspoctvxdldceormfhcvdckmkcpjaybncawuuyzjzvfcaxgab 
+14723 14384 -1 1 1 102 744 366 2.03279 4994 -1 100 wzcawgccaoezymcacuavecbthxobxmvccconccscqdjcvwbjxxcccpnspoctixdldceormfkcvdcmkcqjaybncacuuyzjzvfcaygab 
+14724 14706 -1 1 1 99 736 360 2.04444 4994 -1 103 ccwsnupoctvccltceorkfccxxqmkcqjayncjcuuyznzvcaxgabwzcagccacizylcacjsvlcetcxwbxmvccccnccscqcccvxecxx 
+14725 14695 -1 1 1 102 744 366 2.03279 4994 -1 101 wzcawgcwaoezymcacuavecbthxobomvccconccscqdjcvwbjxxcccpnspoctixdldceormfkcvdcmkcqjaybncacuuyzjzvfcaxgab 
+14691 14647 -1 1 2 102 776 364 2.13187 4985 -1 104 wzcagcbavizylcacyavecqthxobxmoccronccscqdjcvjbjxxccccnspoctvxdldceormfhcvdckmkcpjaybncewuuyzjzvfcaxgab 
+14727 14693 -1 1 1 100 784 362 2.16575 4995 -1 101 wzcagccavizylcacuavecqthxobxmvccconccscqdjcvjbjxxccccnspocvxdlceormfjcvdckmkcpjaybncawuuyzjzvfcaxgab 
+14728 14555 -1 1 1 102 776 364 2.13187 4995 -1 103 wzcagcbavizylcacuavecqthxobxmoccronccscqdjcvjbjxyccccnspoctvxdldceormfjcvdckmkcpjaybncawuuhzjzvfcaxgab 
+14729 14694 -1 1 1 101 736 362 2.03315 4995 -1 102 wzcawgccaoezymcacuafecbthxobxmvccconccscqdjcvwbjxxccpnspoctixdldceormfkcvdcmkcqjaybncacuuyzezvfcaxgab 
+14663 14384 -1 1 2 102 744 366 2.03279 4977 -1 100 wzcawgccaoezymcacuavecbthxobxmvccconccscqdjcvwbjxxcccpnspoctwxdldceormfkcvdcmkcqjaybncacuuyzjzvfcaxgab 
+14733 14663 -1 1 1 102 744 366 2.03279 4996 -1 101 wzcawgccaoezymcacuavecbthxobxmvccconccscqdjcvwbjxxcccpnopoctwxdldceormfkcvdcmkcqjaybncacuuyzjzvfcaxgab 
+14734 14708 -1 1 1 103 784 361 2.17175 4996 -1 102 wzcagccavizylcacutvecqthaobxmvccconccscqdjcvjbjxxccccnspoctdxdlvceormfjcovdckmkcpjayvncawuuyzjzvfcawgab 
+14735 14670 -1 1 1 101 736 362 2.03315 4996 -1 102 wrcawgccaoezymcacuavecbthxobxmvccconccscqdjcvwbjxxccpnspoctixdldceormfkcvdcmkcqjaybncacuuyzhzvfcaxgab 
+14705 14555 -1 1 2 103 784 368 2.13043 4987 -1 103 wzcalgcbavizylcacuavecqthxobxmoccronccscqdjcvjbjxxccccnspoctvxdldceormfjcvdckmkcpjaybncawuuyzjzvfcaxgab 
+14736 14412 -1 1 1 102 776 361 2.14958 4996 -1 100 wzcagccavizylcacuavecqthxfbxmvccconccscqdjcvjbjxxccccnspobtvxdldceormfjcvdckmkcpjaybncacuujzjzvfcaxgab 
+14737 14675 -1 1 1 100 744 364 2.04396 4997 -1 102 wzcagccacizylcacjevlcetcxwbxbvccccnccscqcccvxfcxxcccsnupoctvccltceorkoccxbcmkcqjayncjcuuyznzvfcaxgab 
+14738 14412 -1 1 1 102 776 361 2.14958 4997 -1 100 wzcagccavizylcacuavecqthxfbxmvccconccscqdjcvjbjxxccccnspobtvxdldceormfjcvdckmkcpjaybncacyuyzjzvfcaxgab 
+14739 14657 -1 1 1 102 776 361 2.14958 4997 -1 101 wzcagccavizylcacuavecqthxfbxmvccconccscqdjcvjbjxxccccnspobtvxdldcoormfjcvdckmkcpjaybncacuuyzjzvfuaxgab 
+14740 14606 -1 1 1 100 736 360 2.04444 4997 -1 102 wzcagccacizylcacjsvlcetcxwbxmvccccnccscqcccvxecxxccwsnupoctvccltceorkfccxbqmkcqjayncgcuuyznzvfcaxgab 
+14742 14712 -1 1 1 98 736 355 2.07324 4997 -1 106 wzcagccaoizyxdacjovbcetcxwbomvccccnccucqcjvjtjpccwknupoctvkclwceormfckxbcukcqjayncjcuuyzjzvfcaxgab 
+14743 14679 -1 1 1 94 736 355 2.07324 4997 -1 108 gccaoizyxdacjrvbcctcxwbomvccccnccssqcjvjtjxccknupoctvkclwceormfccxbcukcqjayncgcuueyzjzvfcaxgab 
+14744 14640 -1 1 1 103 784 365 2.14795 4998 -1 101 wzcagccavizylcacuavecqthxfobxmvccconccscqdjcvjbjjxccccnspochvxdldceormfjcvfckmkcpjaybncacuuyzjzvfcaxgab 
+14664 14626 -1 1 4 101 736 362 2.03315 4977 -1 101 wzcawgccaoezymcacuavecbthxobxmvccconccscqdjcvwbjxxcccnspoctixdldceormfkcvdcmkcqjaybncacuuyzjzvfcaxgab 
+14745 14716 -1 1 1 98 736 357 2.06162 4998 -1 109 wzchgccaoizyxmacjavbcetcxwbomvcccnccscqrjfjtjxcclknupoctvkclwceormfccxbcukcqjayncjcuuyzajzvfcaxgab 

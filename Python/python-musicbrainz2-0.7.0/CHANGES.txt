@@ -1,0 +1,147 @@
+Changes in 0.7.0:
+
+  * Added ISRC support (patch by Alastair Porter).
+  * Added rating support (patch by Peter Schnebel).
+  * Added a trackCount parameter to ReleaseFilter (#3781).
+  * Changed ReleaseFilter and TrackFilter to accept URIs for artistId
+    and releaseId (#4746).
+  * Fixed serialization of relations in MbXmlWriter (#4394).
+  * Fixed a crash on 64-bit systems in libdiscid bindings (Luks).
+  * Fixed a deprecation warning: use builtin set if available (#4956).
+
+
+Changes in 0.6.0:
+
+  * Added folksonomy tagging support (mostly by Philipp Wolfer, #3285):
+      - Added getTag(), getTags(), and addTag() methods to model.Entity.
+      - Added getUserTags() and submitUserTags() to webservice.Query.
+      - Added an example script: examples/folksonomytags.py.
+  * Relation.DIR_BOTH is no longer used since the web service doesn't 
+    know bidirectional relations. If no direction is returned, the client
+    library maps it to Relation.DIR_NONE. Note that this is *not* entirely
+    backwards compatible (#3034).
+  * Added "WaxCylinder" and "PianoRoll" to ReleaseEvent (#3231).
+  * Changed download URL to HTTP for installation via setuptools (#3202).
+  * Warn if epydoc isn't found when installing from source (by intgr, #3124).
+
+
+Changes in 0.5.0:
+
+  * Added label support (based on Oliver's patch in #2671):
+      - Added the model.Label and model.LabelAlias classes.
+      - Added a label property to model.Release.
+      - Updated the webservice.Query class.
+      - Added webservice.LabelFilter and webservice.LabelIncludes.
+      - Updated wsxml.Metadata, wsxml.MbXmlParser, and wsxml.MbXmlWriter.
+  * Added catalog number and barcode properties to model.ReleaseEvent.
+  * Changes to IFilter:
+      - Added a query parameter to pass in Lucene queries.
+      - Added an offset parameter to support paging through results.
+  * Added count and offset properties to all Result classes in wsxml.
+
+
+Changes in 0.4.1:
+
+  * Access to a CD drive other than the default drive works again (Luks).
+  * IWebService.post() now returns a file-like object instead of None (Luks).
+  * Added the "Artificial" language and the "Pseudo-Release" type (Luks).
+
+
+Changes in 0.4.0:
+
+  * DiscID calculation now uses libdiscid instead of libmusicbrainz2.
+  * Fixed the IFilter subclasses to properly encode strings (#2148)
+  * Added several count and offset related methods in the model package.
+  * Added Entity.getRelationTargets() for easier relation handling.
+  * Added two (optional) parameters for Entity.getRelations().
+  * Added mb-submit-disc, a tool for submitting DiscIDs to MusicBrainz.
+
+
+Changes in 0.3.2:
+
+  * Made the package work inside a zip file for py2exe (#1411, Luks).
+  * Added the mb-submit-disc tool.
+
+
+Changes in 0.3.1:
+
+  * Fixed webservice.WebService.post(), to make PUID submission work (Luks).
+  * Added and updated package metadata in setup.py.
+
+
+Changes in 0.3.0:
+
+  * API changes in model.Query to support relevance scores (#1175):
+      - Changed getArtists() to return a list of ArtistResult objects.
+      - Changed getReleases() to return a list of ReleaseResult objects.
+      - Changed getTracks() to return a list of TrackResult objects.
+
+  * API changes in model.ReleaseEvent:
+      - Renamed getCountryId() to getCountry()
+      - Renamed __init__()'s 'countryId' parameter to 'country'.
+
+  * API changes in model.Artist:
+      - Renamed setType()'s 'typeUri' parameter to 'type_'.
+
+  * API changes in model.ArtistAlias:
+      - Renamed __init__()'s and setType()'s 'typeUri' parameter to 'type_'.
+
+  * API changes to wsxml.Metadata:
+      - Removed getArtistList(), getReleaseList(), getTrackList()
+      - Added getArtistResults(), getReleaseResults(), and getTrackResults(),
+	returning ArtistResult, ReleaseResult, and TrackResult objects,
+	respectively.
+
+  * General API changes:
+      - Classes are now derived from 'object' (new-style classes).
+      - Marked all supposedly private attributes as private ('attr' -> '_attr').
+      - Marked the DOM utility functions in wsxml.py as private.
+
+  * All getter and setter methods are now exposed as properties, too.
+
+  * Added the class wsxml.MbXmlWriter which generates MMD XML.
+
+  * Fixed model.Release.TYPE_EP ('Ep' -> 'EP').
+
+  * Added TYPE_PERSON and TYPE_GROUP constans to model.Artist.
+
+  * Added functions to the utils module to map country, language, script
+    and release type IDs to printable strings.
+
+  * Modules now have __all__, which makes 'import *' possible (but don't do it).
+
+  * The country code in model.ReleaseEvent is now optional. This is due to
+    the server which doesn't provide country codes for release collection
+    queries (and just the earliest date).
+
+  * Added model.Release.getEarliestReleaseEvent() (#1260).
+
+  * Added more example code and improved the documentation.
+
+
+Changes in 0.2.2:
+
+  * Added the musicbrainz2.utils module (#1192).
+
+
+Changes in 0.2.1:
+
+  * Release date parsing has been fixed (#1181).
+  * ctypes 0.9.9.3 is now supported.
+  * Authentication now works even after HTTP redirects (#1166).
+  * Added type and script support to ArtistAlias.
+
+
+Changes in 0.2.0:
+
+  * API change: Switched from TRM to PUID (Luks).
+    All interfaces with 'Trm' or 'trm' in the name are affected.
+  * python 2.3 compatibility fixes (#1160)
+
+
+Changes in 0.1.0:
+
+  * Initial release.
+
+--
+$Id: CHANGES.txt 11730 2009-06-14 09:58:08Z matt $

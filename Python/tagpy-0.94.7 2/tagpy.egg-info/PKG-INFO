@@ -1,0 +1,40 @@
+Metadata-Version: 1.0
+Name: tagpy
+Version: 0.94.7
+Summary: Python Bindings for TagLib
+Home-page: http://mathema.tician.de/software/tagpy
+Author: Andreas Kloeckner
+Author-email: inform@tiker.net
+License: MIT
+Description: 
+        TagPy is a set of Python bindings for Scott Wheeler's
+        `TagLib <http://developer.kde.org/~wheeler/taglib.html>`_.
+        It builds upon `Boost.Python <http://www.boost.org/libs/python/doc/>`_,
+        a wrapper generation library which is part of the renowned Boost
+        set of C++ libraries.
+        
+        Just like TagLib, TagPy can:
+        
+        * read and write ID3 tags of version 1 and 2, with many supported frame types
+        for version 2 (in MPEG Layer 2 and MPEG Layer 3, FLAC and MPC),
+        * access Xiph Comments in Ogg Vorbis Files and Ogg Flac Files,
+        * access APE tags in Musepack and MP3 files.
+        
+        All these features have their own specific interfaces, but
+        TagLib's generic tag reading and writing mechanism is also
+        supported. It comes with a bunch of examples.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: CD Audio :: CD Ripping
+Classifier: Topic :: Multimedia :: Sound/Audio :: Editors
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities

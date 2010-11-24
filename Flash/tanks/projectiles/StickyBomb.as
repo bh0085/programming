@@ -1,0 +1,1 @@
+﻿package tanks.projectiles{	import physics.projectile.NewtonianSphere	public class StickyBomb extends NewtonianSphere{		public function StickyBomb():void{			colType = 2		}			}}

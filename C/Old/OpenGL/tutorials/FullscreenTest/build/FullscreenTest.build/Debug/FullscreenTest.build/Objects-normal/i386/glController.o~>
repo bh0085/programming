@@ -1,0 +1,5 @@
+/Users/bh0085/Programming/OpenGL/tutorials/FullscreenTest/glController.m: In function '-[glController updateGLView:]':
+/Users/bh0085/Programming/OpenGL/tutorials/FullscreenTest/glController.m:98: warning: 'glView' may not respond to '-timeStep'
+/Users/bh0085/Programming/OpenGL/tutorials/FullscreenTest/glController.m:98: warning: (Messages without a matching method signature
+/Users/bh0085/Programming/OpenGL/tutorials/FullscreenTest/glController.m:98: warning: will be assumed to return 'id' and accept
+/Users/bh0085/Programming/OpenGL/tutorials/FullscreenTest/glController.m:98: warning: '...' as arguments.)

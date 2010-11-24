@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	089C165DFE840E0CC02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {270, 168}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 0}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 61435D8410052DEC004C876F /* Box2DAsteroids */;
+		activeTarget = 8D1107260486CEB800E47090 /* Box2DAsteroids */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* Box2DAsteroids */,
+		);
+		breakpoints = (
+			61D27589101364AD00C5F6F2 /* bgBone.cpp:81 */,
+			61D77120102384B700BE2E68 /* GridLearner2D.cpp:16 */,
+			619A3DBF102CDB63002CE48D /* AsteroidsGame.cpp:185 */,
+			61D7C4B81034ACD800DAC3B0 /* GLIDL.m:30 */,
+		);
+		codeSenseManager = 61435D9D10052DFE004C876F /* Code sense */;
+		executables = (
+			61435D8410052DEC004C876F /* Box2DAsteroids */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					228.58349609375,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = 1;
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Target_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					364,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					45.20849609375,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					10,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					10,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 278560383;
+			PBXWorkspaceStateSaveDate = 278560383;
+		};
+		sourceControlManager = 61435D9C10052DFE004C876F /* Source Control */;
+		userBookmarkGroup = 616356FB101CB1CD00B61B61 /* PBXBookmarkGroup */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* old_main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 253}}";
+			sepNavSelRange = "{266, 0}";
+			sepNavVisRange = "{0, 266}";
+			sepNavWindowFrame = "{{620, 14}, {880, 864}}";
+		};
+	};
+	32CA4F630368D1EE00C91783 /* Box2DAsteroids_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {612, 253}}";
+			sepNavSelRange = "{159, 0}";
+			sepNavVisRange = "{0, 159}";
+		};
+	};
+	61435D8410052DEC004C876F /* Box2DAsteroids */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Box2DAsteroids;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	61435D9C10052DFE004C876F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	61435D9D10052DFE004C876F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	61435DBA10052FF7004C876F /* AsteroidsGame.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 896}}";
+			sepNavSelRange = "{312, 0}";
+			sepNavVisRange = "{37, 514}";
+			sepNavWindowFrame = "{{569, 320}, {750, 558}}";
+		};
+	};
+	61435DBB10052FF7004C876F /* AsteroidsGame.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 3122}}";
+			sepNavSelRange = "{3996, 0}";
+			sepNavVisRange = "{3591, 745}";
+			sepNavWindowFrame = "{{553, 320}, {750, 558}}";
+		};
+	};
+	61435DC510053350004C876F /* AsteroidsGameController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {360, 266}}";
+			sepNavSelRange = "{315, 0}";
+			sepNavVisRange = "{0, 0}";
+			sepNavWindowFrame = "{{108, 166}, {1030, 712}}";
+		};
+	};
+	61435DC610053350004C876F /* AsteroidsGameController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {648, 1204}}";
+			sepNavSelRange = "{1103, 0}";
+			sepNavVisRange = "{730, 724}";
+			sepNavWindowFrame = "{{38, 43}, {707, 613}}";
+		};
+	};
+	61435DCA100535FC004C876F /* AsteroidsGameLauncher.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {300, 69}}";
+			sepNavSelRange = "{3, 0}";
+			sepNavVisRange = "{0, 0}";
+			sepNavWindowFrame = "{{176, 113}, {707, 613}}";
+		};
+	};
+	61435DCB100535FC004C876F /* AsteroidsGameLauncher.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {360, 392}}";
+			sepNavSelRange = "{371, 263}";
+			sepNavVisRange = "{0, 0}";
+			sepNavWindowFrame = "{{334, -62}, {880, 864}}";
+		};
+	};
+	614C9369109A25BC0030627F /* cp_main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1836, 380}}";
+			sepNavSelRange = "{1052, 0}";
+			sepNavVisRange = "{0, 1052}";
+			sepNavWindowFrame = "{{58, -53}, {707, 613}}";
+		};
+	};
+	616356FB101CB1CD00B61B61 /* PBXBookmarkGroup */ = {
+		isa = PBXBookmarkGroup;
+		children = (
+			6163572B101D6C7F00B61B61 /* PBXTextBookmark */,
+		);
+		name = Root;
+	};
+	6163572B101D6C7F00B61B61 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 619734741017DC0B0064FE79 /* NNReinforcementLearner.h */;
+		name = cons;
+		rLen = 0;
+		rLoc = 773;
+		rType = 0;
+		vrLen = 928;
+		vrLoc = 304;
+	};
+	619734741017DC0B0064FE79 /* NNReinforcementLearner.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = NNReinforcementLearner.h;
+		path = /Users/bh0085/Programming/Old/Box2DAsteroids/NNReinforcementLearner.h;
+		sourceTree = "<absolute>";
+	};
+	619A3DBF102CDB63002CE48D /* AsteroidsGame.cpp:185 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 61435DBB10052FF7004C876F /* AsteroidsGame.cpp */;
+		functionName = "makeGame()";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 185;
+		location = Box2DAsteroids;
+		modificationTime = 278563942.653465;
+		state = 2;
+	};
+	619A3E21102CE0DC002CE48D /* GLIDL.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = GLIDL.m;
+		path = /Users/bh0085/Programming/Old/Box2DAsteroids/GLIDL.m;
+		sourceTree = "<absolute>";
+	};
+	61BC7A2E100BEB0700EB4FE5 /* bgBone.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = bgBone.cpp;
+		path = /Users/bh0085/Programming/Old/Box2DAsteroids/bgBone.cpp;
+		sourceTree = "<absolute>";
+	};
+	61D27589101364AD00C5F6F2 /* bgBone.cpp:81 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 61BC7A2E100BEB0700EB4FE5 /* bgBone.cpp */;
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 81;
+		modificationTime = 278563942.652479;
+		state = 0;
+	};
+	61D76D851023530800BE2E68 /* GridLearner2D.cpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = GridLearner2D.cpp;
+		path = /Users/bh0085/Programming/Old/Box2DAsteroids/GridLearner2D.cpp;
+		sourceTree = "<absolute>";
+	};
+	61D77120102384B700BE2E68 /* GridLearner2D.cpp:16 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 61D76D851023530800BE2E68 /* GridLearner2D.cpp */;
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 16;
+		location = Box2DAsteroids;
+		modificationTime = 278563942.653159;
+		state = 2;
+	};
+	61D7C4B81034ACD800DAC3B0 /* GLIDL.m:30 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 619A3E21102CE0DC002CE48D /* GLIDL.m */;
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 30;
+		location = Box2DAsteroids;
+		modificationTime = 278563942.653785;
+		state = 2;
+	};
+	8D1107260486CEB800E47090 /* Box2DAsteroids */ = {
+		activeExec = 0;
+		executables = (
+			61435D8410052DEC004C876F /* Box2DAsteroids */,
+		);
+	};
+}

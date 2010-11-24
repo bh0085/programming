@@ -1,0 +1,1 @@
+﻿package math{		public class ScalarField3D {						//Extending classes implement valueAt and (Potentials) will mainly use ...args to define objects to exclude from the calculation.		public function valueAt(xat:Number,yat:Number, zat:Number, ...args):Number {return 0}			}}

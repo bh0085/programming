@@ -1,0 +1,4 @@
+include *.py *.txt
+recursive-include tests *
+# recursive-include doc *
+

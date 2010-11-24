@@ -1,0 +1,6 @@
+include Makefile msgfmt.py *.txt scripts/*
+recursive-include dnuos/locale *.po *.pot
+recursive-exclude dnuos/locale *.mo
+recursive-include dnuostests *.py
+recursive-exclude dnuostests *.pyc *.pyo
+recursive-include debian *

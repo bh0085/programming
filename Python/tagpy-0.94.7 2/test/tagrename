@@ -1,0 +1,175 @@
+#! /usr/bin/env python
+
+import sys
+import os
+import os.path
+import re
+import tagpy
+import tagpy.mpeg
+import tagpy.ogg
+
+from optparse import OptionParser
+
+songs = sys.argv[1:]
+
+patterns = [
+ "${artist:7}-${album:7}/${track}-${title}.${ext}",
+ "${artist}/${album}/${track}-${title}.${ext}",
+ ]
+mix_pattern = "AAAMIX/${artist:7}-${title}.${ext}"
+
+opt_parse = OptionParser(usage="%prog [options] root_path")
+opt_parse.add_option("-p", "--pattern", dest="pattern",
+                     help="Use PATTERN as the rename pattern")
+opt_parse.add_option("-m", "--use-mix", action="store_true", dest="use_mix",
+                     help="Use aaamix directory")
+opt_parse.add_option("-M", "--no-use-mix", action="store_false", dest="use_mix",
+                     help="Do not use aaamix directory")
+
+(options, remaining_args) = opt_parse.parse_args()
+
+if options.pattern is not None:
+    pattern = patterns[int(options.pattern)]
+else:
+    for i, p in enumerate(patterns):
+        print i, p
+    print
+
+    pattern = patterns[int(raw_input("Select pattern: "))]
+if options.use_mix is not None:
+    use_mix = options.use_mix
+else:
+    use_mix = raw_input("Use AAAMIX directory? [n]y?") == "y"
+
+def canonical_ext(song):
+    if isinstance(song, tagpy.mpeg.File):
+        aprops = song.audioProperties()
+        if aprops is None:
+            raise ValueError, "MPEG track %s has no audio properties" % song.name()
+        return "mp%d" % aprops.layer
+    elif isinstance(song, tagpy.ogg.File):
+        return "ogg"
+    else:
+        raise ValueError, "unknown track type"
+
+def is_directory(name):
+    dirstat = os.stat(name)
+    import stat
+    return stat.S_ISDIR(dirstat.st_mode)
+
+def force_us_ascii(str):
+    result = ""
+    for i in str:
+        if 32 <= ord(i) < 128:
+            result += chr(ord(i))
+        else:
+            result += "_"
+    return result
+
+def makedirs(name, mode=0777):
+    # stolen and modified from os
+    """makedirs(path [, mode=0777])
+
+    Super-mkdir; create a leaf directory and all intermediate ones.
+    Works like mkdir, except that any intermediate path segment (not
+    just the rightmost) will be created if it does not exist.  This is
+    recursive.
+
+    """
+    head, tail = os.path.split(name)
+    while not tail:
+        head, tail = os.path.split(head)
+    if head and tail and not os.path.exists(head):
+        makedirs(head, mode)
+    try:
+        os.mkdir(name, mode)
+    except OSError:
+        pass
+
+def make_fn_suitable(str):
+    return force_us_ascii(str
+                          .replace("/", "_")
+                          .replace("?", "_")
+                          .replace("*", "_")
+                          .replace("&", "_")
+                          .replace(":", "_")
+                          .replace("\"", "_")
+                          .replace("\'", "_")
+                          .replace("<", "_")
+                          .replace(">", "_")
+                          )
+
+def expand_pattern(pattern, song):
+    tag = song.tag()
+    if tag is None:
+        return None
+
+    expr = re.compile(r"\$\{([a-z]+)(\:[0-9]+)?\}")
+
+    def variable_function(match):
+        meta_id = match.group(1)
+
+        if meta_id == "artist": result =  tag.artist
+        elif meta_id == "album": result =  tag.album
+        elif meta_id == "title": result =  tag.title
+        elif meta_id == "ext": result =  canonical_ext(song)
+        elif meta_id == "track": result =  "%02d" % tag.track
+        else: 
+            raise ValueError, "invalid variable in pattern: "+meta_id
+
+        if len(match.groups()) == 2 and match.group(2):
+            result = result[:int(match.group(2)[1:])]
+        return make_fn_suitable(result).strip()
+
+    return expr.sub(variable_function, pattern)
+
+def get_new_dir_and_name(pattern, song):
+    dest_name = expand_pattern(pattern, song)
+    if dest_name is None:
+        return None
+
+    dest_dir = os.path.dirname(dest_name).lower()
+    dest_basename = os.path.basename(dest_name)
+    return dest_dir, os.path.join(dest_dir, dest_basename)
+
+# walk directory tree
+all_songs = []
+for dirpath, dirnames, filenames in os.walk(remaining_args[0]):
+    all_songs += [os.path.join(dirpath, filename) for filename in filenames]
+
+# find out all "canonical" renames, i.e. without mix directory
+dest_dir_counts = {}
+renames = []
+
+for source_name in all_songs:
+    try:
+        song = tagpy.FileRef(source_name).file()
+    except ValueError:
+        print "WARNING: Not a media file:\n  %s" % source_name
+        continue
+
+    dir_and_name = get_new_dir_and_name(pattern, song)
+    if dir_and_name is not None:
+        dest_dir, dest_name = get_new_dir_and_name(pattern, song)
+
+        renames.append((source_name, dest_name, dest_dir))
+        dest_dir_counts[dest_dir] = 1 + dest_dir_counts.setdefault(dest_dir, 0)
+
+# judge mix directory and perform moves
+for source_name, dest_name, dest_dir in renames:
+    if use_mix and dest_dir_counts[dest_dir] == 1:
+        song = tagpy.FileRef(source_name).file()
+        dest_dir, dest_name = get_new_dir_and_name(mix_pattern, song)
+
+    try:
+        if not is_directory(dest_dir):
+            print "WARNING: %s exists, but is not a directory, skipping\n  %s" % \
+                  (dest_dir, dest_name)
+            continue
+    except OSError:
+        makedirs(dest_dir)
+
+    try:
+      os.rename(source_name, dest_name)
+    except OSError, e:
+      print "Couldn't rename `%s' to `%s': %s" % (source_name, dest_name, e)

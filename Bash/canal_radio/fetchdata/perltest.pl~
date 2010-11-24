@@ -1,0 +1,5 @@
+#! /usr/bin/perl
+print "hello\n";
+use LWP::Simple;
+my $test = get "http://blogs.canalsur.es/parrilla_cfl/";
+print $test

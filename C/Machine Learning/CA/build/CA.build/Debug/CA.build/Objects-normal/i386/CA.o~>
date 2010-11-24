@@ -1,0 +1,14 @@
+/Users/bh0085/Programming/C++/CA/CA.cpp:10: error: prototype for 'CA::CA(unsigned int, unsigned int)' does not match any in class 'CA'
+/Users/bh0085/Programming/C++/CA/CA.h:11: error: candidates are: CA::CA(const CA&)
+/Users/bh0085/Programming/C++/CA/CA.h:11: error:                 CA::CA()
+/Users/bh0085/Programming/C++/CA/CA.cpp: In constructor 'CA::CA(unsigned int, unsigned int)':
+/Users/bh0085/Programming/C++/CA/CA.cpp:13: error: 'arr' was not declared in this scope
+/Users/bh0085/Programming/C++/CA/CA.cpp: At global scope:
+/Users/bh0085/Programming/C++/CA/CA.cpp:15: error: no 'void CA::Display()' member function declared in class 'CA'
+/Users/bh0085/Programming/C++/CA/CA.cpp: In member function 'void CA::Display()':
+/Users/bh0085/Programming/C++/CA/CA.cpp:16: error: 'j' was not declared in this scope
+/Users/bh0085/Programming/C++/CA/CA.cpp:17: error: 'i' was not declared in this scope
+/Users/bh0085/Programming/C++/CA/CA.cpp:18: error: 'pos' was not declared in this scope
+/Users/bh0085/Programming/C++/CA/CA.cpp:20: error: expected primary-expression before '}' token
+/Users/bh0085/Programming/C++/CA/CA.cpp:20: error: expected `)' before '}' token
+/Users/bh0085/Programming/C++/CA/CA.cpp:20: error: expected `;' before '}' token

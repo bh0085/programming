@@ -1,0 +1,7 @@
+#!/opt/local/Library/Frameworks/Python.framework/Versions/2.5/Resources/Python.app/Contents/MacOS/Python
+import sys
+import dnuos
+try:
+    sys.exit(dnuos.main())
+except (KeyboardInterrupt, SystemExit):
+    pass

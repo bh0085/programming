@@ -1,0 +1,1 @@
+﻿package physics.pscript{	public class oHideScript extends OverlayScript{				override public function advance(...args):void{			thisOverlay.setOpacity((.2*(4 - frame)))			if (frame > 3) {				thisOverlay.visible = false				scriptDone = true}					}			}}

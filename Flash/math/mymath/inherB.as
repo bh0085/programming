@@ -1,0 +1,1 @@
+﻿package mymath{	public class inherB extends Array{		public function inherB(... args){			this.push(args)		}	}}

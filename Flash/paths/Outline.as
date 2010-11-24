@@ -1,0 +1,1 @@
+﻿package paths{	import flash.display.Sprite	public interface Outline{		function nodesInOrder():Array		//the first extra argument dictates the method to use to find seg-point distance and the second args asks whether to search nodes or bits		function closest(ptXY:Array,...args):Node		function drawOutline(...args):Sprite	}}

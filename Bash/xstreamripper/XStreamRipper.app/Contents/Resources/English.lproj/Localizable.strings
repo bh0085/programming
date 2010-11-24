@@ -1,0 +1,17 @@
+// General
+"OK" = "OK";
+"Cancel" = "Cancel";
+
+"ErrorCode" = "StreamRipper engine reported error %d";
+
+"Buffering" = "Buffering";
+"Ripping" = "Ripping";
+"Reconnecting" = "Reconnecting";
+
+// Quit
+// TODO: %d in "SureQuit" to indicate the number of streams being ripped
+"Quit" = "Quit XStreamRipper";
+"SureQuit" = "You are currently ripping from an Internet radio station.\n\nAre you sure you want to quit?";
+
+"Delete" = "Delete Items";
+"SureDelete" = "Are you sure you want to delete the selected items?";

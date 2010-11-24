@@ -1,0 +1,255 @@
+#!/bin/bash
+#
+# Copyright 2008 Octavio Ruiz
+# Distributed under the terms of the GNU General Public License v3
+# $Header: $
+#
+# Yet Another FLAC to MP3 script
+#
+# Author:
+#       Octavio Ruiz (Ta^3) <tacvbo@tacvbo.net>
+# Contributors:
+#        Zythme <zythmer@gmail.com>
+# Thanks:
+#       Those comments at:
+#       http://www.linuxtutorialblog.com/post/solution-converting-flac-to-mp3
+#       Thatch's fork and fixes at:
+#       http://github.com/
+# WebPage:
+#       https://github.com/tacvbo/yaflac2mp3/tree
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY. YOU USE AT YOUR OWN RISK. THE AUTHOR
+# WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY
+# OTHER  KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.
+# See the GNU General Public License for more details.
+ 
+
+old_dir="`pwd`"
+LAME_OPTS_V0="-V 0 --vbr-new"
+LAME_OPTS_V2="-V 2 --vbr-new"
+OGG_OPTS=""
+OGG=$(which oggenc)
+LAME=$(which lame)
+FLAC=$(which flac)
+SOURCE="${old_dir}"
+cd ..
+DEST_ROOT=`pwd`
+cd "${old_dir}"
+ID3=""
+DELETE_OLD=1
+ 
+usage()
+{
+    EXIT=${1:-1}
+ 
+    cat<<EOF
+ 
+Usage: $0 [-l <lame>] [-f <flac>] [-x <lame_opts>]
+          [-s <source>] [-d <dest>] [-o] [-i]
+Usage: $0 -h
+ 
+Default options:
+  <lame_opts> = ${LAME_OPTS}
+  <lame>      = ${LAME}
+  <flac>      = ${FLAC}
+  <source>    = ${SOURCE}
+  <dest>      = ${DEST}
+  <id3_tool>  = ${ID3}
+ 
+  If you use -o, an existing mp3 file at destination dir it's overwritten
+ 
+  If you use -i, id3_tool is set to id3v2.
+  This is only necessary if your LAME version doesn't tag properly
+ 
+EOF
+ 
+    exit ${EXIT}
+}
+ 
+while getopts l:f:x:d:s:hior name; do
+ 
+    case "${name}" in
+        l)
+            LAME="${OPTARG}"
+            ;;
+        f)
+            FLAC="${OPTARG}"
+            ;;
+        x)
+            LAME_OPTS="${OPTARG}"
+            ;;
+        s)
+            SOURCE="${OPTARG}"
+            ;;
+        d)
+            DEST_ROOT="${OPTARG}"
+            ;;
+        o)
+            OVRWRT=yes
+            ;;
+        i)
+            ID3="$(which id3v2 || echo '')"
+            if [[ ! -x "$ID3" ]]; then
+                echo -e "Requested id3v2 but not found.  Only using lame.\n\n"
+            fi
+            ;;
+        h)
+            usage 0
+            ;;
+	r)
+	    DELETE_OLD=1
+	    ;;
+        ?)
+            usage 1
+            ;;
+    esac
+done
+
+
+
+ 
+if [[ ! -d "${DEST_ROOT}" ]]; then
+  mkdir -p "${DEST_ROOT}"
+  [[ "$?" != "0" ]] && exit 2
+fi
+
+bn=`basename "$SOURCE"`
+DEST_V0=$DEST_ROOT/$bn" [V0]"
+DEST_V2=$DEST_ROOT/$bn" [V2]"
+DEST_OGG=$DEST_ROOT/$bn" [OGG]"
+DEST_FLAC=$DEST_ROOT/$bn" [FLAC]"
+
+[[ ! -d "${SOURCE}" ]] && echo "\"${SOURCE}\" is not a directory" && usage 1
+ 
+old_IFS=${IFS}
+new_IFS='
+'
+IFS=$new_IFS
+
+IFS=$old_IFS
+
+if [[ -d "${DEST_V0}" ]]; then
+  rm -r "${DEST_V0}"
+fi
+if [[ -d "${DEST_V2}" ]]; then
+  rm -r "${DEST_V2}"
+fi
+if [[ -d "${DEST_FLAC}" ]]; then
+  rm -r "${DEST_FLAC}"
+fi
+if [[ -d "${DEST_OGG}" ]]; then
+  rm -r "${DEST_OGG}"
+fi
+
+echo $DEST_V0
+cp -r "$SOURCE" "$DEST_V0"
+cp -r "$SOURCE" "$DEST_V2"
+cp -r "$SOURCE" "$DEST_OGG"
+cp -r "$SOURCE" "$DEST_FLAC"
+IFS=$new_IFS
+
+
+
+files=( `find "${DEST_OGG}" \( -type f -o -type l \) -a -iname '*.flac'` )
+for N_files in ${!files[@]}
+  do
+    dst_file="${files[${N_files}]/%\.flac/.ogg}"
+    [[ -e "$dst_file" ]] && [[ -z $OVRWRT ]] && continue
+    vars=( `metaflac --no-utf8-convert --export-tags-to=- "${files[${N_files}]}"` )
+ 
+    comment_str=""
+    for N_vars in ${!vars[@]}
+      do
+	comment_str=${comment_str}'
+-c'${vars[${N_vars}]}' '
+        export "$(echo "${vars[${N_vars}]%=*}" | tr [:upper:] [:lower:])=${vars[${N_vars}]#*=}"
+    done
+
+    echo "$dst_file"
+    echo $comment_str
+    #IFS=$old_IFS
+    "${FLAC}" -dc "${files[${N_files}]}" |\
+    oggenc - -o "$dst_file" $comment_str
+    #IFS=$new_IFS
+       
+    if [[ $DELETE_OLD == 1 ]]; then rm "${files[${N_files}]}"; fi
+
+done
+
+#V0 loop
+files=( `find "${DEST_V0}" \( -type f -o -type l \) -a -iname '*.flac'` )
+for N_files in ${!files[@]}
+  do
+    dst_file="${files[${N_files}]/%\.flac/.mp3}"
+    [[ -e "$dst_file" ]] && [[ -z $OVRWRT ]] && continue
+    vars=( `metaflac --no-utf8-convert --export-tags-to=- "${files[${N_files}]}"` )
+ 
+    comment_str=""
+    for N_vars in ${!vars[@]}
+      do
+        export "$(echo "${vars[${N_vars}]%=*}" | tr [:upper:] [:lower:])=${vars[${N_vars}]#*=}"
+    done
+
+
+    echo  "${tracknumber}"
+    IFS=$old_IFS
+
+    "${FLAC}" -dc "${files[${N_files}]}" |\
+    "${LAME}" --ignore-tag-errors --add-id3v2 "${LAME_OPTS_V0}" \
+        ${artist:+--ta} "${artist}" \
+        ${tracknumber:+--tn} "${tracknumber}${tracktotal:+/}${tracktotal}" \
+        ${title:+--tt} "${title}" \
+        ${album:+--tl} "${album}" \
+        ${date:+--ty} "${date}" \
+        ${genre:+--tg} "${genre}" \
+        ${comment:+--tc} "${comment}" \
+        - "${dst_file}"
+
+    IFS=$new_IFS
+
+    if [[ $DELETE_OLD == 1 ]]; then rm "${files[${N_files}]}"; fi
+done
+
+
+files=( `find "${DEST_V2}" \( -type f -o -type l \) -a -iname '*.flac'` )
+for N_files in ${!files[@]}
+  do
+    dst_file="${files[${N_files}]/%\.flac/.mp3}"
+    [[ -e "$dst_file" ]] && [[ -z $OVRWRT ]] && continue
+    vars=( `metaflac --no-utf8-convert --export-tags-to=- "${files[${N_files}]}"` )
+ 
+    comment_str=""
+    for N_vars in ${!vars[@]}
+      do
+        export "$(echo "${vars[${N_vars}]%=*}" | tr [:upper:] [:lower:])=${vars[${N_vars}]#*=}"
+    done
+
+    IFS=$old_IFS
+
+    "${FLAC}" -dc "${files[${N_files}]}" |\
+    "${LAME}" --ignore-tag-errors --add-id3v2 "${LAME_OPTS_V2}" \
+        ${artist:+--ta} "${artist}" \
+        ${tracknumber:+--tn} "${tracknumber}${tracktotal:+/}${tracktotal}" \
+        ${title:+--tt} "${title}" \
+        ${album:+--tl} "${album}" \
+        ${date:+--ty} "${date}" \
+        ${genre:+--tg} "${genre}" \
+        ${comment:+--tc} "${comment}" \
+        - "${dst_file}"
+
+    IFS=$new_IFS
+
+    if [[ $DELETE_OLD == 1 ]]; then rm "${files[${N_files}]}"; fi
+
+done
+
+
+
+
+
+cd ${old_dir}
+IFS=${old_IFS}
+ 
+exit 0
+ 

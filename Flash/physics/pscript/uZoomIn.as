@@ -1,0 +1,1 @@
+﻿package physics.pscript{		public class uZoomIn extends UniverseScript {			override public function advance(...args):void{		thisUniverse.scaleX *= 1.05		thisUniverse.scaleY *= 1.05		if (frame > 5){scriptDone = true}	}		}	}

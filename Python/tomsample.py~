@@ -1,0 +1,12 @@
+def makePath(name):
+    ltr = name[0]
+    num = int(name[1:])
+    base_dir = '~/Programming/Python/save'
+    
+    import os
+    
+    ltr_path = ltr + '_numbers'
+    num_path = str(int(math.floor(num/50)*50))
+    path = os.path.join(base_dir,ltr_path,num_path)
+    print path
+    

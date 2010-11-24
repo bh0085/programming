@@ -1,0 +1,1 @@
+﻿package ct_code{	import flash.display.Shape	public class Smiley extends Shape {		public function Smiley() {			graphics.lineStyle(1);			graphics.lineTo(50,0);			graphics.lineTo(50,50);		}	}	}

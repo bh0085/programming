@@ -1,0 +1,40 @@
+#! /usr/bin/env python
+# 
+# Helper script to calculate a MusicBrainz DiscID and a disc submission URL.
+#
+# Usage:
+#	mb-submit-disc [device]
+#
+# $Id$
+#
+import sys
+import musicbrainz2.disc as mbdisc
+
+if len(sys.argv) == 1:
+	device = None
+elif len(sys.argv) == 2:
+	device = sys.argv[1]
+if len(sys.argv) > 2:
+	print >>sys.stderr, 'Usage: %s [device]' % sys.argv[0]
+	sys.exit(1);
+
+try:
+	# Read the disc in the given drive. If no device name is given, use
+	# the default one.
+	#
+	if device is None:
+		disc = mbdisc.readDisc()
+	else:
+		disc = mbdisc.readDisc(device)
+except mbdisc.DiscError, e:
+	print "%s: Couldn't read disc: %s" % (sys.argv[0], e)
+	print >>sys.stderr, "Is there an Audio CD in the drive?"
+	sys.exit(1)
+
+print 'MusicBrainz DiscID:', disc.id
+print
+
+print 'You can use the following URL to submit this disc to MB:'
+print ' ', mbdisc.getSubmissionUrl(disc)
+
+# EOF

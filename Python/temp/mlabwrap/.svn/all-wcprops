@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/scikits/!svn/ver/944/trunk/mlabwrap
+END
+ugly-plot.png
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/scikits/!svn/ver/61/trunk/mlabwrap/ugly-plot.png
+END
+mlabwraptester.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/scikits/!svn/ver/43/trunk/mlabwrap/mlabwraptester.py
+END
+restoreSymlinks.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/scikits/!svn/ver/42/trunk/mlabwrap/restoreSymlinks.sh
+END
+webrelease.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/scikits/!svn/ver/98/trunk/mlabwrap/webrelease.sh
+END
+design.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/scikits/!svn/ver/58/trunk/mlabwrap/design.txt
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/scikits/!svn/ver/944/trunk/mlabwrap/setup.py
+END
+surface-plot.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/scikits/!svn/ver/60/trunk/mlabwrap/surface-plot.png
+END
+timings.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/scikits/!svn/ver/49/trunk/mlabwrap/timings.txt
+END
+filerelease.sh
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/scikits/!svn/ver/59/trunk/mlabwrap/filerelease.sh
+END
+Steely.css
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/scikits/!svn/ver/59/trunk/mlabwrap/Steely.css
+END
+setup.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/scikits/!svn/ver/106/trunk/mlabwrap/setup.cfg
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/scikits/!svn/ver/27/trunk/mlabwrap/LICENSE.txt
+END
+MANIFEST
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/scikits/!svn/ver/60/trunk/mlabwrap/MANIFEST
+END
+MANIFEST.in
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/scikits/!svn/ver/79/trunk/mlabwrap/MANIFEST.in
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/scikits/!svn/ver/60/trunk/mlabwrap/README.txt
+END
+version.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/scikits/!svn/ver/80/trunk/mlabwrap/version.py
+END

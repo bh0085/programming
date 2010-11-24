@@ -1,0 +1,1 @@
+﻿package physics.misc{	public class Dipole extends Multipole{		public function Dipole(newmasses,newcharges,newcustomCharges,newxys):void{			pushPole(newmasses[0],newcharges[0],newcustomCharges[0],newxys[0])			pushPole(newmasses[1],newcharges[1],newcustomCharges[1],newxys[1])		}			}}

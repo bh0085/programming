@@ -1,0 +1,44 @@
+import os
+
+def make_eve(name, fname, eve_specs):
+    old = open(os.path.join(name,os.path.join('data',fname)))
+    lines = old.read()
+    new_fname = os.path.join(name,os.path.join('data',fname+'.auto'))
+    new = open(new_fname,'w')
+    new.write(lines)
+    close(old)
+    close(new)
+    return new_fname
+
+
+def make_env(name, fname, env_specs):
+    old = open(os.path.join(name,os.path.join('data',fname)))
+    lines = old.read()
+    new_fname = os.path.join(name,os.path.join('data',fname+'.auto'))
+    new = open(new_fname,'w')
+    new.write(lines)
+    close(old)
+    close(new)
+    return new_fname
+
+
+def make_org(name, fname, org_specs):
+    old = open(os.path.join(name,os.path.join('data',fname)))
+    lines = old.read()
+    new_fname = os.path.join(name,os.path.join('data',fname+'.auto'))
+    new = open(new_fname,'w')
+    new.write(lines)
+    close(old)
+    close(new)
+    return new_fname
+
+
+def make_ana(name, fname, ana_specs):
+    old = open(os.path.join(name,os.path.join('data',fname)))
+    lines = old.read()
+    new_fname = os.path.join(name,os.path.join('data',fname+'.auto'))
+    new = open(new_fname,'w')
+    new.write(lines)
+    close(old)
+    close(new)
+    return new_fname

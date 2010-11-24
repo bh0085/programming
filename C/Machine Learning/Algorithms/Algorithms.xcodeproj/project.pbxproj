@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61AEF93B109964760048B885 /* Kohonen1D.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEF91C1099639C0048B885 /* Kohonen1D.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEF93C109964780048B885 /* Kohonen1D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEF91D1099639C0048B885 /* Kohonen1D.cpp */; };
+		61AEF981109967E90048B885 /* Gene.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEF922109963A50048B885 /* Gene.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEF982109967EB0048B885 /* GA0.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEF924109963A50048B885 /* GA0.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEF983109967EF0048B885 /* Gene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEF923109963A50048B885 /* Gene.cpp */; };
+		61AEF984109967EF0048B885 /* GA0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEF925109963A50048B885 /* GA0.cpp */; };
+		61AEF999109968A00048B885 /* GAGD3L.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEF91F109963A50048B885 /* GAGD3L.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEF99A109968A20048B885 /* GAGD3L.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEF920109963A50048B885 /* GAGD3L.cpp */; };
+		61AEFCAE109A170F0048B885 /* ReinforcementLearnerState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC93109A16D70048B885 /* ReinforcementLearnerState.cpp */; };
+		61AEFCAF109A170F0048B885 /* ReinforcementLearnerEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC95109A16D70048B885 /* ReinforcementLearnerEnvironment.cpp */; };
+		61AEFCB0109A170F0048B885 /* ReinforcementLearnerAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC97109A16D70048B885 /* ReinforcementLearnerAction.cpp */; };
+		61AEFCB1109A170F0048B885 /* NNReinforcementLearner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC99109A16D70048B885 /* NNReinforcementLearner.cpp */; };
+		61AEFCB2109A170F0048B885 /* GridEnvironment2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC8E109A16D70048B885 /* GridEnvironment2D.cpp */; };
+		61AEFCB3109A170F0048B885 /* GridLearner2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC90109A16D70048B885 /* GridLearner2D.cpp */; };
+		61AEFCB4109A17220048B885 /* ReinforcementLearnerState.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC92109A16D70048B885 /* ReinforcementLearnerState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEFCB5109A17220048B885 /* ReinforcementLearnerEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC94109A16D70048B885 /* ReinforcementLearnerEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEFCB6109A17220048B885 /* ReinforcementLearnerAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC96109A16D70048B885 /* ReinforcementLearnerAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEFCB7109A17220048B885 /* NNReinforcementLearner.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC98109A16D70048B885 /* NNReinforcementLearner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEFCB8109A17220048B885 /* GridLearner2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC8F109A16D70048B885 /* GridLearner2D.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEFCB9109A17220048B885 /* GridEnvironment2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC91109A16D70048B885 /* GridEnvironment2D.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEFCC2109A178D0048B885 /* GridState2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFCBE109A17870048B885 /* GridState2D.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEFCC3109A17950048B885 /* GridState2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFCBF109A17870048B885 /* GridState2D.cpp */; };
+		61AEFCD2109A18C20048B885 /* SigmoidUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC70109A16D00048B885 /* SigmoidUnit.h */; };
+		61AEFCD3109A18C20048B885 /* RBFUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC72109A16D00048B885 /* RBFUnit.h */; };
+		61AEFCD4109A18C20048B885 /* ComputableUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC74109A16D00048B885 /* ComputableUnit.h */; };
+		61AEFCD5109A18C20048B885 /* LinearUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC76109A16D00048B885 /* LinearUnit.h */; };
+		61AEFCD6109A18C20048B885 /* InputUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC78109A16D00048B885 /* InputUnit.h */; };
+		61AEFCD7109A18C20048B885 /* NeuralUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC7A109A16D00048B885 /* NeuralUnit.h */; };
+		61AEFCD8109A18C20048B885 /* NeuralNet.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFC7C109A16D00048B885 /* NeuralNet.h */; };
+		61AEFCD9109A18D30048B885 /* SigmoidUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC71109A16D00048B885 /* SigmoidUnit.cpp */; };
+		61AEFCDA109A18D30048B885 /* RBFUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC73109A16D00048B885 /* RBFUnit.cpp */; };
+		61AEFCDB109A18D30048B885 /* ComputableUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC75109A16D00048B885 /* ComputableUnit.cpp */; };
+		61AEFCDC109A18D30048B885 /* LinearUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC77109A16D00048B885 /* LinearUnit.cpp */; };
+		61AEFCDD109A18D30048B885 /* InputUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC79109A16D00048B885 /* InputUnit.cpp */; };
+		61AEFCDE109A18D30048B885 /* NeuralUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC7B109A16D00048B885 /* NeuralUnit.cpp */; };
+		61AEFCDF109A18D30048B885 /* NeuralNet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFC7D109A16D00048B885 /* NeuralNet.cpp */; };
+		61F98B2710A48E3100512515 /* SIM_GA.h in Headers */ = {isa = PBXBuildFile; fileRef = 61F98B2510A48E3100512515 /* SIM_GA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61F98B2810A48E3100512515 /* SIM_GA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61F98B2610A48E3100512515 /* SIM_GA.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61AEF91C1099639C0048B885 /* Kohonen1D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kohonen1D.h; sourceTree = "<group>"; };
+		61AEF91D1099639C0048B885 /* Kohonen1D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Kohonen1D.cpp; sourceTree = "<group>"; };
+		61AEF91F109963A50048B885 /* GAGD3L.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAGD3L.h; sourceTree = "<group>"; };
+		61AEF920109963A50048B885 /* GAGD3L.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GAGD3L.cpp; sourceTree = "<group>"; };
+		61AEF922109963A50048B885 /* Gene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gene.h; sourceTree = "<group>"; };
+		61AEF923109963A50048B885 /* Gene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gene.cpp; sourceTree = "<group>"; };
+		61AEF924109963A50048B885 /* GA0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GA0.h; sourceTree = "<group>"; };
+		61AEF925109963A50048B885 /* GA0.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GA0.cpp; sourceTree = "<group>"; };
+		61AEF934109963D90048B885 /* libKohonen1D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKohonen1D.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AEF97D1099679D0048B885 /* libGenetic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGenetic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AEF9961099687C0048B885 /* libGAGD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGAGD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AEFC70109A16D00048B885 /* SigmoidUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SigmoidUnit.h; sourceTree = "<group>"; };
+		61AEFC71109A16D00048B885 /* SigmoidUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SigmoidUnit.cpp; sourceTree = "<group>"; };
+		61AEFC72109A16D00048B885 /* RBFUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBFUnit.h; sourceTree = "<group>"; };
+		61AEFC73109A16D00048B885 /* RBFUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RBFUnit.cpp; sourceTree = "<group>"; };
+		61AEFC74109A16D00048B885 /* ComputableUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputableUnit.h; sourceTree = "<group>"; };
+		61AEFC75109A16D00048B885 /* ComputableUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComputableUnit.cpp; sourceTree = "<group>"; };
+		61AEFC76109A16D00048B885 /* LinearUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearUnit.h; sourceTree = "<group>"; };
+		61AEFC77109A16D00048B885 /* LinearUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinearUnit.cpp; sourceTree = "<group>"; };
+		61AEFC78109A16D00048B885 /* InputUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputUnit.h; sourceTree = "<group>"; };
+		61AEFC79109A16D00048B885 /* InputUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputUnit.cpp; sourceTree = "<group>"; };
+		61AEFC7A109A16D00048B885 /* NeuralUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuralUnit.h; sourceTree = "<group>"; };
+		61AEFC7B109A16D00048B885 /* NeuralUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralUnit.cpp; sourceTree = "<group>"; };
+		61AEFC7C109A16D00048B885 /* NeuralNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuralNet.h; sourceTree = "<group>"; };
+		61AEFC7D109A16D00048B885 /* NeuralNet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NeuralNet.cpp; sourceTree = "<group>"; };
+		61AEFC8E109A16D70048B885 /* GridEnvironment2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GridEnvironment2D.cpp; sourceTree = "<group>"; };
+		61AEFC8F109A16D70048B885 /* GridLearner2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridLearner2D.h; sourceTree = "<group>"; };
+		61AEFC90109A16D70048B885 /* GridLearner2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GridLearner2D.cpp; sourceTree = "<group>"; };
+		61AEFC91109A16D70048B885 /* GridEnvironment2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridEnvironment2D.h; sourceTree = "<group>"; };
+		61AEFC92109A16D70048B885 /* ReinforcementLearnerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReinforcementLearnerState.h; sourceTree = "<group>"; };
+		61AEFC93109A16D70048B885 /* ReinforcementLearnerState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReinforcementLearnerState.cpp; sourceTree = "<group>"; };
+		61AEFC94109A16D70048B885 /* ReinforcementLearnerEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReinforcementLearnerEnvironment.h; sourceTree = "<group>"; };
+		61AEFC95109A16D70048B885 /* ReinforcementLearnerEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReinforcementLearnerEnvironment.cpp; sourceTree = "<group>"; };
+		61AEFC96109A16D70048B885 /* ReinforcementLearnerAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReinforcementLearnerAction.h; sourceTree = "<group>"; };
+		61AEFC97109A16D70048B885 /* ReinforcementLearnerAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReinforcementLearnerAction.cpp; sourceTree = "<group>"; };
+		61AEFC98109A16D70048B885 /* NNReinforcementLearner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNReinforcementLearner.h; sourceTree = "<group>"; };
+		61AEFC99109A16D70048B885 /* NNReinforcementLearner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NNReinforcementLearner.cpp; sourceTree = "<group>"; };
+		61AEFCAB109A16EB0048B885 /* libReinforcementLearning.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReinforcementLearning.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AEFCBE109A17870048B885 /* GridState2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridState2D.h; sourceTree = "<group>"; };
+		61AEFCBF109A17870048B885 /* GridState2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GridState2D.cpp; sourceTree = "<group>"; };
+		61AEFCCE109A188D0048B885 /* libNeuralNetwork1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNeuralNetwork1.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F98B2510A48E3100512515 /* SIM_GA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIM_GA.h; sourceTree = "<group>"; };
+		61F98B2610A48E3100512515 /* SIM_GA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SIM_GA.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61AEF932109963D90048B885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEF97B1099679D0048B885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEF9941099687C0048B885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEFCA9109A16EB0048B885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEFCCC109A188D0048B885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61AEF910109963720048B885 = {
+			isa = PBXGroup;
+			children = (
+				61AEFCE0109A18E00048B885 /* Source */,
+				61AEF92C109963B70048B885 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61AEF91B1099639C0048B885 /* Kohonen */ = {
+			isa = PBXGroup;
+			children = (
+				61AEF91C1099639C0048B885 /* Kohonen1D.h */,
+				61AEF91D1099639C0048B885 /* Kohonen1D.cpp */,
+			);
+			name = Kohonen;
+			sourceTree = "<group>";
+		};
+		61AEF91E109963A50048B885 /* GAGD */ = {
+			isa = PBXGroup;
+			children = (
+				61AEF91F109963A50048B885 /* GAGD3L.h */,
+				61AEF920109963A50048B885 /* GAGD3L.cpp */,
+			);
+			name = GAGD;
+			sourceTree = "<group>";
+		};
+		61AEF921109963A50048B885 /* Genetic */ = {
+			isa = PBXGroup;
+			children = (
+				61F98B2510A48E3100512515 /* SIM_GA.h */,
+				61F98B2610A48E3100512515 /* SIM_GA.cpp */,
+				61AEF922109963A50048B885 /* Gene.h */,
+				61AEF923109963A50048B885 /* Gene.cpp */,
+				61AEF924109963A50048B885 /* GA0.h */,
+				61AEF925109963A50048B885 /* GA0.cpp */,
+			);
+			name = Genetic;
+			sourceTree = "<group>";
+		};
+		61AEF92C109963B70048B885 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61AEF934109963D90048B885 /* libKohonen1D.a */,
+				61AEF97D1099679D0048B885 /* libGenetic.a */,
+				61AEF9961099687C0048B885 /* libGAGD.a */,
+				61AEFCAB109A16EB0048B885 /* libReinforcementLearning.a */,
+				61AEFCCE109A188D0048B885 /* libNeuralNetwork1.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61AEFC6F109A16D00048B885 /* Neural Network 1 */ = {
+			isa = PBXGroup;
+			children = (
+				61AEFC70109A16D00048B885 /* SigmoidUnit.h */,
+				61AEFC71109A16D00048B885 /* SigmoidUnit.cpp */,
+				61AEFC72109A16D00048B885 /* RBFUnit.h */,
+				61AEFC73109A16D00048B885 /* RBFUnit.cpp */,
+				61AEFC74109A16D00048B885 /* ComputableUnit.h */,
+				61AEFC75109A16D00048B885 /* ComputableUnit.cpp */,
+				61AEFC76109A16D00048B885 /* LinearUnit.h */,
+				61AEFC77109A16D00048B885 /* LinearUnit.cpp */,
+				61AEFC78109A16D00048B885 /* InputUnit.h */,
+				61AEFC79109A16D00048B885 /* InputUnit.cpp */,
+				61AEFC7A109A16D00048B885 /* NeuralUnit.h */,
+				61AEFC7B109A16D00048B885 /* NeuralUnit.cpp */,
+				61AEFC7C109A16D00048B885 /* NeuralNet.h */,
+				61AEFC7D109A16D00048B885 /* NeuralNet.cpp */,
+			);
+			name = "Neural Network 1";
+			sourceTree = "<group>";
+		};
+		61AEFC8C109A16D70048B885 /* Reinforcement Learning */ = {
+			isa = PBXGroup;
+			children = (
+				61AEFC92109A16D70048B885 /* ReinforcementLearnerState.h */,
+				61AEFC93109A16D70048B885 /* ReinforcementLearnerState.cpp */,
+				61AEFC94109A16D70048B885 /* ReinforcementLearnerEnvironment.h */,
+				61AEFC95109A16D70048B885 /* ReinforcementLearnerEnvironment.cpp */,
+				61AEFC96109A16D70048B885 /* ReinforcementLearnerAction.h */,
+				61AEFC97109A16D70048B885 /* ReinforcementLearnerAction.cpp */,
+				61AEFC98109A16D70048B885 /* NNReinforcementLearner.h */,
+				61AEFC99109A16D70048B885 /* NNReinforcementLearner.cpp */,
+				61AEFC8D109A16D70048B885 /* 2DGrid */,
+			);
+			name = "Reinforcement Learning";
+			sourceTree = "<group>";
+		};
+		61AEFC8D109A16D70048B885 /* 2DGrid */ = {
+			isa = PBXGroup;
+			children = (
+				61AEFCBE109A17870048B885 /* GridState2D.h */,
+				61AEFCBF109A17870048B885 /* GridState2D.cpp */,
+				61AEFC8E109A16D70048B885 /* GridEnvironment2D.cpp */,
+				61AEFC8F109A16D70048B885 /* GridLearner2D.h */,
+				61AEFC90109A16D70048B885 /* GridLearner2D.cpp */,
+				61AEFC91109A16D70048B885 /* GridEnvironment2D.h */,
+			);
+			name = 2DGrid;
+			sourceTree = "<group>";
+		};
+		61AEFCE0109A18E00048B885 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				61AEFC8C109A16D70048B885 /* Reinforcement Learning */,
+				61AEFC6F109A16D00048B885 /* Neural Network 1 */,
+				61AEF921109963A50048B885 /* Genetic */,
+				61AEF91E109963A50048B885 /* GAGD */,
+				61AEF91B1099639C0048B885 /* Kohonen */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		61AEF930109963D90048B885 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEF93B109964760048B885 /* Kohonen1D.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEF9791099679D0048B885 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEF982109967EB0048B885 /* GA0.h in Headers */,
+				61AEF981109967E90048B885 /* Gene.h in Headers */,
+				61F98B2710A48E3100512515 /* SIM_GA.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEF9921099687C0048B885 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEF999109968A00048B885 /* GAGD3L.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEFCA7109A16EB0048B885 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEFCC2109A178D0048B885 /* GridState2D.h in Headers */,
+				61AEFCB4109A17220048B885 /* ReinforcementLearnerState.h in Headers */,
+				61AEFCB5109A17220048B885 /* ReinforcementLearnerEnvironment.h in Headers */,
+				61AEFCB6109A17220048B885 /* ReinforcementLearnerAction.h in Headers */,
+				61AEFCB7109A17220048B885 /* NNReinforcementLearner.h in Headers */,
+				61AEFCB8109A17220048B885 /* GridLearner2D.h in Headers */,
+				61AEFCB9109A17220048B885 /* GridEnvironment2D.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEFCCA109A188D0048B885 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEFCD2109A18C20048B885 /* SigmoidUnit.h in Headers */,
+				61AEFCD3109A18C20048B885 /* RBFUnit.h in Headers */,
+				61AEFCD4109A18C20048B885 /* ComputableUnit.h in Headers */,
+				61AEFCD5109A18C20048B885 /* LinearUnit.h in Headers */,
+				61AEFCD6109A18C20048B885 /* InputUnit.h in Headers */,
+				61AEFCD7109A18C20048B885 /* NeuralUnit.h in Headers */,
+				61AEFCD8109A18C20048B885 /* NeuralNet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		61AEF933109963D90048B885 /* Kohonen1D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AEF939109963F90048B885 /* Build configuration list for PBXNativeTarget "Kohonen1D" */;
+			buildPhases = (
+				61AEF930109963D90048B885 /* Headers */,
+				61AEF931109963D90048B885 /* Sources */,
+				61AEF932109963D90048B885 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kohonen1D;
+			productName = AlgKohonen1D;
+			productReference = 61AEF934109963D90048B885 /* libKohonen1D.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		61AEF97C1099679D0048B885 /* Genetic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AEF980109967BB0048B885 /* Build configuration list for PBXNativeTarget "Genetic" */;
+			buildPhases = (
+				61AEF9791099679D0048B885 /* Headers */,
+				61AEF97A1099679D0048B885 /* Sources */,
+				61AEF97B1099679D0048B885 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Genetic;
+			productName = Genetic;
+			productReference = 61AEF97D1099679D0048B885 /* libGenetic.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		61AEF9951099687C0048B885 /* GAGD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AEF99F109968A90048B885 /* Build configuration list for PBXNativeTarget "GAGD" */;
+			buildPhases = (
+				61AEF9921099687C0048B885 /* Headers */,
+				61AEF9931099687C0048B885 /* Sources */,
+				61AEF9941099687C0048B885 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GAGD;
+			productName = GAGD;
+			productReference = 61AEF9961099687C0048B885 /* libGAGD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		61AEFCAA109A16EB0048B885 /* ReinforcementLearning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AEFCBD109A175E0048B885 /* Build configuration list for PBXNativeTarget "ReinforcementLearning" */;
+			buildPhases = (
+				61AEFCA7109A16EB0048B885 /* Headers */,
+				61AEFCA8109A16EB0048B885 /* Sources */,
+				61AEFCA9109A16EB0048B885 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReinforcementLearning;
+			productName = ReinforcementLearning;
+			productReference = 61AEFCAB109A16EB0048B885 /* libReinforcementLearning.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		61AEFCCD109A188D0048B885 /* NeuralNetwork1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AEFCE1109A18E00048B885 /* Build configuration list for PBXNativeTarget "NeuralNetwork1" */;
+			buildPhases = (
+				61AEFCCA109A188D0048B885 /* Headers */,
+				61AEFCCB109A188D0048B885 /* Sources */,
+				61AEFCCC109A188D0048B885 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeuralNetwork1;
+			productName = NeuralNetwork1;
+			productReference = 61AEFCCE109A188D0048B885 /* libNeuralNetwork1.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61AEF912109963720048B885 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 61AEF915109963720048B885 /* Build configuration list for PBXProject "Algorithms" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = 61AEF910109963720048B885;
+			productRefGroup = 61AEF92C109963B70048B885 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61AEF933109963D90048B885 /* Kohonen1D */,
+				61AEF97C1099679D0048B885 /* Genetic */,
+				61AEF9951099687C0048B885 /* GAGD */,
+				61AEFCAA109A16EB0048B885 /* ReinforcementLearning */,
+				61AEFCCD109A188D0048B885 /* NeuralNetwork1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61AEF931109963D90048B885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEF93C109964780048B885 /* Kohonen1D.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEF97A1099679D0048B885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEF983109967EF0048B885 /* Gene.cpp in Sources */,
+				61AEF984109967EF0048B885 /* GA0.cpp in Sources */,
+				61F98B2810A48E3100512515 /* SIM_GA.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEF9931099687C0048B885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEF99A109968A20048B885 /* GAGD3L.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEFCA8109A16EB0048B885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEFCC3109A17950048B885 /* GridState2D.cpp in Sources */,
+				61AEFCAE109A170F0048B885 /* ReinforcementLearnerState.cpp in Sources */,
+				61AEFCAF109A170F0048B885 /* ReinforcementLearnerEnvironment.cpp in Sources */,
+				61AEFCB0109A170F0048B885 /* ReinforcementLearnerAction.cpp in Sources */,
+				61AEFCB1109A170F0048B885 /* NNReinforcementLearner.cpp in Sources */,
+				61AEFCB2109A170F0048B885 /* GridEnvironment2D.cpp in Sources */,
+				61AEFCB3109A170F0048B885 /* GridLearner2D.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AEFCCB109A188D0048B885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEFCD9109A18D30048B885 /* SigmoidUnit.cpp in Sources */,
+				61AEFCDA109A18D30048B885 /* RBFUnit.cpp in Sources */,
+				61AEFCDB109A18D30048B885 /* ComputableUnit.cpp in Sources */,
+				61AEFCDC109A18D30048B885 /* LinearUnit.cpp in Sources */,
+				61AEFCDD109A18D30048B885 /* InputUnit.cpp in Sources */,
+				61AEFCDE109A18D30048B885 /* NeuralUnit.cpp in Sources */,
+				61AEFCDF109A18D30048B885 /* NeuralNet.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		61AEF913109963720048B885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = "$(gcc-include)";
+			};
+			name = Debug;
+		};
+		61AEF914109963720048B885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "$(build-dir)";
+				HEADER_SEARCH_PATHS = (
+					"$(gcc-include)",
+					"$(opt-include)",
+				);
+				INSTALL_PATH = /gcclib/Algorithms;
+				PRIVATE_HEADERS_FOLDER_PATH = /gccinclude/Algorithms;
+				PUBLIC_HEADERS_FOLDER_PATH = /gccinclude/Algorithms;
+			};
+			name = Release;
+		};
+		61AEF935109963D90048B885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../gcclib\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = AlgKohonen1D;
+			};
+			name = Debug;
+		};
+		61AEF936109963D90048B885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "$(build-dir)";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = "$(gcc-include)";
+				INSTALL_PATH = /gcclib/Algorithms;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../gcclib\"";
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = /gccinclude/Algorithms;
+				PRODUCT_NAME = Kohonen1D;
+				PUBLIC_HEADERS_FOLDER_PATH = /gccinclude/Algorithms;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		61AEF97E1099679D0048B885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					/opt/local/lib,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../gcclib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../C/MyMath/build/Release\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = Genetic;
+			};
+			name = Debug;
+		};
+		61AEF97F1099679D0048B885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /gcclib/Algorithms;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					/opt/local/lib,
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../gcclib\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../../C/MyMath/build/Release\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = Genetic;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		61AEF9971099687D0048B885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../gcclib\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = GAGD;
+			};
+			name = Debug;
+		};
+		61AEF9981099687D0048B885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /gcclib/Algorithms;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../gcclib\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = GAGD;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		61AEFCAC109A16EC0048B885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = ReinforcementLearning;
+			};
+			name = Debug;
+		};
+		61AEFCAD109A16EC0048B885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /gcclib/;
+				PREBINDING = NO;
+				PRODUCT_NAME = ReinforcementLearning;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		61AEFCCF109A188E0048B885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = NeuralNetwork1;
+			};
+			name = Debug;
+		};
+		61AEFCD0109A188E0048B885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /gcclib/;
+				PREBINDING = NO;
+				PRODUCT_NAME = NeuralNetwork1;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61AEF915109963720048B885 /* Build configuration list for PBXProject "Algorithms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AEF913109963720048B885 /* Debug */,
+				61AEF914109963720048B885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AEF939109963F90048B885 /* Build configuration list for PBXNativeTarget "Kohonen1D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AEF935109963D90048B885 /* Debug */,
+				61AEF936109963D90048B885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AEF980109967BB0048B885 /* Build configuration list for PBXNativeTarget "Genetic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AEF97E1099679D0048B885 /* Debug */,
+				61AEF97F1099679D0048B885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AEF99F109968A90048B885 /* Build configuration list for PBXNativeTarget "GAGD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AEF9971099687D0048B885 /* Debug */,
+				61AEF9981099687D0048B885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AEFCBD109A175E0048B885 /* Build configuration list for PBXNativeTarget "ReinforcementLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AEFCAC109A16EC0048B885 /* Debug */,
+				61AEFCAD109A16EC0048B885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AEFCE1109A18E00048B885 /* Build configuration list for PBXNativeTarget "NeuralNetwork1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AEFCCF109A188E0048B885 /* Debug */,
+				61AEFCD0109A188E0048B885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61AEF912109963720048B885 /* Project object */;
+}

@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		616918581099503D00D450BB /* GLIDL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6169180210994C3B00D450BB /* GLIDL.m */; };
+		616918591099504000D450BB /* GLIDL.h in Headers */ = {isa = PBXBuildFile; fileRef = 6169180110994C3B00D450BB /* GLIDL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6169185A1099504E00D450BB /* GLIOldCommands.h in Headers */ = {isa = PBXBuildFile; fileRef = 6169179F1099478000D450BB /* GLIOldCommands.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6169185B1099504E00D450BB /* FreetypeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 616917A11099478000D450BB /* FreetypeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6169185C1099504E00D450BB /* GLFT.h in Headers */ = {isa = PBXBuildFile; fileRef = 616917A31099478000D450BB /* GLFT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6169185D1099504E00D450BB /* GLIWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 616917A61099478000D450BB /* GLIWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6169185E1099504E00D450BB /* GLIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 616917A71099478000D450BB /* GLIView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6169185F1099504E00D450BB /* GLIController.h in Headers */ = {isa = PBXBuildFile; fileRef = 616917A91099478000D450BB /* GLIController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		616918601099504E00D450BB /* GLIRunApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 616917AC1099478100D450BB /* GLIRunApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		616918611099505B00D450BB /* GLIOldCommands.m in Sources */ = {isa = PBXBuildFile; fileRef = 616917A01099478000D450BB /* GLIOldCommands.m */; };
+		616918621099505B00D450BB /* FreetypeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 616917A21099478000D450BB /* FreetypeManager.cpp */; };
+		616918631099505B00D450BB /* GLFT.m in Sources */ = {isa = PBXBuildFile; fileRef = 616917A41099478000D450BB /* GLFT.m */; };
+		616918641099505B00D450BB /* GLIWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 616917A51099478000D450BB /* GLIWindow.m */; };
+		616918651099505B00D450BB /* GLIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 616917A81099478000D450BB /* GLIView.m */; };
+		616918661099505B00D450BB /* GLIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616917AA1099478000D450BB /* GLIController.m */; };
+		616918671099505B00D450BB /* GLIRunApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 616917AB1099478000D450BB /* GLIRunApp.m */; };
+		61AEF88C10995C010048B885 /* GLISimController.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEF88A10995C010048B885 /* GLISimController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEF88D10995C010048B885 /* GLISimController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AEF88B10995C010048B885 /* GLISimController.m */; };
+		61AEF89410995CFF0048B885 /* GLISim.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEF89210995CFF0048B885 /* GLISim.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AEF89510995CFF0048B885 /* GLISim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEF89310995CFF0048B885 /* GLISim.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* MyCocoaGL_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCocoaGL_Prefix.pch; sourceTree = "<group>"; };
+		6169179F1099478000D450BB /* GLIOldCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLIOldCommands.h; sourceTree = "<group>"; };
+		616917A01099478000D450BB /* GLIOldCommands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLIOldCommands.m; sourceTree = "<group>"; };
+		616917A11099478000D450BB /* FreetypeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreetypeManager.h; sourceTree = "<group>"; };
+		616917A21099478000D450BB /* FreetypeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FreetypeManager.cpp; sourceTree = "<group>"; };
+		616917A31099478000D450BB /* GLFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFT.h; sourceTree = "<group>"; };
+		616917A41099478000D450BB /* GLFT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLFT.m; sourceTree = "<group>"; };
+		616917A51099478000D450BB /* GLIWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLIWindow.m; sourceTree = "<group>"; };
+		616917A61099478000D450BB /* GLIWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLIWindow.h; sourceTree = "<group>"; };
+		616917A71099478000D450BB /* GLIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLIView.h; sourceTree = "<group>"; };
+		616917A81099478000D450BB /* GLIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLIView.m; sourceTree = "<group>"; };
+		616917A91099478000D450BB /* GLIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLIController.h; sourceTree = "<group>"; };
+		616917AA1099478000D450BB /* GLIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLIController.m; sourceTree = "<group>"; };
+		616917AB1099478000D450BB /* GLIRunApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLIRunApp.m; sourceTree = "<group>"; };
+		616917AC1099478100D450BB /* GLIRunApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLIRunApp.h; sourceTree = "<group>"; };
+		616917B71099479B00D450BB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		616917D5109948D600D450BB /* libfreetype.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfreetype.6.dylib; path = /opt/local/lib/libfreetype.6.dylib; sourceTree = "<absolute>"; };
+		616917E51099497C00D450BB /* libMyMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMyMath.a; path = ../../gcclib/libMyMath.a; sourceTree = SOURCE_ROOT; };
+		6169180110994C3B00D450BB /* GLIDL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLIDL.h; sourceTree = "<group>"; };
+		6169180210994C3B00D450BB /* GLIDL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLIDL.m; sourceTree = "<group>"; };
+		6169184210994D9800D450BB /* libMyCocoaGL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyCocoaGL.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AEF88A10995C010048B885 /* GLISimController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLISimController.h; sourceTree = "<group>"; };
+		61AEF88B10995C010048B885 /* GLISimController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLISimController.m; sourceTree = "<group>"; };
+		61AEF89210995CFF0048B885 /* GLISim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLISim.h; sourceTree = "<group>"; };
+		61AEF89310995CFF0048B885 /* GLISim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLISim.cpp; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6169184010994D9800D450BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6169184210994D9800D450BB /* libMyCocoaGL.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* MyCocoaGL */ = {
+			isa = PBXGroup;
+			children = (
+				616917B71099479B00D450BB /* OpenGL.framework */,
+				616917E51099497C00D450BB /* libMyMath.a */,
+				616917D5109948D600D450BB /* libfreetype.6.dylib */,
+				6169180010994C3B00D450BB /* GLIDL */,
+				6169179E1099478000D450BB /* GLIClasses */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = MyCocoaGL;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MyCocoaGL_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6169179E1099478000D450BB /* GLIClasses */ = {
+			isa = PBXGroup;
+			children = (
+				6169179F1099478000D450BB /* GLIOldCommands.h */,
+				616917A01099478000D450BB /* GLIOldCommands.m */,
+				616917A11099478000D450BB /* FreetypeManager.h */,
+				616917A21099478000D450BB /* FreetypeManager.cpp */,
+				616917A31099478000D450BB /* GLFT.h */,
+				616917A41099478000D450BB /* GLFT.m */,
+				616917A51099478000D450BB /* GLIWindow.m */,
+				616917A61099478000D450BB /* GLIWindow.h */,
+				616917A71099478000D450BB /* GLIView.h */,
+				616917A81099478000D450BB /* GLIView.m */,
+				616917A91099478000D450BB /* GLIController.h */,
+				616917AA1099478000D450BB /* GLIController.m */,
+				61AEF88A10995C010048B885 /* GLISimController.h */,
+				61AEF88B10995C010048B885 /* GLISimController.m */,
+				61AEF89210995CFF0048B885 /* GLISim.h */,
+				61AEF89310995CFF0048B885 /* GLISim.cpp */,
+				616917AB1099478000D450BB /* GLIRunApp.m */,
+				616917AC1099478100D450BB /* GLIRunApp.h */,
+			);
+			name = GLIClasses;
+			sourceTree = "<group>";
+		};
+		6169180010994C3B00D450BB /* GLIDL */ = {
+			isa = PBXGroup;
+			children = (
+				6169180110994C3B00D450BB /* GLIDL.h */,
+				6169180210994C3B00D450BB /* GLIDL.m */,
+			);
+			name = GLIDL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6169183E10994D9800D450BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6169185A1099504E00D450BB /* GLIOldCommands.h in Headers */,
+				6169185B1099504E00D450BB /* FreetypeManager.h in Headers */,
+				6169185C1099504E00D450BB /* GLFT.h in Headers */,
+				6169185D1099504E00D450BB /* GLIWindow.h in Headers */,
+				6169185E1099504E00D450BB /* GLIView.h in Headers */,
+				6169185F1099504E00D450BB /* GLIController.h in Headers */,
+				616918601099504E00D450BB /* GLIRunApp.h in Headers */,
+				616918591099504000D450BB /* GLIDL.h in Headers */,
+				61AEF88C10995C010048B885 /* GLISimController.h in Headers */,
+				61AEF89410995CFF0048B885 /* GLISim.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6169184110994D9800D450BB /* MyCocoaGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6169185110994DD000D450BB /* Build configuration list for PBXNativeTarget "MyCocoaGL" */;
+			buildPhases = (
+				6169183E10994D9800D450BB /* Headers */,
+				6169183F10994D9800D450BB /* Sources */,
+				6169184010994D9800D450BB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCocoaGL;
+			productName = MyCocoaGL;
+			productReference = 6169184210994D9800D450BB /* libMyCocoaGL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MyCocoaGL" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* MyCocoaGL */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6169184110994D9800D450BB /* MyCocoaGL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6169183F10994D9800D450BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616918611099505B00D450BB /* GLIOldCommands.m in Sources */,
+				616918621099505B00D450BB /* FreetypeManager.cpp in Sources */,
+				616918631099505B00D450BB /* GLFT.m in Sources */,
+				616918641099505B00D450BB /* GLIWindow.m in Sources */,
+				616918651099505B00D450BB /* GLIView.m in Sources */,
+				616918661099505B00D450BB /* GLIController.m in Sources */,
+				616918671099505B00D450BB /* GLIRunApp.m in Sources */,
+				616918581099503D00D450BB /* GLIDL.m in Sources */,
+				61AEF88D10995C010048B885 /* GLISimController.m in Sources */,
+				61AEF89510995CFF0048B885 /* GLISim.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6169184310994D9900D450BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = MyCocoaGL;
+			};
+			name = Debug;
+		};
+		6169184410994D9900D450BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /Users/bh0085/Programming/;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					"$(gcc-include)",
+					"$(opt-include)",
+					"$(opt-include)/freetype2",
+				);
+				INSTALL_PATH = /gcclib/;
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = /gccinclude/;
+				PRODUCT_NAME = MyCocoaGL;
+				PUBLIC_HEADERS_FOLDER_PATH = /gccinclude/;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(gcc-include)",
+					"$(opt-include)",
+					"$(opt-include)/freetype2",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEPLOYMENT_LOCATION = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(opt-include)/freetype2";
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6169185110994DD000D450BB /* Build configuration list for PBXNativeTarget "MyCocoaGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6169184310994D9900D450BB /* Debug */,
+				6169184410994D9900D450BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MyCocoaGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

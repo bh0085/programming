@@ -1,0 +1,59 @@
+Version 1.1 (9 Dec 2007)
+- Lost localization due to changing maintainer and lack of knowledge.  Will try and update them
+    soon.
+- Switched to streamripper 1.62.3
+- Add support for Ogg/Vorbis
+- Switched to XCode 3.0
+- Removed code to parse .pls files since streamripperlib does this better.
+- Removed the dependency on curl
+- Compiled for Leopard now.
+
+Version 1.0.4 (5 Mar 2003)
+- Added German localisation and Italian localisation
+- Fixed proxy problem - now uses sysconfigframework http web proxy - can still override
+  by "ignoring" the system web proxy, and entering your own custom proxy
+- AppleScript 'osascript' task replaced with call to NSAppleScript
+- New executable, curl7103 (curl 7.10.3) bundled - don't use Apple's old version 7.7.2
+- Fixed problems resolving some station URLs - now works with CelticMelt!
+- Finder's requestor has now helped to fix the Alias directory problem.
+
+Version 1.0.3 (4 Nov 2002)
+- Tuner Menu - Import Shoutcast radio stations (by genre) from the web via a Perl script in Resources
+- Wide characters such as umlaut, "Ÿ" or "š" are stripped from the filename.
+  - Patched sripper_1x/lib/util.c - may not be rolled into StreamRipper CVS yet)
+- Parsing for ID3 tags now handles radio station "Axioms" which uses "_" in title tracks
+  - Patched sripper_1x/lib/ripstream.c - may not be rolled into StreamRipper CVS yet)
+- Modified URL drag'n'drop behaviour - stores .pls and resolves IP address at time of recording
+- When recording, duplicate track names will not be displayed
+- Song length and size of download is displayed for each song
+- Column sizes saved between sessions (thanks to Jacek Stanislawski)
+
+Version 1.0.2 (21 Oct 2002)
+- Window resizing (thanks to Jacek Stanislawski for modified .nib file)
+- Compilation: Compilation docs and fixed the project builder settings
+- Better parsing of iTunes URLs.  Use Curl instead of AppKit fn [NSString stringFromURL:] which doesn't follow HTTP 302 redirect
+- Fixed option: write over complete tracks
+- Fixed option: add sequence number to tracks
+- Added GPL menu item
+
+Version 1.0.1 (5 Sept 2002)
+- Drag'n'drop from iTunes (tested with iTunes 3.0 on OSX 10.1.5) of single radio stations
+- Drag'n'drop of a .pls file from Finder
+- Japanese localisation (thanks to Tsuyoshi Nakamula)
+- Tooltips
+- Animation on progress bar would sometimes not clear properly - fixed
+- Quitting the application from the menu would not ask you to confirm first
+- Gui change: sheets used instead of panels
+- UserAgent string modified
+
+Version 1.0 (16 July 2002)
+- Changed GUI to be more like RadioFree and use an OutlineView (suggestion: VersionTracker people)
+- Using some nice GPL icons for the interface
+- Old radio stream data is imported into new outline view data (Node) structure
+- Proxy option (Dan Percival suggested this)
+- Tidied up prefs code, old way was lame
+- URL drag and drop (e.g. a URL pointing to .pls, to be processed).
+- Makefiles: added libtool command to target 'all'
+- Uses latest code from StreamRipper 1_x ... uses libmad... no longer using mpglib
+
+Version: 1.0 beta (21 May 2002)

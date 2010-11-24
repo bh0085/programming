@@ -1,0 +1,2 @@
+temp=`find /Users/bh0085/Programming/IDL -type d -maxdepth 1`
+echo $temp|sed 's/\ /:/' 

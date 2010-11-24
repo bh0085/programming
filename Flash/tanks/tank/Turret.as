@@ -1,0 +1,1 @@
+﻿package tanks.tank{		import flash.display.MovieClip				public class Turret extends MovieClip{		public function Turret(){		}				public function turretUp(){rotation += 5}		public function turretDown(){rotation -= 5}	}	}

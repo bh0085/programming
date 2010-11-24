@@ -1,0 +1,1 @@
+﻿package physics{	import flash.display.Sprite	import physics.objects.UniformDensityObject		public class PhysWall extends UniformDensityObject {				public var thisUniverseWallsIndex:Number			public function PhysWall() {			isDraggable = false		}	}}

@@ -1,0 +1,1 @@
+﻿package code{	import flash.display.MovieClip;	import flash.events.Event;	import flash.events.MouseEvent;			public class ball_abstract extends MovieClip{			public var thisx:Number			public var thisy:Number			public function ball_abstract(ball:MovieClip){				thisx = ball.x				thisy = ball.y				trace(String(thisx))		}			}}

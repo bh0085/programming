@@ -1,0 +1,32 @@
+libdiscid ChangeLog:
+--------------------
+
+libdiscid-0.2.2:
+
+  - Set libtool version number to 2:1:2 because it is backwards compatible
+    with versions 0.1.x. Thanks to Luks for spotting this.
+
+
+libdiscid-0.2.1:
+
+  - Added code for automatic CD drive detection on darwin (Rob).
+
+
+libdiscid-0.2.0:
+
+  - Use accurate TOC reading method for multi-session CDs on
+    Windows NT/2000/XP (Lukas).
+  - Replace custom MSVC makefile with CMake build system (Lukas).
+  - Added support for FreeBSD (Patrick Hurrelmann).
+  - Addded the discid_get_webservice_url() function (Rob).
+   
+
+libdiscid-0.1.1:
+
+  - Use generic 'cdaudio' device name on windows (Lukas).
+   
+
+libdiscid-0.1.0:
+
+  - Initial public release.
+

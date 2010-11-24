@@ -1,0 +1,1 @@
+﻿package tanks.explosions{	import tanks.scripts.StickyExplosionScript	public class StickyExplosion extends Explosion{		override public function createScript():void{			thisScript = new StickyExplosionScript()			thisScript.setExplosion(this)		}	}}				

@@ -1,0 +1,1 @@
+﻿package tanks.tank.tankscripts {		import tanks.tank.Tank		public class tForward extends TankScript{		override public function advance(...args):void{			thisTank.thrustForward(.5)			if (frame  > 5) {scriptDone = true}		}	}}

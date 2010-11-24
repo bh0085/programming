@@ -1,0 +1,1 @@
+﻿package physics.objects{		public class detach extends ObjectScript(){						}	}

@@ -1,0 +1,1 @@
+﻿package paths{		public class BigNode{		public var firstNode:Node		public var includesFirst = false		public var lastNode:Node		public function BigNode(f:Node,l:Node):void{			firstNode = f			lastNode = l		}	}	}

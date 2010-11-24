@@ -1,0 +1,1 @@
+﻿package mymath{	import flash.display.MovieClip	public class MathTest extends MovieClip{				public function MathTest(){			trace("hello?")			trace("yo")			//var ma:MathArray = new MathArray(1,2 ,3)			var ihb:inherB = new inherB(1)		}	}}

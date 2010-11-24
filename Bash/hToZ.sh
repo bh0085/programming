@@ -1,0 +1,2 @@
+echo "arg1:" $1 $#
+echo $1 | sed "s/[hs]/z/g" > /Users/bh0085/Programming/Bash/hToZOut

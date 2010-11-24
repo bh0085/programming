@@ -1,0 +1,1 @@
+﻿package physics.pscript{		public class uZoomOut extends UniverseScript {			override public function advance(...args):void{		thisUniverse.scaleX *= .95		thisUniverse.scaleY *= .95		if (frame > 5){scriptDone = true}	}		}	}

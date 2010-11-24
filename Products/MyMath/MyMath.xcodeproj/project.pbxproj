@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		611FA3FB10724EDC00C914C6 /* MySparse.h in Headers */ = {isa = PBXBuildFile; fileRef = 611FA3F910724EDC00C914C6 /* MySparse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		611FA3FC10724EDC00C914C6 /* MySparse.c in Sources */ = {isa = PBXBuildFile; fileRef = 611FA3FA10724EDC00C914C6 /* MySparse.c */; };
+		611FA40B10724F2500C914C6 /* MyKNN.h in Headers */ = {isa = PBXBuildFile; fileRef = 611FA40710724F2500C914C6 /* MyKNN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		611FA40C10724F2500C914C6 /* MyKNN.c in Sources */ = {isa = PBXBuildFile; fileRef = 611FA40810724F2500C914C6 /* MyKNN.c */; };
+		611FA4BF1072740B00C914C6 /* MySDE.h in Headers */ = {isa = PBXBuildFile; fileRef = 611FA4BD1072740B00C914C6 /* MySDE.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		611FA4C01072740B00C914C6 /* MySDE.c in Sources */ = {isa = PBXBuildFile; fileRef = 611FA4BE1072740B00C914C6 /* MySDE.c */; };
+		61AA572A106BCEF200312EF1 /* MyCIDL.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AA5726106BCEF200312EF1 /* MyCIDL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AA572B106BCEF200312EF1 /* MyCIDL.c in Sources */ = {isa = PBXBuildFile; fileRef = 61AA5727106BCEF200312EF1 /* MyCIDL.c */; };
+		61AA572C106BCEF200312EF1 /* MyMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AA5728106BCEF200312EF1 /* MyMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AA572D106BCEF200312EF1 /* MyMath.c in Sources */ = {isa = PBXBuildFile; fileRef = 61AA5729106BCEF200312EF1 /* MyMath.c */; };
+		61AEFA36109A00940048B885 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFA2C109A00760048B885 /* main.cpp */; };
+		61AEFA72109A04610048B885 /* libMyMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC046055464E500DB518D /* libMyMath.a */; };
+		61AEFA80109A05D70048B885 /* BitArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61AEFA7E109A05D70048B885 /* BitArray.cpp */; };
+		61AEFA81109A05D70048B885 /* BitArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AEFA7F109A05D70048B885 /* BitArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		611FA3F910724EDC00C914C6 /* MySparse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySparse.h; sourceTree = "<group>"; };
+		611FA3FA10724EDC00C914C6 /* MySparse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MySparse.c; sourceTree = "<group>"; };
+		611FA40710724F2500C914C6 /* MyKNN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyKNN.h; sourceTree = "<group>"; };
+		611FA40810724F2500C914C6 /* MyKNN.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MyKNN.c; sourceTree = "<group>"; };
+		611FA4BD1072740B00C914C6 /* MySDE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySDE.h; sourceTree = "<group>"; };
+		611FA4BE1072740B00C914C6 /* MySDE.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MySDE.c; sourceTree = "<group>"; };
+		61AA5726106BCEF200312EF1 /* MyCIDL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCIDL.h; sourceTree = "<group>"; };
+		61AA5727106BCEF200312EF1 /* MyCIDL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MyCIDL.c; sourceTree = "<group>"; };
+		61AA5728106BCEF200312EF1 /* MyMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMath.h; sourceTree = "<group>"; };
+		61AA5729106BCEF200312EF1 /* MyMath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MyMath.c; sourceTree = "<group>"; };
+		61AEFA2C109A00760048B885 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		61AEFA31109A008A0048B885 /* MyMathTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyMathTester; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AEFA7E109A05D70048B885 /* BitArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitArray.cpp; sourceTree = "<group>"; };
+		61AEFA7F109A05D70048B885 /* BitArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitArray.h; sourceTree = "<group>"; };
+		D2AAC046055464E500DB518D /* libMyMath.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyMath.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61AEFA2F109A008A0048B885 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEFA72109A04610048B885 /* libMyMath.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D289987405E68DCB004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* MyMath */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* C Source */,
+				61AEFA2B109A00610048B885 /* Test */,
+				C6A0FF2B0290797F04C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = MyMath;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* C Source */ = {
+			isa = PBXGroup;
+			children = (
+				61AEFA7E109A05D70048B885 /* BitArray.cpp */,
+				61AEFA7F109A05D70048B885 /* BitArray.h */,
+				61AA5726106BCEF200312EF1 /* MyCIDL.h */,
+				61AA5727106BCEF200312EF1 /* MyCIDL.c */,
+				61AA5728106BCEF200312EF1 /* MyMath.h */,
+				61AA5729106BCEF200312EF1 /* MyMath.c */,
+				611FA3F910724EDC00C914C6 /* MySparse.h */,
+				611FA3FA10724EDC00C914C6 /* MySparse.c */,
+				611FA40710724F2500C914C6 /* MyKNN.h */,
+				611FA40810724F2500C914C6 /* MyKNN.c */,
+				611FA4BD1072740B00C914C6 /* MySDE.h */,
+				611FA4BE1072740B00C914C6 /* MySDE.c */,
+			);
+			name = "C Source";
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC046055464E500DB518D /* libMyMath.a */,
+				61AEFA31109A008A0048B885 /* MyMathTester */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61AEFA2B109A00610048B885 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				61AEFA2C109A00760048B885 /* main.cpp */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		C6A0FF2B0290797F04C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC043055464E500DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AA572A106BCEF200312EF1 /* MyCIDL.h in Headers */,
+				61AA572C106BCEF200312EF1 /* MyMath.h in Headers */,
+				611FA3FB10724EDC00C914C6 /* MySparse.h in Headers */,
+				611FA40B10724F2500C914C6 /* MyKNN.h in Headers */,
+				611FA4BF1072740B00C914C6 /* MySDE.h in Headers */,
+				61AEFA81109A05D70048B885 /* BitArray.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		61AEFA30109A008A0048B885 /* MyMathTester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AEFA3D109A00BC0048B885 /* Build configuration list for PBXNativeTarget "MyMathTester" */;
+			buildPhases = (
+				61AEFA2E109A008A0048B885 /* Sources */,
+				61AEFA2F109A008A0048B885 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyMathTester;
+			productName = MyMathTester;
+			productReference = 61AEFA31109A008A0048B885 /* MyMathTester */;
+			productType = "com.apple.product-type.tool";
+		};
+		D2AAC045055464E500DB518D /* MyMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91EB08733DB70010E9CD /* Build configuration list for PBXNativeTarget "MyMath" */;
+			buildPhases = (
+				D2AAC043055464E500DB518D /* Headers */,
+				D2AAC044055464E500DB518D /* Sources */,
+				D289987405E68DCB004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyMath;
+			productName = MyMath;
+			productReference = D2AAC046055464E500DB518D /* libMyMath.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "MyMath" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* MyMath */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC045055464E500DB518D /* MyMath */,
+				61AEFA30109A008A0048B885 /* MyMathTester */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61AEFA2E109A008A0048B885 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AEFA36109A00940048B885 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC044055464E500DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AA572B106BCEF200312EF1 /* MyCIDL.c in Sources */,
+				61AA572D106BCEF200312EF1 /* MyMath.c in Sources */,
+				611FA3FC10724EDC00C914C6 /* MySparse.c in Sources */,
+				611FA40C10724F2500C914C6 /* MyKNN.c in Sources */,
+				611FA4C01072740B00C914C6 /* MySDE.c in Sources */,
+				61AEFA80109A05D70048B885 /* BitArray.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91EC08733DB70010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_FILES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DSTROOT = /Users/bh0085/Programming/;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/opt/local/include/,
+					/Users/bh0085/Programming/gccinclude/,
+				);
+				INSTALL_PATH = /gcclib/;
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib/,
+					/Users/bh0085/Programming/gcclib/,
+				);
+				PRIVATE_HEADERS_FOLDER_PATH = /gccinclude/;
+				PRODUCT_NAME = MyMath;
+				PUBLIC_HEADERS_FOLDER_PATH = /gccinclude/;
+			};
+			name = Debug;
+		};
+		1DEB91ED08733DB70010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_FILES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /Users/bh0085/Programming/;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					/opt/local/include/,
+					/Users/bh0085/Programming/gccinclude/,
+				);
+				INSTALL_PATH = /gcclib/;
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib/,
+					/Users/bh0085/Programming/gcclib/,
+				);
+				PRIVATE_HEADERS_FOLDER_PATH = /gccinclude/;
+				PRODUCT_NAME = MyMath;
+				PUBLIC_HEADERS_FOLDER_PATH = /gccinclude/;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB91F008733DB70010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DSTROOT = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/opt/local/include/,
+					/Users/bh0085/Programming/gccinclude/,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib/,
+					/Users/bh0085/Programming/gcclib/,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91F108733DB70010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DSTROOT = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "";
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		618E6AB4106BF44900623EDD /* local_publish */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLY_RULES_IN_COPY_FILES = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DSTROOT = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx10.5;
+			};
+			name = local_publish;
+		};
+		618E6AB5106BF44900623EDD /* local_publish */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLY_RULES_IN_COPY_FILES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /Users/bh0085/Programming/;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/opt/local/include/,
+					/Users/bh0085/Programming/gccinclude/,
+				);
+				INSTALL_PATH = /gcclib/;
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib/,
+					/Users/bh0085/Programming/gcclib/,
+				);
+				PRIVATE_HEADERS_FOLDER_PATH = /gccinclude/;
+				PRODUCT_NAME = MyMath;
+			};
+			name = local_publish;
+		};
+		61AEFA33109A008A0048B885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = MyMathTester;
+			};
+			name = Debug;
+		};
+		61AEFA34109A008A0048B885 /* local_publish */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = MyMathTester;
+			};
+			name = local_publish;
+		};
+		61AEFA35109A008A0048B885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = MyMathTester;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91EB08733DB70010E9CD /* Build configuration list for PBXNativeTarget "MyMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91EC08733DB70010E9CD /* Debug */,
+				618E6AB5106BF44900623EDD /* local_publish */,
+				1DEB91ED08733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "MyMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91F008733DB70010E9CD /* Debug */,
+				618E6AB4106BF44900623EDD /* local_publish */,
+				1DEB91F108733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AEFA3D109A00BC0048B885 /* Build configuration list for PBXNativeTarget "MyMathTester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AEFA33109A008A0048B885 /* Debug */,
+				61AEFA34109A008A0048B885 /* local_publish */,
+				61AEFA35109A008A0048B885 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

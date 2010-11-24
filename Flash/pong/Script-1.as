@@ -1,0 +1,1 @@
+﻿package paths{	public class Node {		var x:Number		var y:Number		var prev:Node		var next:Node					}	}

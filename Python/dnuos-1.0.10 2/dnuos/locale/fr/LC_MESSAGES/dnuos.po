@@ -1,0 +1,650 @@
+# French translations for Dnuos.
+# Copyright (C) 2008 Brodie Rao
+# This file is distributed under the same license as the Dnuos project.
+# Brodie Rao <me+dnuos@dackz.net>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Dnuos 1.0\n"
+"Report-Msgid-Bugs-To: me+dnuos@dackz.net\n"
+"POT-Creation-Date: 2008-02-13 13:28+0500\n"
+"PO-Revision-Date: 2009-02-10 23:39-0500\n"
+"Last-Translator: Jean-Denis Vauguet <jd@vauguet.fr>\n"
+"Language-Team: French\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 1.0dev-r361\n"
+
+#: dnuos/__init__.py:197
+#, python-format
+msgid "Failed to delete cache: %s"
+msgstr "La suppression du cache a échoué : %s"
+
+#: dnuos/__init__.py:199
+#, python-format
+msgid "Removed cache directory %s"
+msgstr "Le dossier de cache %s a été supprimé"
+
+#: dnuos/__init__.py:210
+#, python-format
+msgid "Culled %d non-existent directories"
+msgstr "Suppression de %d dossiers inexistants"
+
+#: dnuos/__init__.py:214
+msgid "Failed to create cache directory:"
+msgstr "La création du dossier de cache a échoué :"
+
+#: dnuos/__init__.py:218 dnuos/__init__.py:255
+msgid "Use the --disable-cache switch to disable caching"
+msgstr "Utilisez l'option --disable-cache pour interdire le cache"
+
+#: dnuos/__init__.py:226
+msgid "Format string can only contain valid fields"
+msgstr "La chaîne de sortie ne doit contenir que des champs valides"
+
+#: dnuos/__init__.py:227
+msgid "Use the --help-output-string switch for more information"
+msgstr "Utilisez l'option --help-output-string pour plus d'information"
+
+#: dnuos/__init__.py:251
+msgid "Failed to save cache data:"
+msgstr "L'enregistrement des données de cache a échoué :"
+
+#: dnuos/__init__.py:269
+#, python-format
+msgid "%sB processed\r"
+msgstr "%sB traités\r"
+
+#: dnuos/__init__.py:285
+msgid "Audiotype failed for:"
+msgstr "Audiotype a échoué pour :"
+
+#: dnuos/conf.py:59
+msgid ""
+"\n"
+"Anything enclosed by brackets is considered a field. A field must have "
+"the\n"
+"following syntax:\n"
+"  [TAG]\n"
+"  [TAG,WIDTH]\n"
+"  [TAG,WIDTH,SUFFIX]\n"
+"  [TAG,,SUFFIX]\n"
+"\n"
+"TAG is any of the following characters:\n"
+"  a  list of bitrates in Audiolist compatible format\n"
+"  A  artist name as found in ID3 tags\n"
+"  b  bitrate with suffix (e.g. 192k)\n"
+"  B  bitrate in bps\n"
+"  C  album name as found in ID3 tags\n"
+"  D  depth; distance from respective basedir\n"
+"  f  number of audio files (including spacers)\n"
+"  l  length in minutes and seconds\n"
+"  L  length in seconds\n"
+"  m  time of last change\n"
+"  M  time of last change in seconds since the epoch\n"
+"  n  directory name (indented)\n"
+"  N  directory name\n"
+"  p  profile\n"
+"  P  full path\n"
+"  q  quality\n"
+"  s  size with suffix (e.g 65.4M)\n"
+"  S  size in bytes\n"
+"  t  file type\n"
+"  T  bitrate type:\n"
+"       ~ mixed files\n"
+"       C constant bitrate\n"
+"       L lossless compression\n"
+"       V variable bitrate\n"
+"  V  encoder\n"
+"  Y  year as found in ID3 tags\n"
+"\n"
+"WIDTH defines the exact width of the field. The output is cropped to this"
+"\n"
+"width if needed. Negative values will give left aligned output. Cropping "
+"is\n"
+"always done on the right.\n"
+"\n"
+"SUFFIX lets you specify a unit to be concatenated to all non-empty data.\n"
+"\n"
+"Other interpreted sequences are:\n"
+"  \\[  [\n"
+"  \\]  ]\n"
+"  \\n  new line\n"
+"  \\t  tab character\n"
+"\n"
+"Unescaped brackets are forbidden unless they define a field.\n"
+"\n"
+"Note: If you have any whitespace in your output string you must put it "
+"inside\n"
+"quotes or otherwise it will not get parsed right.\n"
+msgstr ""
+"\n"
+"Tout texte entre crochets est considéré comme un champ. Un champ doit\n"
+"être utilisé avec la syntaxe suivante :\n"
+"  [BALISE]\n"
+"  [BALISE,LARGEUR]\n"
+"  [BALISE,LARGEUR,SUFFIXE]\n"
+"  [BALISE,,SUFFIXE]\n"
+"\n"
+"BALISE n'importe lequel des caractères suivants :\n"
+"  a  une liste de bitrates en format compatible avec Audiolist\n"
+"  A  le nom d'artiste spécifié à la manière des balises ID3\n"
+"  b  le bitrate avec son suffixe (par ex. 192k)\n"
+"  B  le bitrate en bps\n"
+"  C  le nom d'album spécifié à la manière des balises ID3\n"
+"  D  profondeur ; la distance par rapport au basedir respectif\n"
+"  f  le nombre de fichiers audio (incluant les spaceurs)\n"
+"  l  la durée en minutes et secondes\n"
+"  L  la durée en secondes\n"
+"  m  la date de la dernière modification\n"
+"  M  la date de la dernière modification en temps UNIX\n"
+"  n  le nom du dossier (indenté)\n"
+"  N  le nom du dossier\n"
+"  p  le profil\n"
+"  P  le chemin complet du dossier\n"
+"  q  la qualité\n"
+"  s  la taille avec suffixe (par ex. 65,4M)\n"
+"  S  la taille en octets\n"
+"  t  le type du fichier\n"
+"  T  le type du bitrate :\n"
+"       ~ fichiers mélangés\n"
+"       C bitrate constant\n"
+"       L compression sans perte\n"
+"       V bitrate variable\n"
+"  V  l'encodeur\n"
+"  Y  l'année de sortie d'album à la manière des balises ID3\n"
+"\n"
+"LARGEUR définit la largeur exacte du champ. La sortie est alignée à cette\n"
+"largeur si nécessaire. Les valeurs négatives résulteront en un alignement à gauche.\n"
+"La troncature est toujours effectuée à droite.\n"
+"\n"
+"SUFFIXE spécifie une chaîne à adjoindre à toutes données non vides.\n"
+"\n"
+"D'autres chaînes interprétées :\n"
+"  \\[  [\n"
+"  \\]  ]\n"
+"  \\n  nouvelle ligne\n"
+"  \\t  caractère tab\n"
+"\n"
+"Les crochets non échappés sont interdits, à moins qu'ils\n"
+"ne définissent un champ.\n"
+"\n"
+"Note : Si vous avez des espaces blancs dans la chaîne de sortie, vous devez\n"
+"les mettre entre guillemets, sinon ils ne seront pas analysés correctement.\n"
+
+#: dnuos/conf.py:119
+#, python-format
+msgid ""
+"The %s option is deprecated and will be removed in a future version. Use "
+"--template=db --file=FILE instead to ensure compatibility with future "
+"versions."
+msgstr ""
+"L'option %s est dépréciée et sera supprimée dans une prochaine version. "
+"Utilisez plutôt --template=db --file=FICHIER pour assurer compatibilité "
+"avec de prochaines versions."
+
+#: dnuos/conf.py:130
+#, python-format
+msgid "Bad format string argument to %s"
+msgstr "La chaîne de sortie pour %s est invalide"
+
+#: dnuos/conf.py:137
+#, python-format
+msgid ""
+"The %s option is deprecated and will be removed in a future version. Use "
+"--template=html instead to ensure compatibility with future versions."
+msgstr ""
+"L'option %s est dépréciée et sera supprimée dans une prochaine version. "
+"Utilisez plutôt --template=html pour assurer compatibilité avec de "
+"prochaines versions."
+
+#: dnuos/conf.py:147
+msgid "Bitrate must be 0 or in the range (1..320)"
+msgstr "Le bitrate doit être égal à 0 ou compris dans la plage (1..320)"
+
+#: dnuos/conf.py:155
+#, python-format
+msgid "Unknown template %s"
+msgstr "Template inconnu %s'"
+
+#: dnuos/conf.py:164
+#, python-format
+msgid "Invalid argument to %s"
+msgstr "L'argument pour %s est invalide"
+
+#: dnuos/conf.py:173 dnuos/conf.py:188
+#, python-format
+msgid "No such directory: %s"
+msgstr "Il n'y a pas de dossier : %s"
+
+#: dnuos/conf.py:243
+msgid "%prog [options] basedir ..."
+msgstr ""
+
+#: dnuos/conf.py:278
+msgid "Show this help message and exit"
+msgstr "Afficher ce message d'aide et s'arrêter"
+
+#: dnuos/conf.py:282
+msgid "Show output string help message"
+msgstr "Afficher l'aide pour la chaîne de sortie"
+
+#: dnuos/conf.py:284
+msgid "Application"
+msgstr "Application "
+
+#: dnuos/conf.py:287
+msgid "Output debug trace to stderr"
+msgstr "Envoyer la sortie du débogage vers stderr"
+
+#: dnuos/conf.py:290
+msgid "Don't list files that cause Audiotype failure"
+msgstr "Ne pas afficher les fichiers qui mettent Audiotype en échec"
+
+#: dnuos/conf.py:293
+msgid "Omit progress indication"
+msgstr "Omettre les indications de progression"
+
+#: dnuos/conf.py:296
+msgid "Display version"
+msgstr "Afficher la version"
+
+#: dnuos/conf.py:299
+msgid "Caching"
+msgstr "Cache "
+
+#: dnuos/conf.py:303
+#, python-format
+msgid "Store cache in DIR (default %s)"
+msgstr "Enregistrer le cache dans DOSSIER (%s par défaut)"
+
+#: dnuos/conf.py:305 dnuos/conf.py:322
+msgid "DIR"
+msgstr "DOSSIER"
+
+#: dnuos/conf.py:308
+msgid "Cull non-existent cached directories and exit"
+msgstr "Supprimer les dossiers inexistants mis en cache et terminer"
+
+#: dnuos/conf.py:311
+msgid "Delete the cache directory and exit"
+msgstr "Supprimer le dossier de cache et terminer"
+
+#: dnuos/conf.py:314
+msgid "Disable caching"
+msgstr "Désactiver le cache"
+
+#: dnuos/conf.py:318
+msgid "Directory walking"
+msgstr "Recherche de dossier "
+
+#: dnuos/conf.py:322
+msgid "Exclude DIR from search"
+msgstr "Exclure DOSSIER de recherche"
+
+#: dnuos/conf.py:326
+msgid "Case-insensitive directory sorting"
+msgstr "Ne pas tenir compte de la casse dans l'ordonnancement des dossiers"
+
+#: dnuos/conf.py:329
+msgid "List audio files in directories (doesn't use caching)"
+msgstr ""
+"Lister les fichiers audio dans les dossiers (n'utilise pas la mise en "
+"cache)"
+
+#: dnuos/conf.py:333
+msgid "Parse basedirs in parallel and merge output"
+msgstr "Analyser les répertoires parents en parallèle et combiner les sorties"
+
+#: dnuos/conf.py:337
+msgid "A comma-separated list of unknown audio types to list"
+msgstr "Une liste de types audio inconnus, séparés par des virgules"
+
+#: dnuos/conf.py:338
+msgid "TYPES"
+msgstr ""
+
+#: dnuos/conf.py:341
+msgid "Expand wildcards in basedirs"
+msgstr "Développer les caractères génériques dans les répertoires parents"
+
+#: dnuos/conf.py:344
+msgid "Filtering"
+msgstr "Filtrage "
+
+#: dnuos/conf.py:348
+msgid "Exclude MP3s with bitrate lower than MIN (in Kbps)"
+msgstr "Exclure les MP3 avec un bitrate inférieur à MIN (en Kbps)"
+
+#: dnuos/conf.py:349
+msgid "MIN"
+msgstr "MIN"
+
+#: dnuos/conf.py:352
+msgid "Exclude MP3s with no LAME profile"
+msgstr "Exclure les MP3 sans profil LAME"
+
+#: dnuos/conf.py:355
+msgid "Exclude MP3s with constant bitrates"
+msgstr "Exclure les MP3 aux bitrates constants"
+
+#: dnuos/conf.py:358
+msgid "Exclude directories with mixed files"
+msgstr "Exclure les dossiers contenant plusieurs formats de fichier audio"
+
+#: dnuos/conf.py:361
+msgid "Output"
+msgstr "Sortie "
+
+#: dnuos/conf.py:364
+#, python-format
+msgid "Set HTML background COLOR (default %s)"
+msgstr "Mettre la COULEUR arrière-plan pour la sortie HTML (%s par défaut)"
+
+#: dnuos/conf.py:366 dnuos/conf.py:410
+msgid "COLOR"
+msgstr "COULEUR"
+
+#: dnuos/conf.py:369
+msgid "Write output to FILE"
+msgstr "Écrire la sortie dans FICHIER"
+
+#: dnuos/conf.py:369 dnuos/conf.py:389
+msgid "FILE"
+msgstr "FICHIER"
+
+#: dnuos/conf.py:372
+msgid "HTML output (deprecated, use --template html)"
+msgstr "Sortie HTML (déprécié, utilisez --template html)"
+
+#: dnuos/conf.py:375
+#, python-format
+msgid "Set indent to n (default %s)"
+msgstr "Fixer l'indentation à n (%s par défaut)"
+
+#: dnuos/conf.py:377 dnuos/conf.py:396
+msgid "n"
+msgstr ""
+
+#: dnuos/conf.py:381
+#, python-format
+msgid ""
+"Set output format STRING used in plain-text and HTML output. See --help-"
+"output-string for details on syntax. (default %s)"
+msgstr ""
+"Définir la chaîne de sortie utilisée pour les sorties en texte brut et "
+"code HTML. Voyez --help-output-string pour plus d'information à propos de"
+" la syntaxe. (%s par défaut)"
+
+#: dnuos/conf.py:384
+msgid "STRING"
+msgstr "CHAÎNE"
+
+#: dnuos/conf.py:388
+msgid "Write list in output.db format to FILE (deprecated, use --template db)"
+msgstr ""
+"Écrire la liste dans FICHIER, au format output.db  (déprecié, utilisez "
+"--template db)"
+
+#: dnuos/conf.py:393
+#, python-format
+msgid "If both ID3v1 and ID3v2 tags exist, prefer n (1 or 2) (default %s)"
+msgstr ""
+"Si des balises ID3v1 et ID3v2 existent, préférer n (1 ou 2) (%s par "
+"défaut)"
+
+#: dnuos/conf.py:399
+msgid "Strip output of field headers and empty directories"
+msgstr "Supprimer de la sortie les en-têtes de champ et les dossiers vides"
+
+#: dnuos/conf.py:404
+msgid "Set output TEMPLATE (default plaintext)"
+msgstr "Activer le TEMPLATE de sortie (plaintext par défaut)"
+
+#: dnuos/conf.py:405
+msgid "TEMPLATE"
+msgstr ""
+
+#: dnuos/conf.py:408
+#, python-format
+msgid "Set HTML text COLOR (default %s)"
+msgstr "Mettre le texte HTML dans cette COULEUR (%s par défaut)"
+
+#: dnuos/conf.py:413
+msgid "Statistics"
+msgstr "Statistiques "
+
+#: dnuos/conf.py:416
+msgid "Display datestamp header"
+msgstr "Afficher les informations de date/heure dans l'en-tête"
+
+#: dnuos/conf.py:419
+msgid "Display statistics results"
+msgstr "Afficher les résultats statistiques"
+
+#: dnuos/conf.py:422
+msgid "Display elapsed time footer"
+msgstr "Afficher le temps d'exécution en pied de page"
+
+#: dnuos/conf.py:438
+#, python-format
+msgid ""
+"No folders to process.\n"
+"Type `%s -h' for help."
+msgstr ""
+"Il n'y a aucun dossier à traiter.\n"
+"Exécutez `%s -h' pour aide."
+
+#: dnuos/conf.py:444
+#, python-format
+msgid "No such file or directory: %s"
+msgstr "Il n'y a pas de fichier ou dossier : %s"
+
+#: dnuos/output/abstract_renderer.py:24
+msgid "Bitrate(s)"
+msgstr ""
+
+#: dnuos/output/abstract_renderer.py:25
+msgid "Artist"
+msgstr "Artiste"
+
+#: dnuos/output/abstract_renderer.py:26 dnuos/output/abstract_renderer.py:27
+msgid "Bitrate"
+msgstr ""
+
+#: dnuos/output/abstract_renderer.py:28
+msgid "Album"
+msgstr ""
+
+#: dnuos/output/abstract_renderer.py:29
+msgid "Depth"
+msgstr "Profondeur"
+
+#: dnuos/output/abstract_renderer.py:30
+msgid "Files"
+msgstr "Fichiers"
+
+#: dnuos/output/abstract_renderer.py:31 dnuos/output/abstract_renderer.py:32
+msgid "Length"
+msgstr "Durée"
+
+#: dnuos/output/abstract_renderer.py:33 dnuos/output/abstract_renderer.py:34
+msgid "Modified"
+msgstr "Modification"
+
+#: dnuos/output/abstract_renderer.py:35 dnuos/output/abstract_renderer.py:36
+msgid "Album/Artist"
+msgstr "Album/Artiste"
+
+#: dnuos/output/abstract_renderer.py:37
+msgid "Profile"
+msgstr "Profil"
+
+#: dnuos/output/abstract_renderer.py:38
+msgid "Path"
+msgstr "Chemin"
+
+#: dnuos/output/abstract_renderer.py:39
+msgid "Quality"
+msgstr "Qualité"
+
+#: dnuos/output/abstract_renderer.py:40 dnuos/output/abstract_renderer.py:41
+msgid "Size"
+msgstr "Taille"
+
+#: dnuos/output/abstract_renderer.py:42
+msgid "Type"
+msgstr ""
+
+#: dnuos/output/abstract_renderer.py:43
+msgid "BR Type"
+msgstr "Type du BR"
+
+#: dnuos/output/abstract_renderer.py:44
+msgid "Encoder"
+msgstr "Encodeur"
+
+#: dnuos/output/abstract_renderer.py:45
+msgid "Year"
+msgstr "Année"
+
+#: dnuos/output/html.py:45
+msgid "en"
+msgstr "fr"
+
+#: dnuos/output/html.py:45
+msgid "Music List"
+msgstr "Liste de musique"
+
+#: dnuos/output/plaintext.py:56
+msgid "Audiotype failed on the following files:"
+msgstr "Audiotype a échoué avec ces fichiers :"
+
+#: dnuos/output/plaintext.py:62
+#, python-format
+msgid "Generation time:     %s s"
+msgstr "Temps de génération : %s s"
+
+#: dnuos/output/plaintext.py:66
+msgid "+-----------------------+-----------+"
+msgstr "+-------------------------+-------------+"
+
+#: dnuos/output/plaintext.py:69
+msgid "| Format    Amount (Mb) | Ratio (%) |"
+msgstr "| Format    Quantité (Mo) | Rapport (%) |"
+
+#: dnuos/output/plaintext.py:73
+#, python-format
+msgid "%12.2f"
+msgstr ""
+
+#: dnuos/output/plaintext.py:75
+#, python-format
+msgid "%9.2f"
+msgstr "%12.2f"
+
+#: dnuos/output/plaintext.py:77
+#, python-format
+msgid "| %-8s %s | %s |"
+msgstr "| %-10s %s |%s |"
+
+#: dnuos/output/plaintext.py:80 dnuos/output/plaintext.py:82
+#: dnuos/output/plaintext.py:85
+#, python-format
+msgid "%10.2f"
+msgstr ""
+
+#: dnuos/output/plaintext.py:86
+#, python-format
+msgid "| Total %s Mb   |"
+msgstr "| Total     %s Mo |"
+
+#: dnuos/output/plaintext.py:87
+#, python-format
+msgid "| Speed %s Mb/s |"
+msgstr "| Vitesse %s Mo/s |"
+
+#: dnuos/output/plaintext.py:88
+msgid "+-----------------------+"
+msgstr "+-------------------------+"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:134
+#, python-format
+msgid "no such option: %s"
+msgstr "option inexistante : %s"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:145
+#, python-format
+msgid "ambiguous option: %s (%s?)"
+msgstr "option ambiguë : %s (%s ?)"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:368
+#, python-format
+msgid "Usage: %s\n"
+msgstr "Utilisation : %s\n"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:387
+msgid "Usage"
+msgstr "Utilisation "
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:412
+msgid "integer"
+msgstr "entier"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:413
+msgid "long integer"
+msgstr "entier long"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:414
+msgid "floating-point"
+msgstr "virgule flottante"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:415
+msgid "complex"
+msgstr "complexe"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:423
+#, python-format
+msgid "option %s: invalid %s value: %r"
+msgstr "option %s : valeur %s invalide : %r"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:431
+#, python-format
+msgid "option %s: invalid choice: %r (choose from %s)"
+msgstr "option %s : choix invalide : %r (choisir parmi %s)"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:1239
+msgid "show this help message and exit"
+msgstr "montre ce message d'aide et s'arrête"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:1244
+msgid "show program's version number and exit"
+msgstr "affiche la version du programme et s'arrête"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:1267
+msgid "%prog [options]"
+msgstr ""
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:1477
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:1516
+#, python-format
+msgid "%s option requires an argument"
+msgstr "l'option %s requiert un paramètre"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:1479
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:1518
+#, python-format
+msgid "%s option requires %d arguments"
+msgstr "l'option %s requiert %d paramètres"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:1488
+#, python-format
+msgid "%s option does not take a value"
+msgstr "l'option %s ne prend pas de valeurs"
+
+#: /System/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/optparse.py:1605
+msgid "Options"
+msgstr "Options "
+

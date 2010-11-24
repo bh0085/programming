@@ -1,0 +1,34 @@
+Metadata-Version: 1.0
+Name: python-musicbrainz2
+Version: 0.7.0
+Summary: An interface to the MusicBrainz XML web service
+Home-page: http://musicbrainz.org/products/python-musicbrainz2/
+Author: Matthias Friedrich
+Author-email: matt@mafr.de
+License: BSD
+Download-URL: http://ftp.musicbrainz.org/pub/musicbrainz/python-musicbrainz2/
+Description: An interface to the MusicBrainz XML web service
+        ===============================================
+        
+        python-musicbrainz2 provides simple, object oriented access to the
+        MusicBrainz web service. It is useful for applications like CD rippers,
+        taggers, media players, and other tools that need music metadata.
+        
+        The MusicBrainz Project (see http://musicbrainz.org) collects music
+        metadata and is maintained by its large and constantly growing user
+        community.
+        
+        Most of this package works on python-2.3 and later without further
+        dependencies. If you want to generate DiscIDs from an audio CD in the
+        drive, you need ctypes (already included in python-2.5) and libdiscid.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Multimedia :: Sound/Audio :: CD Audio :: CD Ripping
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup :: XML

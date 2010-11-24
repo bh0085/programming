@@ -1,0 +1,1 @@
+﻿package graphicstest_code {		import flash.display.MovieClip		public class GraphicsTest extends MovieClip{		public function GraphicsTest() {			var p:Polygon = new Polygon()			trace(p)		}	}}

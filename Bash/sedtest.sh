@@ -1,0 +1,1 @@
+sed -e "s/Ã¡/\&aacute;/g" -e "s/Ã©/\&eacute;/g" -e "s/Ã©/\&eacute;/g" -e "s/Ã­/\&iacute;/g" -e "s/Ã³/\&oacute;/g" -e "s/Ãº/\&uacute;/g" -e "s/Ã�/\&Aacute;/g" -e "s/Ã�/\&Eacute;/g" -e "s/Ã�/\&Iacute;/g" -e "s/Ã�/\&Oacute;/g" -e "s/Ã�/\&Uacute;/g" -e "s/Ã±/\&ntilde;/g" -e "s/Â¿/\&iquest;/g"
