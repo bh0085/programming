@@ -1,0 +1,3 @@
+[submodule "Python/compbio"]
+	path = Python/compbio
+	url = git@github.com:bh0085/compbio.git
