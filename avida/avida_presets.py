@@ -32,7 +32,7 @@ biproduct_last = True
 lethal_biproduct = True
 conversion = 3.0
 expected_burst_dose = value_per_usage * conversion
-lethal_dose =  expected_burst_dose * 1
+lethal_dose =  expected_burst_dose * .2
 #trigger a chain reaction?
 death_chain_reaction = True
 #chain reaction spread speed
@@ -43,7 +43,7 @@ kmut = 1
 kdiv = 1.5
 
 
-default_ygrav = .85
+default_ygrav = .01
 default_xgrav = 0
 
 default_xdiffuse = 1

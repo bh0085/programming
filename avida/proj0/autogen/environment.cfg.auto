@@ -45,26 +45,26 @@ RESOURCE resXOR:inflow=125.0:outflow=0.01:geometry=torus:inflowx1=0:inflowx2=49:
 RESOURCE resEQU:inflow=125.0:outflow=0.01:geometry=torus:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=49:outflowx1=0:outflowx2=49:outflowy1=0:outflowy2=49
 
 
-RESOURCE resNOTB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.85:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
-RESOURCE resNANDB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.85:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
-RESOURCE resANDB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.85:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
-RESOURCE resORNB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.85:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
-RESOURCE resORB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.85:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
-RESOURCE resANDNB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.85:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
-RESOURCE resNORB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.85:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
-RESOURCE resXORB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.85:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
-RESOURCE resEQUB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.85:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
+RESOURCE resNOTB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.01:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
+RESOURCE resNANDB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.01:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
+RESOURCE resANDB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.01:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
+RESOURCE resORNB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.01:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
+RESOURCE resORB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.01:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
+RESOURCE resANDNB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.01:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
+RESOURCE resNORB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.01:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
+RESOURCE resXORB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.01:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
+RESOURCE resEQUB:inflow=0:outflow=0.25:geometry=grid:inflowx1=0:inflowx2=49:inflowy1=0:inflowy2=0:outflowx1=0:outflowx2=49:outflowy1=49:outflowy2=49:ygravity=0.01:xgravity=0:ydiffuse=0.25:xdiffuse=0.5
 
 
-REACTION RESNOTB not process:resource=resNOTB:value=0:frac=0.9:type=mult:conversion=3:product=resNOTB:lethal=1 requisite:min_count=13.5
-REACTION RESNANDB nand process:resource=resNANDB:value=0:frac=0.9:type=mult:conversion=3:product=resNANDB:lethal=1 requisite:min_count=13.5
-REACTION RESANDB and process:resource=resANDB:value=0:frac=0.9:type=mult:conversion=3:product=resANDB:lethal=1 requisite:min_count=13.5
-REACTION RESORNB orn process:resource=resORNB:value=0:frac=0.9:type=mult:conversion=3:product=resORNB:lethal=1 requisite:min_count=13.5
-REACTION RESORB or process:resource=resORB:value=0:frac=0.9:type=mult:conversion=3:product=resORB:lethal=1 requisite:min_count=13.5
-REACTION RESANDNB andn process:resource=resANDNB:value=0:frac=0.9:type=mult:conversion=3:product=resANDNB:lethal=1 requisite:min_count=13.5
-REACTION RESNORB nor process:resource=resNORB:value=0:frac=0.9:type=mult:conversion=3:product=resNORB:lethal=1 requisite:min_count=13.5
-REACTION RESXORB xor process:resource=resXORB:value=0:frac=0.9:type=mult:conversion=3:product=resXORB:lethal=1 requisite:min_count=13.5
-REACTION RESEQUB equ process:resource=resEQUB:value=0:frac=0.9:type=mult:conversion=3:product=resEQUB:lethal=1 requisite:min_count=13.5
+REACTION RESNOTB not process:resource=resNOTB:value=0:frac=0.9:type=mult:conversion=3:product=resNOTB:lethal=1 requisite:min_count=2.7
+REACTION RESNANDB nand process:resource=resNANDB:value=0:frac=0.9:type=mult:conversion=3:product=resNANDB:lethal=1 requisite:min_count=2.7
+REACTION RESANDB and process:resource=resANDB:value=0:frac=0.9:type=mult:conversion=3:product=resANDB:lethal=1 requisite:min_count=2.7
+REACTION RESORNB orn process:resource=resORNB:value=0:frac=0.9:type=mult:conversion=3:product=resORNB:lethal=1 requisite:min_count=2.7
+REACTION RESORB or process:resource=resORB:value=0:frac=0.9:type=mult:conversion=3:product=resORB:lethal=1 requisite:min_count=2.7
+REACTION RESANDNB andn process:resource=resANDNB:value=0:frac=0.9:type=mult:conversion=3:product=resANDNB:lethal=1 requisite:min_count=2.7
+REACTION RESNORB nor process:resource=resNORB:value=0:frac=0.9:type=mult:conversion=3:product=resNORB:lethal=1 requisite:min_count=2.7
+REACTION RESXORB xor process:resource=resXORB:value=0:frac=0.9:type=mult:conversion=3:product=resXORB:lethal=1 requisite:min_count=2.7
+REACTION RESEQUB equ process:resource=resEQUB:value=0:frac=0.9:type=mult:conversion=3:product=resEQUB:lethal=1 requisite:min_count=2.7
 
 
 REACTION RESNOT not process:resource=resNOT:value=3.55555555556:frac=0.9:type=pow:conversion=3.0:product=resEQUB requisite:min_count=0
